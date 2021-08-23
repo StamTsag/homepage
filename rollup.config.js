@@ -1,0 +1,61 @@
+import svelte from "rollup-plugin-svelte";
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import livereload from "rollup-plugin-livereload";
+import { terser } from "rollup-plugin-terser";
+
+const isDev = Boolean(process.env.ROLLUP_WATCH);
+
+export default [
+  // Browser bundle
+  {
+    input: "src/main.js",
+    output: {
+      sourcemap: true,
+      format: "iife",
+      name: "app",
+      file: "public/generated/bundle.js"
+    },
+    plugins: [
+      svelte({
+        compilerOptions: {
+          hydratable: true,
+          css: css => {
+            css.write("public/generated/bundle.css");
+          }
+        }
+      }),
+      resolve(),
+      commonjs(),
+      // App.js will be built after bundle.js, so we only need to watch that.
+      // By setting a small delay the Node server has a chance to restart before reloading.
+      isDev &&
+        livereload({
+          watch: "public",
+          delay: 200
+        }),
+      !isDev && terser()
+    ]
+  },
+  // Server bundle
+  {
+    input: "src/App.svelte",
+    output: {
+      exports: "default",
+      sourcemap: false,
+      format: "cjs",
+      name: "app",
+      file: "public/generated/App.js"
+    },
+    plugins: [
+      svelte({
+        compilerOptions: {
+          generate: "ssr"
+        }
+      }),
+      resolve(),
+      commonjs(),
+      !isDev && terser()
+    ]
+  }
+];

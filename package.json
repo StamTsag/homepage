@@ -1,0 +1,42 @@
+{
+  "name": "shadofer-homepage",
+  "version": "1.0.0",
+  "description": "Shadofer's homepage made with the power of Svelte.",
+  "main": "server.js",
+  "scripts": {
+    "start": "run-p watch server",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "server": "nodemon server.js --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shadofer/homepage.git"
+  },
+  "author": "Shadofer#0001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shadofer/homepage/issues"
+  },
+  "homepage": "https://github.com/Shadofer/homepage#readme",
+
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm-run-all": "^4.1.5",
+    "nodemon": "^2.0.13-alpha.1",
+    "rollup": "^2.56.1",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-svelte": "~7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sirv-cli": "^1.0.12",
+    "svelte": "^3.42.1",
+    "svelte-routing": "^1.6.0",
+    "@smui/common": "4.2.0",
+    "@smui/icon-button": "4.2.0"
+  },
+
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4"
+  }
+}

@@ -10,6 +10,7 @@ body {
 
 h1 {
     color: white;
+    font-family: Recursive;
 }
 
 a {
@@ -36,6 +37,7 @@ button {
     cursor: pointer;
     padding: 10px;
     color: #fff;
+    font-family: Alata;
 }
 
 .top {
@@ -95,14 +97,17 @@ button {
 }
 
 .project-title {
+    color: white;
     font-size: 35px;
     margin-top: 0px;
     padding-top: 10px;
     margin-bottom: 0px;
+    font-family: Alata;
 }
 
 .project-descriptor {
     color: #dfdfdf;
+    font-family: Quicksand;
 }
 
 /* About Me */

@@ -15,8 +15,6 @@ server.use(express.static(path.join(__dirname, "public")));
 server.get("*", function(req, res) {
   // Invalid path rejector, wont send any data.
   if(valid_paths.includes(req.url) || req.url.endsWith(valid_extensions)) {    
-    const { html } = app.render({ url: req.url });
-  
     res.write(`
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +22,7 @@ server.get("*", function(req, res) {
 <link rel='stylesheet' href='/global.css'>
 <link rel='stylesheet' href='generated/bundle.css'>
 
-<div id="app">${html}
+<div id="app">${app.render({url: req.url})}
 </div>
 <script src="generated/bundle.js"></script>
   `);

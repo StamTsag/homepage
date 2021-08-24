@@ -3,17 +3,11 @@
 </svelte:head>
 
 <script>
-	// SMUI
-	import {Icon} from '@smui/common';
-	import Img from '@smui/common/Img.svelte';
-
 	// Svelte-routing
 	import {navigate} from 'svelte-routing';
 </script>
 
-<div class='top'>
-	<Icon component={Img} src='../../images/homepage-top-image.png' on:click={() => navigate('/')}></Icon>
-</div>
+<h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
 <h1 class='top-text'>My projects</h1>
 
@@ -21,7 +15,7 @@
 
 <div class='top-project'>
 	<div style='display: flex; align-items: center; margin-top: 5px;'>
-		<Img class='project-icon' component={Img} src='../../images/towerverse-icon.png'/>
+		<img class='project-icon' src='../../images/towerverse-icon.png' alt='TowerVerse project icon'/>
 		<h1 class='project-title'><a href='https://github.com/TowerVerse'>TowerVerse</a></h1>
 	</div>
 

@@ -3,21 +3,17 @@
 </svelte:head>
 
 <script>
-	// SMUI
-	import {Icon} from '@smui/common';
-	import Img from '@smui/common/Img.svelte';
-
 	// Svelte-routing
 	import {navigate} from 'svelte-routing';
 </script>
 
-<!-- Don't make this clickable, skip div class. -->
-<Icon component={Img} src='../../images/homepage-top-image.png'></Icon>
+<!-- Don't make this clickable as it is the main route, skip top class. -->
+<h1 class='logo'>Shadofer</h1>
 
 <div class='content'>
-	<button class="glow" style='font-size: 45px;' on:click={() => navigate('projects')}>My projects</button>
+	<button class='glow' on:click={() => navigate('projects')}>My projects</button>
 </div>
 
 <div class='content'>
-	<button class="glow" style='font-size: 45px;' on:click={() => navigate('aboutme')}>About Me</button>
+	<button class='glow' on:click={() => navigate('aboutme')}>About Me</button>
 </div>

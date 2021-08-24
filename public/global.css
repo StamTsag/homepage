@@ -1,7 +1,7 @@
 /* General */
 body {
     animation-name: bg-anim;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     padding: 0px;
@@ -35,9 +35,9 @@ a:hover::after {
 button {
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px;
     color: #fff;
     font-family: Alata;
+    font-size: 5vmin;
 }
 
 .top {
@@ -45,9 +45,15 @@ button {
     cursor: pointer;
 }
 
+.logo {
+    margin-top: 0;
+    font-family: Acme;
+    font-size: 45px;
+}
+
 .top-text {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 0px;
     font-size: 45px;
 }
@@ -62,8 +68,8 @@ button {
 /* Buttons */
 .glow {
     background-color: transparent;
-    border: 0px solid rgb(255, 0, 0);
-    box-shadow: 0 0 50px 50px rgb(168, 12, 12) inset;
+    border: 0px solid rgb(0, 0, 0);
+    box-shadow: 0 0 60px 50px rgb(23, 176, 187) inset;
     transition: all 300ms;
     height: fit-content;
     padding: 20px;
@@ -71,7 +77,7 @@ button {
 }
 
 .glow:hover {
-    box-shadow: 0 0 10px 0 rgb(255, 0, 0) inset, 0 0 50px 0 rgb(255, 0, 0);
+    box-shadow: 0 0 10px 0 rgb(24, 174, 211) inset, 0 0 15px 0 rgb(0, 225, 255);
 }
 
 /* My projects */
@@ -91,14 +97,14 @@ button {
 }
 
 .project-icon {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     margin-right: 10px;
 }
 
 .project-title {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 0px;
     padding-top: 10px;
     margin-bottom: 0px;
@@ -108,6 +114,7 @@ button {
 .project-descriptor {
     color: #dfdfdf;
     font-family: Quicksand;
+    font-size: 20px;
 }
 
 /* About Me */
@@ -120,8 +127,8 @@ button {
 }
 
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 20vmin;
+    height: 20vmin;
     border: 1px solid white;
 }
 
@@ -137,14 +144,14 @@ button {
 }
 
 .socials-icon {
-    width: 90px;
-    height: 90px;
+    width: 10vmin;
+    height: 10vmin;
     margin-right: 10px;
 }
 
 /* Animations */
 @keyframes bg-anim {
-    0% { background: rgb(122, 31, 31); }
+    0% { background: rgb(10, 39, 43); }
 
-    100% { background: rgb(143, 16, 16); }
+    100% { background: rgb(19, 54, 66); }
 }

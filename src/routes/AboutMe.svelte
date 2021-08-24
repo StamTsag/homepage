@@ -3,23 +3,16 @@
 </svelte:head>
 
 <script>
-	// SMUI
-	import {Icon} from '@smui/common';
-	import Img from '@smui/common/Img.svelte';
-
 	// Svelte-routing
 	import {navigate} from 'svelte-routing';
 </script>
 
-
-<div class='top'>
-	<Icon component={Img} src='../../images/homepage-top-image.png' on:click={() => navigate('/')}></Icon>
-</div>
+<h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
 <h1 class='top-text'>About Me</h1>
 
 <div class='avatar-container'>
-	<Icon class='avatar' component={Img} src='../../images/shadofer-avatar.png'/>
+	<img class='avatar' src='../../images/shadofer-avatar.png' alt='Shadofer pfp'/>
 
 	<div class='avatar-descriptors-container'>
 	<h1>Username: Shadofer</h1>
@@ -33,11 +26,11 @@
 <h1 class='top-text'>Socials</h1>
 
 <div class='socials-container'>
-	<Img class='socials-icon' component={Img} src='../../images/discord.png'/>
+	<img class='socials-icon' src='../../images/discord.png' alt='Discord icon'/>
 	<h1 style='color: white; font-size: 25px;'>Shadofer#0001</h1>
 </div>
 
 <div class='socials-container'>
-	<Img class='socials-icon' component={Img} src='../../images/github.png'/>
+	<img class='socials-icon' src='../../images/github.png' alt='Github icon'/>
 	<h1 style='color: white; font-size: 25px;'><a href='https://github.com/Shadofer'>Shadofer</a></h1>
 </div>

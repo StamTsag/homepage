@@ -21,6 +21,7 @@ server.get("*", function(req, res) {
 <link rel='icon' type='image/png' href='favicon.png'/>
 <link rel='stylesheet' href='/global.css'>
 <link rel='stylesheet' href='generated/bundle.css'>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">

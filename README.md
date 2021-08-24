@@ -9,9 +9,9 @@
 
 ## Using for your own purposes
 
-**Run ```npm install``` inside the [svelte](https://github.com/Shadofer/homepage/tree/master/shadofer-homepage/svelte) directory.**
+**Run ```npm install```**
 
-**Run ```npm start``` inside the [shadofer-homepage](https://github.com/Shadofer/homepage/tree/master/shadofer-homepage) directory.**
+**Run ```npm start```**
 
 **The server should be running locally at port 5000 while also listening for css/svelte file changes!**
 

@@ -15,11 +15,11 @@
 	<img class='avatar' src='../../images/shadofer-avatar.png' alt='Shadofer pfp'/>
 
 	<div class='avatar-descriptors-container'>
-		<h1>Username: Shadofer</h1>
-		<h1>Age: 16</h1>
-		<h1>Country: Greece</h1>
-		<h1>Hobbies: Gaming, Programming</h1>
-		<h1>Knowledge in: Python, Java, C++</h1>
+		<h1 class='avatar-descriptor'>Username: Shadofer</h1>
+		<h1 class='avatar-descriptor'>Age: 16</h1>
+		<h1 class='avatar-descriptor'>Country: Greece</h1>
+		<h1 class='avatar-descriptor'>Hobbies: Gaming, Programming</h1>
+		<h1 class='avatar-descriptor'>Knowledge in: Python, Java, C++</h1>
 	</div>
 </div>
 

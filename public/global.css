@@ -136,6 +136,10 @@ button {
     margin-left: 20px;
 }
 
+.avatar-descriptor {
+    font-size: 4vmin;
+}
+
 .socials-container {
     display: flex;
     margin-top: 10px;

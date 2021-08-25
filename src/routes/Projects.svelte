@@ -14,7 +14,7 @@
 <h1>Most recent</h1>
 
 <div class='top-project'>
-	<div style='display: flex; align-items: center; margin-top: 5px;'>
+	<div class='project-top'>
 		<img class='project-icon' src='../../images/towerverse-icon.png' alt='TowerVerse project icon'/>
 		<h1 class='project-title'><a href='https://github.com/TowerVerse'>TowerVerse</a></h1>
 	</div>

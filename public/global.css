@@ -96,6 +96,12 @@ button {
     display: inline-block;
 }
 
+.project-top {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
 .project-icon {
     width: 70px;
     height: 70px;

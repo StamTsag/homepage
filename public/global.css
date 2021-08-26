@@ -108,7 +108,7 @@ button {
     margin-right: 10px;
 }
 
-.project-top-item {
+.project-title {
     color: white;
     font-size: 30px;
     margin-top: 0px;
@@ -117,7 +117,7 @@ button {
     font-family: Alata;
 }
 
-.project-descriptor {
+.project-description {
     color: #dfdfdf;
     font-family: Quicksand;
     font-size: 20px;

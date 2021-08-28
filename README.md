@@ -20,3 +20,17 @@
 **[VSCode](https://code.visualstudio.com/) and the [svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) plugin.**
 
 **[Pixlr X](https://pixlr.com/x)**
+
+## Screenshots
+
+**Main tab**
+
+<img src='https://i.ibb.co/wYKTp7q/image.png' alt='Main tab icon'>
+
+**Projects tab**
+
+<img src='https://i.ibb.co/M58gfQJ/image.png' alt='Projects tab icon'>
+
+**About Me tab**
+
+<img src='https://i.ibb.co/kGTzy40/image.png' alt='ABout Me tab icon'>

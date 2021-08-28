@@ -4,7 +4,7 @@
 
 <script>
 	// Animations
-	import {fade, blur, slide, fly, scale} from 'svelte/transition';
+	import {scale} from 'svelte/transition';
 	
 	// Svelte-routing
 	import {navigate} from 'svelte-routing';

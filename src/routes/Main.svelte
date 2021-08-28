@@ -10,8 +10,7 @@
 	import {navigate} from 'svelte-routing';
 </script>
 
-<!-- Don't make this clickable as it is the main route, skip top class. -->
-<h1 class='logo'>Shadofer</h1>
+<h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
 <div in:fade>
 	<div class='content'>

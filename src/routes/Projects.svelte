@@ -4,7 +4,7 @@
 
 <script>
 	// Animations
-	import {slide} from 'svelte/transition';
+	import {fade, blur, slide, fly, scale} from 'svelte/transition';
 	
 	// Svelte-routing
 	import {navigate} from 'svelte-routing';
@@ -12,7 +12,7 @@
 
 <h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
-<div in:slide>
+<div in:scale>
 	<h1 class='top-text'>My projects</h1>
 
 	<!-- Software development -->

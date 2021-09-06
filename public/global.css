@@ -47,15 +47,16 @@ button {
 
 .logo {
     margin-top: 0;
+    margin-bottom: 10px;
     font-family: Acme;
-    font-size: 45px;
+    font-size: 5vh;
 }
 
 .top-text {
     text-align: center;
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 45px;
+    font-size: 4vh;
 }
 
 .content {
@@ -90,7 +91,7 @@ button {
 }
 
 .project-category {
-    font-size: 5vmin;
+    font-size: 4vh;
     margin-bottom: 10px;
 }
 
@@ -108,8 +109,8 @@ button {
 }
 
 .project-icon {
-    width: 10vmin;
-    height: 10vmin;
+    width: 7vh;
+    height: 7vh;
     margin-right: 10px;
 }
 
@@ -159,8 +160,8 @@ button {
 }
 
 .socials-icon {
-    width: 10vmin;
-    height: 10vmin;
+    width: 10vh;
+    height: 10vh;
     margin-right: 10px;
 }
 

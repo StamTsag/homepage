@@ -90,7 +90,7 @@ button {
 }
 
 .project-category {
-    font-size: 40px;
+    font-size: 5vmin;
     margin-bottom: 10px;
 }
 
@@ -108,14 +108,14 @@ button {
 }
 
 .project-icon {
-    width: 70px;
-    height: 70px;
+    width: 10vmin;
+    height: 10vmin;
     margin-right: 10px;
 }
 
 .project-title {
     color: white;
-    font-size: 30px;
+    font-size: 4vh;
     margin-top: 0px;
     padding-top: 10px;
     margin-bottom: 0px;
@@ -125,7 +125,7 @@ button {
 .project-description {
     color: #dfdfdf;
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 2vh;
 }
 
 /* About Me */

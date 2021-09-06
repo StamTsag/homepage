@@ -4,7 +4,7 @@
 
 <script>
 	// Animations
-	import {scale} from 'svelte/transition';
+	import {fade, slide, scale} from 'svelte/transition';
 	
 	// Svelte-routing
 	import {navigate} from 'svelte-routing';
@@ -12,7 +12,7 @@
 
 <h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
-<div in:scale>
+<div in:fade>
 	<h1 class='top-text'>My projects</h1>
 
 	<!-- Software development -->
@@ -36,7 +36,7 @@
 
 	<div class='top-project'>
 		<div class='project-top'>
-			<img class='project-icon' src='../../favicon.png' alt='Shadofer homepage project icon'/>
+			<img in:scale class='project-icon' src='../../favicon.png' alt='Shadofer homepage project icon'/>
 			<h1 class='project-title'><a href='https://github.com/Shadofer/homepage'>Shadofer homepage</a></h1>
 		</div>
 
@@ -48,7 +48,7 @@
 
 	<div class='top-project'>
 		<div class='project-top'>
-			<img class='project-icon' src='../../images/towerverse-icon.png' alt='TowerVerse project icon'/>
+			<img in:scale class='project-icon' src='../../images/towerverse-icon.png' alt='TowerVerse project icon'/>
 			<h1 class='project-title'><a href='https://github.com/TowerVerse'>TowerVerse</a></h1>
 		</div>
 

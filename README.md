@@ -7,6 +7,14 @@
 
 **Anyone can use this site for his own profile.**
 
+## Features
+
+- **Path routing with [svelte-routing](https://www.npmjs.com/package/svelte-routing)**
+
+- **Efficient server system, no spare files needed for each route**
+
+- **Fully responsive on mobile devices**
+
 ## Using for your own purposes
 
 **Run ```npm install```**

@@ -4,7 +4,7 @@
   "description": "Shadofer's homepage made with the power of Svelte.",
   "main": "server.js",
   "scripts": {
-    "start": "run-p watch server",
+    "start": "rollup -c && run-p watch server",
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "server": "nodemon server.js --watch server.js"

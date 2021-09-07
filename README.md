@@ -19,6 +19,8 @@
 
 **Run ```npm install```**
 
+**Run ```npm run build``` (only first time build)**
+
 **Run ```npm start```**
 
 **The server should be running locally at port 5000 while also listening for css/svelte file changes!**

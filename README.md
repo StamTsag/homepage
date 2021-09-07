@@ -41,4 +41,4 @@
 
 **About Me tab**
 
-<img src='https://i.ibb.co/kGTzy40/image.png' alt='ABout Me tab icon'>
+<img src='https://i.ibb.co/kGTzy40/image.png' alt='About Me tab icon'>

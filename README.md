@@ -1,4 +1,5 @@
-# <p align="center"><a href='https://shadofer.herokuapp.com'>**Shadofer Homepage**</a></p>
+<p align="center"><a href='https://shadofer.herokuapp.com'><img src='https://i.ibb.co/zVtMW6N/homepage-icon.png' alt='Homepage Icon'></a></p>
+
 ![GitHub](https://img.shields.io/github/license/Shadofer/homepage) ![GitHub Repo stars](https://img.shields.io/github/stars/Shadofer/homepage?style=social) ![GitHub forks](https://img.shields.io/github/forks/Shadofer/homepage?style=social) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Shadofer/homepage) ![Lines of code](https://img.shields.io/tokei/lines/github/Shadofer/homepage)
 
 ## My own homepage.

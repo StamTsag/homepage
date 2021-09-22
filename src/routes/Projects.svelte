@@ -13,8 +13,6 @@
 <h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
 <div in:fade>
-	<h1 class='top-text'>My projects</h1>
-
 	<!-- Software development -->
 	<h1 class='project-category' style='color: #43d897;'>Software development</h1>
 

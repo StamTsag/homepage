@@ -16,7 +16,7 @@
 	<h1 class='top-text'>About Me</h1>
 
 	<div class='avatar-container'>
-		<img in:scale class='avatar' src='../../images/shadofer-avatar.png' alt='Shadofer pfp'/>
+		<img in:scale class='avatar' src='../../favicon.png' alt='Shadofer pfp'/>
 
 		<div class='avatar-descriptors-container'>
 			<h1 class='avatar-descriptor'>Username: Shadofer</h1>

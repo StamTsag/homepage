@@ -19,7 +19,6 @@
     "url": "https://github.com/Shadofer/homepage/issues"
   },
   "homepage": "https://github.com/Shadofer/homepage#readme",
-
   "dependencies": {
     "express": "^4.17.1",
     "npm-run-all": "^4.1.5",
@@ -31,7 +30,6 @@
     "svelte": "^3.42.1",
     "svelte-routing": "^1.6.0"
   },
-
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4"

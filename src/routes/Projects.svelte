@@ -17,7 +17,10 @@
 	<h1 class='project-category' style='color: #43d897;'>Software development</h1>
 
 	<div class='project'>
-		<h1 class='project-title'><a href='https://github.com/Shadofer/dogey'>Dogey</a></h1>
+		<div class='project-top'>
+			<a href='https://github.com/shadofer/dogey'><img in:scale class='project-icon-standalone' style='width: 20vh; height: 10vh;' src='../../images/dogey-icon.png' alt='Dogey project icon'/></a>
+		</div>
+		
 		<h3 class='project-description'>A pythonic, asynchronous API for the deprecated platform of <a href='https://dogehouse.tv'>dogehouse</a>.</h3>
 	</div>
 
@@ -25,7 +28,10 @@
 	<div></div>
 
 	<div class='project'>
-		<h1 class='project-title'><a href='https://github.com/Shadofer/basicpyapi'>Basicpyapi</a></h1>
+		<div class='project-top'>
+			<a href='https://github.com/shadofer/basicpyapi'><img in:scale class='project-icon-standalone' style='width: 30vh; height: 10vh;' src='../../images/basicpyapi-icon.png' alt='Basicpyapi project icon' href='https://github.com/shadofer/basicpyapi'/></a>
+		</div>
+		
 		<h3 class='project-description'>A barebones websocket server & client made in python.</h3>
 	</div>
 

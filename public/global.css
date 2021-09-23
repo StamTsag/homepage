@@ -107,6 +107,10 @@ button {
     margin-right: 10px;
 }
 
+.project-icon-standalone {
+    margin-right: 10px;
+}
+
 .project-title {
     color: white;
     font-size: 4vh;

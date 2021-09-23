@@ -161,6 +161,10 @@ button {
     margin-right: 10px;
 }
 
+.avatar-social-text {
+    font-size: 3vh;
+}
+
 /* Animations */
 @keyframes bg-anim {
     0% { background: rgb(10, 39, 43); }

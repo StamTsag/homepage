@@ -25,10 +25,12 @@
 
 	<div class='avatar-social'>
 		<img in:scale class='avatar-social-icon' src='../../images/discord.png' alt='Discord icon'/>
-		<h1 style='padding-right: 30px;'>Shadofer#6681</h1>
+		<h1 class='avatar-social-text' style='padding-right: 30px;'>Shadofer#6681</h1>
 
 		<img in:scale class='avatar-social-icon' src='../../images/github.png' alt='Github icon'/>
-		<h1><a href='https://github.com/Shadofer'>Shadofer</a></h1>
+		<h1 class='avatar-social-text'><a href='https://github.com/Shadofer'>Shadofer</a></h1>
 	</div>
-	
+
 </div>
+
+<!-- MAKE SOCIALS TEXT RESPONSIVEEEEEEEEEEEE -->

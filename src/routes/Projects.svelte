@@ -35,7 +35,7 @@
 	<div class='project'>
 		<div class='project-top'>
 			<img in:scale class='project-icon' src='../../favicon.png' alt='Shadofer homepage project icon'/>
-			<h1 class='project-title'><a href='https://github.com/Shadofer/homepage'>Shadofer homepage</a></h1>
+			<h1 class='project-title'><a href='https://github.com/Shadofer/homepage'>Homepage</a></h1>
 		</div>
 
 		<h3 class='project-description'>The source code of this site, made with <a href='https://svelte.dev'>Svelte</a>.</h3>

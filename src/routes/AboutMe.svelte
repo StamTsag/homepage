@@ -32,5 +32,3 @@
 	</div>
 
 </div>
-
-<!-- MAKE SOCIALS TEXT RESPONSIVEEEEEEEEEEEE -->

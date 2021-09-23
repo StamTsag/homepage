@@ -16,7 +16,7 @@
 	<!-- Software development -->
 	<h1 class='project-category' style='color: #43d897;'>Software development</h1>
 
-	<div class='top-project'>
+	<div class='project'>
 		<h1 class='project-title'><a href='https://github.com/Shadofer/dogey'>Dogey</a></h1>
 		<h3 class='project-description'>A pythonic, asynchronous API for the deprecated platform of <a href='https://dogehouse.tv'>dogehouse</a>.</h3>
 	</div>
@@ -32,7 +32,7 @@
 	<!-- Web development-->
 	<h1 class='project-category' style='color: #107ee5;'>Web development</h1>
 
-	<div class='top-project'>
+	<div class='project'>
 		<div class='project-top'>
 			<img in:scale class='project-icon' src='../../favicon.png' alt='Shadofer homepage project icon'/>
 			<h1 class='project-title'><a href='https://github.com/Shadofer/homepage'>Shadofer homepage</a></h1>
@@ -44,7 +44,7 @@
 	<!-- Game development -->
 	<h1 class='project-category' style='color: #e53a10'>Game development</h1>
 
-	<div class='top-project'>
+	<div class='project'>
 		<div class='project-top'>
 			<img in:scale class='project-icon' src='../../images/towerverse-icon.png' alt='TowerVerse project icon'/>
 			<h1 class='project-title'><a href='https://github.com/TowerVerse'>TowerVerse</a></h1>

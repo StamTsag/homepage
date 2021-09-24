@@ -29,7 +29,7 @@
 
 	<div class='project'>
 		<div class='project-top'>
-			<a href='https://github.com/shadofer/basicpyapi'><img in:scale class='project-icon-standalone' style='width: 30vh; height: 10vh;' src='../../images/basicpyapi-icon.png' alt='Basicpyapi project icon' href='https://github.com/shadofer/basicpyapi'/></a>
+			<a href='https://github.com/shadofer/basicpyapi'><img in:scale class='project-icon-standalone' style='width: 35vh; height: 10vh;' src='../../images/basicpyapi-icon.png' alt='Basicpyapi project icon' href='https://github.com/shadofer/basicpyapi'/></a>
 		</div>
 		
 		<h3 class='project-description'>A barebones websocket server & client made in python.</h3>

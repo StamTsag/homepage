@@ -40,8 +40,8 @@
 
 **Projects tab**
 
-<img src='https://i.ibb.co/M58gfQJ/image.png' alt='Projects tab icon'>
+<img src='https://i.ibb.co/tLXwGDH/image.png' alt='Projects tab icon'>
 
 **About Me tab**
 
-<img src='https://i.ibb.co/kGTzy40/image.png' alt='About Me tab icon'>
+<img src='https://i.ibb.co/Pt9Lj71/image.png' alt='About Me tab icon'>

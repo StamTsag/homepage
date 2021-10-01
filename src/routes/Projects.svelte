@@ -29,7 +29,7 @@
 
 	<div class='project'>
 		<div class='project-top'>
-			<a href='https://github.com/shadofer/basicpyapi'><img in:scale class='project-icon-standalone' style='width: 35vh; height: 10vh;' src='../../images/basicpyapi-icon.png' alt='Basicpyapi project icon' href='https://github.com/shadofer/basicpyapi'/></a>
+			<a href='https://github.com/shadofer/basicpyapi'><img in:scale class='project-icon-standalone' style='width: 35vh; height: 10vh;' src='../../images/basicpyapi-icon.png' alt='Basicpyapi project icon'/></a>
 		</div>
 		
 		<h3 class='project-description'>A barebones websocket server & client made in python.</h3>
@@ -40,8 +40,7 @@
 
 	<div class='project'>
 		<div class='project-top'>
-			<img in:scale class='project-icon' src='../../favicon.png' alt='Shadofer homepage project icon'/>
-			<h1 class='project-title'><a href='https://github.com/Shadofer/homepage'>Homepage</a></h1>
+			<a href='https://github.com/shadofer/homepage'><img in:scale class='project-icon-standalone' style='width: 35vh; height: 10vh;' src='../../images/homepage-icon.png' alt='Homepage project icon'/></a>
 		</div>
 
 		<h3 class='project-description'>The source code of this site, made with <a href='https://svelte.dev'>Svelte</a>.</h3>

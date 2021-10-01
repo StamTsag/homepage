@@ -14,7 +14,7 @@
 
 <div in:fade>
 	<div class='avatar-container'>
-		<img in:scale class='avatar' src='../../favicon.png' alt='Shadofer pfp'/>
+		<img in:scale class='avatar' src='../../images/discord-pfp.png' alt='Shadofer pfp'/>
 
 		<h1 class='avatar-descriptor'>Username: Shadofer</h1>
 		<h1 class='avatar-descriptor'>Age: 16</h1>

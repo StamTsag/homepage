@@ -40,6 +40,22 @@ button {
     font-size: 5vmin;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a5466;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(25, 58, 63);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(32, 127, 138);
+}
+
 .top {
     display: inline-block;
     cursor: pointer;

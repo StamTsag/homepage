@@ -18,13 +18,24 @@
 
 	<div class='project'>
 		<div class='project-top'>
+			<img in:scale class='project-icon' src='../../images/fronvo-icon.png' alt='Fronvo project icon'/>
+			<h1 class='project-title'><a href='https://github.com/Fronvo'>Fronvo</a></h1>
+		</div>
+
+		<h3 class='project-description'>An all-in-one social media free-convo chat app.</h3>
+	</div>
+
+	<!-- Prevent project grouping in one line -->
+	<div></div>
+
+	<div class='project'>
+		<div class='project-top'>
 			<a href='https://github.com/shadofer/dogey'><img in:scale class='project-icon-standalone' style='width: 20vh; height: 10vh;' src='../../images/dogey-icon.png' alt='Dogey project icon'/></a>
 		</div>
 		
 		<h3 class='project-description'>A pythonic, asynchronous API for the deprecated platform of <a href='https://dogehouse.tv'>dogehouse</a>.</h3>
 	</div>
 
-	<!-- Prevent project grouping in one line -->
 	<div></div>
 
 	<div class='project'>

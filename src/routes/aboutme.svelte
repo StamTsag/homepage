@@ -5,12 +5,7 @@
 <script>
 	// Animations
 	import {fade, scale} from 'svelte/transition';
-
-	// Svelte-routing
-	import {navigate} from 'svelte-routing';
 </script>
-
-<h1 class='top logo' on:click={() => navigate('/')}>Shadofer</h1>
 
 <div in:fade>
 	<div class='avatar-container'>

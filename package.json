@@ -1,13 +1,12 @@
 {
   "name": "shadofer-homepage",
   "version": "1.0.0",
-  "description": "Shadofer's homepage made with the power of Svelte.",
-  "main": "server.js",
+  "description": "Shadofer's homepage made with the power of Svelte and Svelte-kit.",
   "scripts": {
-    "start": "run-p watch server",
-    "build": "rollup -c",
-    "watch": "rollup -c -w",
-    "server": "nodemon server.js --watch server.js"
+    "host": "node build/index.js",
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "autohost": "run-s build host"
   },
   "repository": {
     "type": "git",
@@ -20,18 +19,14 @@
   },
   "homepage": "https://github.com/Shadofer/homepage#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "@sveltejs/adapter-node": "next",
+    "@sveltejs/kit": "next",
     "npm-run-all": "^4.1.5",
-    "nodemon": "^2.0.13-alpha.1",
-    "rollup": "^2.56.1",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-svelte": "~7.1.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "svelte": "^3.42.1",
-    "svelte-routing": "^1.6.0"
+    "svelte": "^3.43.1"
   },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^20.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.4"
+  "type": "module",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
   }
 }

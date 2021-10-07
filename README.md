@@ -10,9 +10,7 @@
 
 ## Features
 
-- **Path routing with [svelte-routing](https://www.npmjs.com/package/svelte-routing)**
-
-- **Efficient server system, no spare files needed for each route**
+- **Efficient structure with the use of [svelte kit](https://kit.svelte.dev/) (reusable layouts, routing)**
 
 - **Fully responsive on mobile devices**
 
@@ -20,9 +18,7 @@
 
 **Run ```npm install```**
 
-**Run ```npm run build``` (only first time build)**
-
-**Run ```npm start```**
+**Run ```npm run autohost```**
 
 **The server should be running locally at port 5000 while also listening for css/svelte file changes!**
 

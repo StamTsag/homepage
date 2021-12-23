@@ -1,22 +1,28 @@
 <svelte:head>
-	<title>Shadofer - Homepage</title>
+	<title>Shadofer Homepage</title>
 </svelte:head>
 
 <script>
-	// Routing
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
-	// Animations
-	import {fade} from 'svelte/transition';
+	let mountReady = false;
+
+	onMount(() => {
+		mountReady = true;
+	});
 </script>
 
-<div in:fade>
-	<div class='content'>
-		<button class='glow' on:click={() => goto('projects')}>My projects</button>
-	</div>
+{#if mountReady}
+	<div in:fade>
+		<div class='content'>
+			<button class='glow' on:click={() => goto('projects')}>My projects</button>
+		</div>
 
-	<div class='content'>
-		<button class='glow' on:click={() => goto('aboutme')}>About Me</button>
-	</div>
+		<div class='content'>
+			<button class='glow' on:click={() => goto('aboutme')}>About Me</button>
+		</div>
 
-</div>
+	</div>
+{/if}

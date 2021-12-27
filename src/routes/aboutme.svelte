@@ -23,7 +23,7 @@
 				<h1 class='avatar-descriptor'>Age: 16</h1>
 				<h1 class='avatar-descriptor'>Country: Greece</h1>
 				<h1 class='avatar-descriptor'>Hobbies: Gaming, Programming</h1>
-				<h1 class='avatar-descriptor'>Knowledge in: Python, Java, C++</h1>
+				<h1 class='avatar-descriptor'>Knowledge in: Python, JavaScript, Java, C++</h1>
 			</div>
 
 			<div class='avatar-social'>

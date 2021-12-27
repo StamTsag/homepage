@@ -24,6 +24,7 @@ a::after {
     width: 0px;
     transition: width .7s ease, background-color .7s ease;
 }
+
 a:hover::after {
     width: 100%;
     background: white;
@@ -153,4 +154,46 @@ button {
 
 .avatar-social-text {
     font-size: 25px;
+}
+
+@media screen and (max-width: 600px), (max-height: 500px) {
+    button {
+        font-size: 35px;
+    }
+
+    .top-text {
+        font-size: 40px;
+    }
+
+    .project-category {
+        font-size: 30px;
+    }
+    
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .avatar-descriptor {
+        font-size: 20px;
+    }
+
+    .avatar-social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .avatar-social-text {
+        font-size: 20px;
+    }
+
+    .avatar-social {
+        display: inline;
+    }
+
+    .avatar-social-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

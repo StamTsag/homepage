@@ -1,11 +1,8 @@
 /* General */
 body {
-    animation-name: bg-anim;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    padding: 0px;
-    margin: 10px;
+    background-color: #1c5261;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -33,11 +30,11 @@ a:hover::after {
 }
 
 button {
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    color: #fff;
+    color: #ffffff;
     font-family: Alata;
-    font-size: 5vmin;
+    font-size: 45px;
 }
 
 ::-webkit-scrollbar {
@@ -49,113 +46,97 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(25, 58, 63);
+    background: rgb(43, 99, 107);
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(32, 127, 138);
 }
 
-.top {
+.top-text {
     display: inline-block;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: Acme;
+    font-size: 45px;
     cursor: pointer;
 }
 
-.logo {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-family: Acme;
-    font-size: 5vh;
-}
-
-.top-text {
+.center {
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 4vh;
 }
 
-.content {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Buttons */
+/* Button styles */
 .glow {
     background-color: transparent;
     border: 0px solid rgb(0, 0, 0);
-    box-shadow: 0 0 60px 50px rgb(23, 176, 187) inset;
-    transition: all 300ms;
+    box-shadow: 0 0 60px 50px rgb(41, 182, 192) inset;
+    transition: all 200ms;
     height: fit-content;
-    padding: 20px;
-    margin: 20px;
+    padding: 15px 10px 15px 10px;
+    margin-bottom: 20px;
 }
 
 .glow:hover {
-    box-shadow: 0 0 10px 0 rgb(24, 174, 211) inset, 0 0 15px 0 rgb(0, 225, 255);
+    box-shadow: 0 0 10px 0 rgb(37, 143, 170) inset, 0 0 15px 0 rgb(0, 225, 255);
 }
 
-/* My projects */
+/* Projects */
 .project {
     display: inline-block;
-    border: .15vh solid white;
-    border-radius: 15px;
-    margin-top: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .project-category {
-    font-size: 4vh;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin: 10px 10px 5px 10px;
 }
 
 .project-top {
     display: flex;
+    align-items: center;
     margin-top: 5px;
 }
 
 .project-icon {
-    width: 7vh;
-    height: 7vh;
-    margin-right: 10px;
-}
-
-.project-icon-standalone {
-    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+    margin-right: 5px;
 }
 
 .project-title {
     color: white;
-    font-size: 4vh;
-    margin-top: 0px;
-    padding-top: 10px;
-    margin-bottom: 0px;
+    font-size: 35px;
+    margin: 0;
     font-family: Alata;
 }
 
 .project-description {
-    color: #dfdfdf;
+    color: rgb(226, 226, 226);
     font-family: Quicksand;
-    font-size: 2vh;
+    font-size: 18px;
 }
 
 /* About Me */
-.avatar-container {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
 .avatar {
-    width: 20vmin;
-    height: 20vmin;
+    width: 128px;
+    height: 128px;
 }
 
 .avatar-descriptor {
-    font-size: 4vmin;
+    font-size: 28px;
 }
 
 .avatar-social {
@@ -165,18 +146,11 @@ button {
 }
 
 .avatar-social-icon {
-    width: 11vmin;
-    height: 11vmin;
-    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+    margin-right: 5px;
 }
 
 .avatar-social-text {
-    font-size: 4vmin;
-}
-
-/* Animations */
-@keyframes bg-anim {
-    0% { background: rgb(10, 39, 43); }
-
-    100% { background: rgb(19, 54, 66); }
+    font-size: 25px;
 }

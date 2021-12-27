@@ -16,11 +16,12 @@
 
 {#if mountReady}
 	<div in:fade>
-		<div class='content'>
-			<button class='glow' on:click={() => goto('projects')}>My projects</button>
-		</div>
 
-		<div class='content'>
+		<div class='center'>
+			<button class='glow' on:click={() => goto('projects')}>My projects</button>
+			
+			<div></div>
+			
 			<button class='glow' on:click={() => goto('aboutme')}>About Me</button>
 		</div>
 

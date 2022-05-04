@@ -18,7 +18,7 @@ const config = {
 		},
 
 		paths: {
-			base: dev ? '' : '/homepage/docs'
+			base: dev ? '' : '/homepage'
 		}
 	}
 };

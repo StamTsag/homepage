@@ -1,7 +1,7 @@
 {
   "name": "shadofer-homepage",
   "version": "1.0.0",
-  "description": "Shadofer's homepage made with the power of Svelte and Svelte-kit.",
+  "description": "Shadofer's homepage made with the power of SvelteKit.",
   "scripts": {
     "host": "node build/index.js",
     "dev": "svelte-kit dev",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Shadofer/homepage.git"
   },
-  "author": "Shadofer#0001",
+  "author": "Shadofer#6681",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Shadofer/homepage/issues"
@@ -22,11 +22,11 @@
     "@sveltejs/adapter-node": "next",
     "@sveltejs/kit": "next",
     "npm-run-all": "^4.1.5",
-    "svelte": "^3.43.1"
+    "svelte": "^3.48.0"
   },
   "type": "module",
   "engines": {
     "node": "16.x",
-    "npm": "7.x"
+    "npm": "8.x"
   }
 }

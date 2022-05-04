@@ -19,7 +19,9 @@ const config = {
 
 		paths: {
 			base: dev ? '' : '/homepage'
-		}
+		},
+
+		trailingSlash: 'never'
 	}
 };
 

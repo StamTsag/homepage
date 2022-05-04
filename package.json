@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Shadofer's homepage made with the power of SvelteKit.",
   "scripts": {
-    "host": "node build/index.js",
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "autohost": "run-s build host"
+    "build": "svelte-kit build"
   },
   "repository": {
     "type": "git",
@@ -18,9 +16,9 @@
     "url": "https://github.com/Shadofer/homepage/issues"
   },
   "homepage": "https://github.com/Shadofer/homepage#readme",
-  "dependencies": {
-    "@sveltejs/adapter-node": "next",
-    "@sveltejs/kit": "next",
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.29",
+    "@sveltejs/kit": "^1.0.0-next.324",
     "npm-run-all": "^4.1.5",
     "svelte": "^3.48.0"
   },

@@ -20,7 +20,7 @@
 
 		<div class='project'>
 			<div class='project-top'>
-				<img in:scale class='project-icon' src='../../images/fronvo-icon.png' alt='Fronvo project icon'/>
+				<img in:scale class='project-icon' src='../images/fronvo-icon.png' alt='Fronvo project icon'/>
 				<h1 class='project-title'><a href='https://github.com/Fronvo'>Fronvo</a></h1>
 			</div>
 
@@ -32,7 +32,7 @@
 
 		<div class='project'>
 			<div class='project-top'>
-				<a href='https://github.com/shadofer/dogey'><img in:scale style='width: 150px; height: 75px;' src='../../images/dogey-icon.png' alt='Dogey project icon'/></a>
+				<a href='https://github.com/shadofer/dogey'><img in:scale style='width: 150px; height: 75px;' src='../images/dogey-icon.png' alt='Dogey project icon'/></a>
 			</div>
 			
 			<h3 class='project-description'>A pythonic, asynchronous API for the deprecated platform of <a href='https://dogehouse.tv'>dogehouse</a>.</h3>
@@ -42,7 +42,7 @@
 
 		<div class='project'>
 			<div class='project-top'>
-				<a href='https://github.com/shadofer/basicpyapi'><img in:scale style='width: 250px; height: 75px;' src='../../images/basicpyapi-icon.png' alt='Basicpyapi project icon'/></a>
+				<a href='https://github.com/shadofer/basicpyapi'><img in:scale style='width: 250px; height: 75px;' src='../images/basicpyapi-icon.png' alt='Basicpyapi project icon'/></a>
 			</div>
 			
 			<h3 class='project-description'>A barebones websocket server & client made in python.</h3>
@@ -53,7 +53,7 @@
 
 		<div class='project'>
 			<div class='project-top'>
-				<a href='https://github.com/shadofer/homepage'><img in:scale style='width: 300px; height: 90px;' src='../../images/homepage-icon.png' alt='Homepage project icon'/></a>
+				<a href='https://github.com/shadofer/homepage'><img in:scale style='width: 300px; height: 90px;' src='../images/homepage-icon.png' alt='Homepage project icon'/></a>
 			</div>
 
 			<h3 class='project-description'>The source code of this site, made with <a href='https://svelte.dev'>Svelte</a>.</h3>
@@ -64,7 +64,7 @@
 
 		<div class='project'>
 			<div class='project-top'>
-				<img in:scale class='project-icon' src='../../images/towerverse-icon.png' alt='TowerVerse project icon'/>
+				<img in:scale class='project-icon' src='../images/towerverse-icon.png' alt='TowerVerse project icon'/>
 				<h1 class='project-title'><a href='https://github.com/TowerVerse'>TowerVerse</a></h1>
 			</div>
 

@@ -18,7 +18,7 @@ const config = {
 		},
 
 		paths: {
-			base: dev ? '' : '/https://shadofer.github.io/homepage/docs'
+			base: dev ? '' : '/homepage/docs'
 		}
 	}
 };

@@ -132,8 +132,8 @@ button {
 
 /* About Me */
 .avatar {
-    width: 128px;
-    height: 128px;
+    width: 10em;
+    height: 10em;
 }
 
 .avatar-descriptor {
@@ -170,8 +170,8 @@ button {
     }
     
     .avatar {
-        width: 90px;
-        height: 90px;
+        width: 7em;
+        height: 7em;
     }
 
     .avatar-descriptor {

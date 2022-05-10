@@ -1,17 +1,21 @@
-<script context="module">
-    export function load({ error, status }) {
+<script context="module" lang="ts">
+    import type {
+        ErrorLoadParams,
+        ErrorLoadResult,
+    } from 'src/interfaces/global';
+
+    export function load({ status, error }: ErrorLoadParams): ErrorLoadResult {
         return {
             props: {
-                status: `${status}`,
-                err: `${error.message}`,
+                status,
+                error: error.message,
             },
         };
     }
 </script>
 
-<script>
-    export let err, status;
+<script lang="ts">
+    export let status: number;
 </script>
 
 <h1 style="text-align: center; font-size: 6vh;">{status}</h1>
-<h1 style="text-align: center; font-size: 5vh;">{err}</h1>

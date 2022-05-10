@@ -4,7 +4,12 @@
   "description": "Shadofer's homepage made with the power of SvelteKit.",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build"
+    "build": "svelte-kit build",
+    "prepare": "husky install",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "prettier --plugin-search-dir=. --write src/*",
+    "format:check": "prettier --check src/*"
   },
   "repository": {
     "type": "git",
@@ -19,11 +24,22 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.29",
     "@sveltejs/kit": "^1.0.0-next.324",
-    "svelte": "^3.48.0"
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.48.0",
+    "svelte-check": "^2.7.0",
+    "typescript": "^4.6.4"
   },
   "type": "module",
   "engines": {
     "node": "16.x",
     "npm": "8.x"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.7",
+    "postcss": "^8.4.13",
+    "svelte-preprocess": "^4.10.6"
   }
 }

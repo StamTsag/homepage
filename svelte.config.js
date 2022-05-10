@@ -1,4 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
+import { resolve } from 'path';
+import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,8 +17,24 @@ const config = {
 			default: true
 		},
 
-		trailingSlash: 'never'
-	}
+		trailingSlash: 'never',
+
+		vite: {
+			resolve: {
+				alias: {
+					src: resolve('./src'),
+					styles: resolve('./src/styles'),
+					interfaces: resolve('./src/interfaces')
+				}
+			}
+		}
+	},
+	preprocess: preprocess({
+		postcss: true,
+		typescript: {
+			tsconfigFile: true
+		}
+	})
 };
 
 export default config;

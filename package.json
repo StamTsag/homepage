@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shadofer/homepage.git"
+    "url": "git+https://github.com/Shadofer/shadofer.github.io.git"
   },
   "author": "Shadofer#6681",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Shadofer/homepage/issues"
+    "url": "https://github.com/Shadofer/shadofer.github.io/issues"
   },
-  "homepage": "https://github.com/Shadofer/homepage#readme",
+  "homepage": "https://github.com/Shadofer/shadofer.github.io#readme",
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.29",
     "@sveltejs/kit": "^1.0.0-next.324",

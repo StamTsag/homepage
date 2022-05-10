@@ -53,7 +53,7 @@
 
 		<div class='project'>
 			<div class='project-top'>
-				<a href='https://github.com/shadofer/homepage'><img in:scale style='width: 300px; height: 90px;' src='images/homepage-icon.png' alt='Homepage project icon'/></a>
+				<a href='https://github.com/Shadofer/shadofer.github.io'><img in:scale style='width: 300px; height: 90px;' src='images/homepage-icon.png' alt='Homepage project icon'/></a>
 			</div>
 
 			<h3 class='project-description'>The source code of this site, made with <a href='https://svelte.dev'>Svelte</a>.</h3>

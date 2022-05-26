@@ -6,6 +6,7 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "prepare": "husky install",
+    "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --plugin-search-dir=. --write src/*",

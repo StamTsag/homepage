@@ -10,15 +10,15 @@
 
 ## Features
 
-- **Efficient structure with the use of [svelte kit](https://kit.svelte.dev/) (reusable layouts, routing)**
+-   **Efficient structure with the use of [svelte kit](https://kit.svelte.dev/) (reusable layouts, routing)**
 
-- **Fully responsive on mobile devices**
+-   **Fully responsive on mobile devices**
 
 ## Using for your own purposes
 
-**Run ```npm install```**
+**Run `npm install`**
 
-**Run ```npm run autohost```**
+**Run `npm run autohost`**
 
 **The server should be running locally at port 5000 while also listening for css/svelte file changes!**
 

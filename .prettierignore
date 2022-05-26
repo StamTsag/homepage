@@ -1,5 +1,13 @@
+# Node
 node_modules/
 .DS_Store
+
+# Svelte-kit
 build/
 .svelte-kit/
+
+# Generated site
 docs/
+
+# Static assets
+static/

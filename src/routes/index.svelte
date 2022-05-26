@@ -1,7 +1,6 @@
 <script lang="ts">
-    import { goto } from '$app/navigation';
+    import Wave from 'src/lib/Wave.svelte';
     import { onMount } from 'svelte';
-    import { fade } from 'svelte/transition';
 
     let mountReady = false;
 
@@ -15,17 +14,9 @@
 </svelte:head>
 
 {#if mountReady}
-    <div in:fade>
-        <div class="center">
-            <button class="glow" on:click={() => goto('projects')}
-                >My projects</button
-            >
+    <Wave waveColor="#ffffff" />
 
-            <div />
-
-            <button class="glow" on:click={() => goto('aboutme')}
-                >About Me</button
-            >
-        </div>
+    <div class="center-container">
+        <h1>Hello there!</h1>
     </div>
 {/if}

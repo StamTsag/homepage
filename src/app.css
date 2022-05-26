@@ -1,13 +1,13 @@
 /* General */
 body {
-    background-color: #1c5261;
+    background-color: #ff1d4e;
     padding: 0;
     margin: 0;
 }
 
 h1 {
     color: white;
-    font-family: Recursive;
+    font-family: Quicksand;
 }
 
 a {
@@ -31,11 +31,19 @@ a:hover::after {
 }
 
 button {
-    border-radius: 10px;
+    background: white;
+    border: 7px solid white;
+    box-shadow: 0 0 5px white;
     cursor: pointer;
-    color: #ffffff;
-    font-family: Alata;
+    color: #ff1d4e;
+    font-family: Quicksand;
     font-size: 45px;
+    transition: 0.4s all;
+    margin-left: 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 15px white;
 }
 
 ::-webkit-scrollbar {
@@ -54,146 +62,16 @@ button {
     background: rgb(32, 127, 138);
 }
 
-.top-text {
-    display: inline-block;
-    margin: auto;
-    margin-top: 5px;
-    margin-left: 10px;
-    font-family: Acme;
-    font-size: 45px;
-    cursor: pointer;
-}
-
-.center {
-    height: fit-content;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+/* General */
+.center-container {
     text-align: center;
-}
-
-/* Button styles */
-.glow {
-    background-color: transparent;
-    border: 0px solid rgb(0, 0, 0);
-    box-shadow: 0 0 60px 50px rgb(41, 182, 192) inset;
-    transition: all 200ms;
-    height: fit-content;
-    padding: 15px 10px 15px 10px;
-    margin-bottom: 20px;
-}
-
-.glow:hover {
-    box-shadow: 0 0 10px 0 rgb(37, 143, 170) inset, 0 0 15px 0 rgb(0, 225, 255);
-}
-
-/* Projects */
-.project {
-    display: inline-block;
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: 0 10px 10px 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.project-category {
-    font-size: 35px;
-    margin: 10px 10px 5px 10px;
-}
-
-.project-top {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.project-icon {
-    width: 64px;
-    height: 64px;
-    margin-right: 5px;
-}
-
-.project-title {
-    color: white;
-    font-size: 35px;
-    margin: 0;
-    font-family: Alata;
-}
-
-.project-description {
-    color: rgb(226, 226, 226);
-    font-family: Quicksand;
-    font-size: 18px;
-}
-
-/* About Me */
-.avatar {
-    width: 10em;
-    height: 10em;
-}
-
-.avatar-descriptor {
-    font-size: 28px;
-}
-
-.avatar-social {
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.avatar-social-icon {
-    width: 64px;
-    height: 64px;
-    margin-right: 5px;
-}
-
-.avatar-social-text {
-    font-size: 25px;
-}
+/* Index */
 
 @media screen and (max-width: 600px), (max-height: 500px) {
     button {
         font-size: 35px;
-    }
-
-    .top-text {
-        font-size: 40px;
-    }
-
-    .project-category {
-        font-size: 30px;
-    }
-
-    .avatar {
-        width: 7em;
-        height: 7em;
-    }
-
-    .avatar-descriptor {
-        font-size: 20px;
-    }
-
-    .avatar-social-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .avatar-social-text {
-        font-size: 20px;
-    }
-
-    .avatar-social {
-        display: inline;
-    }
-
-    .avatar-social-group {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }

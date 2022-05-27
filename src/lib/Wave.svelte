@@ -2,7 +2,7 @@
     export let waveColor = '#000000';
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 215"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"
     ><path
         fill={waveColor}
         fill-opacity="1"

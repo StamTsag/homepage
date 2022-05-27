@@ -1,21 +1,10 @@
 <script context="module" lang="ts">
-    import type {
-        ErrorLoadParams,
-        ErrorLoadResult,
-    } from 'src/interfaces/global';
-
-    export function load({ status, error }: ErrorLoadParams): ErrorLoadResult {
-        return {
-            props: {
-                status,
-                error: error.message,
-            },
-        };
-    }
+    import { goto } from '$app/navigation';
+    import 'styles/__error.css';
 </script>
 
-<script lang="ts">
-    export let status: number;
-</script>
+<div class="error-container">
+    <h1>An <span style="color: black;">oopsie</span> occured!</h1>
 
-<h1 style="text-align: center; font-size: 6vh;">{status}</h1>
+    <button on:click={() => goto('/')}>Go back</button>
+</div>

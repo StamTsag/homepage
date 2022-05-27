@@ -68,8 +68,6 @@ button:hover {
     justify-content: center;
 }
 
-/* Index */
-
 @media screen and (max-width: 600px), (max-height: 500px) {
     button {
         font-size: 35px;

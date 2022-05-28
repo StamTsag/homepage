@@ -10,6 +10,7 @@
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 15px rgb(255, 95, 95);
+    align-items: center;
 }
 
 .top-nav-container h1 {
@@ -57,10 +58,11 @@
         left: auto;
         width: auto;
         margin: auto;
+        border-radius: 0;
     }
 
     .top-nav-container .info-container {
-        margin-right: 17.5%;
+        margin-right: 5%;
     }
 
     .top-nav-container .info-container h1 {
@@ -72,13 +74,7 @@
     }
 }
 
-@media screen and (max-width: 790px) {
-    .top-nav-container .info-container {
-        margin-right: 7.5%;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .top-nav-container {
         display: none;
     }

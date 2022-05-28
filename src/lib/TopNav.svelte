@@ -40,3 +40,10 @@
         onHandleColor={'#ff4e4e'}
     />
 </div>
+
+<style>
+    /* Override __layout */
+    :global(.top-nav-container .info-container h1) {
+        color: white;
+    }
+</style>

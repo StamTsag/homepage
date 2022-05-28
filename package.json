@@ -45,6 +45,7 @@
     "cssnano": "^5.1.7",
     "postcss": "^8.4.13",
     "postcss-load-config": "^3.1.4",
+    "svelte-icons": "^2.1.0",
     "svelte-preprocess": "^4.10.6",
     "svelte-switch": "^0.0.5"
   }

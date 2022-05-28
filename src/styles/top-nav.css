@@ -18,14 +18,14 @@
     margin: 0;
 }
 
-.top-nav-container img {
-    cursor: pointer;
-}
-
 .top-nav-container .info-container {
     display: flex;
     align-items: center;
     margin-right: 50px;
+}
+
+.top-nav-container .info-container .menu {
+    display: none;
 }
 
 .top-nav-container .info-container h1 {
@@ -76,6 +76,18 @@
 
 @media screen and (max-width: 750px) {
     .top-nav-container {
+        justify-content: center;
+    }
+
+    .top-nav-container .info-container .menu {
+        display: initial;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        transition: 250ms all;
+    }
+
+    .top-nav-container .categories-container {
         display: none;
     }
 }

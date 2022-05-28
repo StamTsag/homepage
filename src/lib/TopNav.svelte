@@ -4,6 +4,7 @@
     import { getContext } from 'svelte';
     import Switch from 'svelte-switch';
     import { fly } from 'svelte/transition';
+    import IoIosMenu from 'svelte-icons/io/IoIosMenu.svelte';
 
     let { toggle, current }: ThemeContext = getContext('theme');
 </script>
@@ -13,6 +14,10 @@
     class="top-nav-container"
 >
     <div class="info-container">
+        <div class="menu">
+            <IoIosMenu />
+        </div>
+
         <img
             src="images/pfp.png"
             alt="Shadofer logo"
@@ -42,6 +47,10 @@
 </div>
 
 <style>
+    :global(.top-nav-container .info-container .menu) {
+        color: var(--theme-nav_menu_color);
+    }
+
     /* Override __layout */
     :global(.top-nav-container .info-container h1) {
         color: white;

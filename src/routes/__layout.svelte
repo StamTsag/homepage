@@ -10,6 +10,6 @@
 
 <style>
     :global(body) {
-        background-color: var(--theme-colors-bg_color);
+        background-color: var(--theme-bg_color);
     }
 </style>

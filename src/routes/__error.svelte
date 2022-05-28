@@ -1,10 +1,19 @@
-<script context="module" lang="ts">
+<script lang="ts">
     import { goto } from '$app/navigation';
     import 'styles/__error.css';
+    import { onMount } from 'svelte';
+
+    let mountReady = false;
+
+    onMount(() => {
+        mountReady = true;
+    });
 </script>
 
-<div class="error-container">
-    <h1>An oopsie occured!</h1>
+{#if mountReady}
+    <div class="error-container">
+        <h1>An oopsie occured!</h1>
 
-    <button on:click={() => goto('/')}>Go back</button>
-</div>
+        <button on:click={() => goto('/')}>Go back</button>
+    </div>
+{/if}

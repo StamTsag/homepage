@@ -38,9 +38,8 @@
 }
 
 .top-nav-container .categories-container h1 {
-    background: white;
     border-radius: 5px;
-    color: rgb(255, 78, 78);
+    color: white;
     padding: 5px;
     cursor: pointer;
     transition: 250ms all;
@@ -49,7 +48,7 @@
 }
 
 .top-nav-container .categories-container h1:hover {
-    box-shadow: 0 0 15px white;
+    color: black;
 }
 
 @media screen and (max-width: 900px) {

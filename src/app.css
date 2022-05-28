@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-    color: white;
     font-family: Quicksand;
 }
 
 a {
-    color: white;
+    cursor: pointer;
+    color: rgb(255, 86, 86);
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -26,13 +26,10 @@ a::after {
 
 a:hover::after {
     width: 100%;
-    background: white;
+    background: rgb(255, 86, 86);
 }
 
 button {
-    background: white;
-    border: 7px solid white;
-    box-shadow: 0 0 5px white;
     cursor: pointer;
     color: #ff1d4e;
     font-family: Quicksand;
@@ -41,24 +38,23 @@ button {
     margin-left: 10px;
 }
 
-button:hover {
-    box-shadow: 0 0 15px white;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a5466;
+    background: #ffd3d3;
+    border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(43, 99, 107);
+    background: rgb(255, 125, 125);
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(32, 127, 138);
+    background: rgb(255, 101, 101);
 }
 
 /* General */

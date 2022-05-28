@@ -18,6 +18,7 @@
             alt="Shadofer logo"
             width="48px"
             height="48px"
+            draggable={false}
         />
         <h1>Shadofer</h1>
     </div>

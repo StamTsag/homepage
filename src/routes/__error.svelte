@@ -4,7 +4,7 @@
 </script>
 
 <div class="error-container">
-    <h1>An <span style="color: black;">oopsie</span> occured!</h1>
+    <h1>An oopsie occured!</h1>
 
     <button on:click={() => goto('/')}>Go back</button>
 </div>

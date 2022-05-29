@@ -43,6 +43,7 @@
         width="64"
         offHandleColor={'#ff4e4e'}
         onHandleColor={'#ff4e4e'}
+        handleDiameter={20}
     >
         <!-- Remove switch icons -->
         <span slot="checkedIcon" />

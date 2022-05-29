@@ -2,7 +2,6 @@
     import type { ThemeContext } from 'src/interfaces/global';
     import 'styles/top-nav.css';
     import { getContext } from 'svelte';
-    import IoIosMenu from 'svelte-icons/io/IoIosMenu.svelte';
     import Switch from 'svelte-switch';
     import { fly } from 'svelte/transition';
 
@@ -14,24 +13,13 @@
     class="top-nav-container"
 >
     <div class="info-container">
-        <div class="menu">
-            <IoIosMenu />
-        </div>
-
-        <img
-            src="images/pfp.png"
-            alt="Shadofer logo"
-            width="48px"
-            height="48px"
-            draggable={false}
-        />
-        <h1>Shadofer</h1>
+        <h1 class="logo">Shadofer</h1>
     </div>
 
     <div class="categories-container">
         <h1>About me</h1>
         <h1>Projects</h1>
-        <h1>Connections</h1>
+        <h1>Socials</h1>
     </div>
 
     <Switch
@@ -48,8 +36,6 @@
         activeBoxShadow={null}
     >
         <!-- Custom switch state icons -->
-
-        <!-- TODO: in:draw? -->
         <svg
             slot="unCheckedIcon"
             version="1.2"
@@ -78,12 +64,12 @@
 </div>
 
 <style>
-    :global(.top-nav-container .info-container .menu) {
-        color: var(--theme-nav_menu_color);
+    :global(.top-nav-container) {
+        background: var(--theme-nav_bg_color);
+        box-shadow: 0 0 15px var(--theme-nav_shadow_color);
     }
 
-    /* Override __layout */
-    :global(.top-nav-container .info-container h1) {
-        color: white;
+    :global(.top-nav-container .categories-container h1:hover) {
+        color: var(--theme-text_color_hover);
     }
 </style>

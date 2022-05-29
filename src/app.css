@@ -6,6 +6,7 @@ body {
 }
 
 h1 {
+    transition: 500ms all;
     font-family: Quicksand;
 }
 

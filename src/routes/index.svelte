@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Fab from 'src/lib/FAB.svelte';
     import TopNav from 'src/lib/TopNav.svelte';
     import { onMount } from 'svelte';
 
@@ -15,4 +16,6 @@
 
 {#if mountReady}
     <TopNav />
+
+    <Fab />
 {/if}

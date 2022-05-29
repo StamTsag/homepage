@@ -2,6 +2,7 @@
 body {
     padding: 0;
     margin: 0;
+    transition: 500ms background;
 }
 
 h1 {

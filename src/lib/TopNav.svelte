@@ -2,9 +2,9 @@
     import type { ThemeContext } from 'src/interfaces/global';
     import 'styles/top-nav.css';
     import { getContext } from 'svelte';
+    import IoIosMenu from 'svelte-icons/io/IoIosMenu.svelte';
     import Switch from 'svelte-switch';
     import { fly } from 'svelte/transition';
-    import IoIosMenu from 'svelte-icons/io/IoIosMenu.svelte';
 
     let { toggle, current }: ThemeContext = getContext('theme');
 </script>
@@ -43,7 +43,11 @@
         width="64"
         offHandleColor={'#ff4e4e'}
         onHandleColor={'#ff4e4e'}
-    />
+    >
+        <!-- Remove switch icons -->
+        <span slot="checkedIcon" />
+        <span slot="unCheckedIcon" />
+    </Switch>
 </div>
 
 <style>

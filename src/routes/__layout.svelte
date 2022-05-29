@@ -4,7 +4,8 @@
     import '../app.css';
 </script>
 
-<ThemeWrapper {themes}>
+<!-- Sanity check for users before entering the white realm -->
+<ThemeWrapper mode="dark" {themes}>
     <slot />
 </ThemeWrapper>
 

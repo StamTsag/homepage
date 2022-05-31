@@ -1,5 +1,4 @@
 <script lang="ts">
-    import 'styles/fab.css';
     import { draw, fly } from 'svelte/transition';
 
     let FABMenuVisible = false;
@@ -57,13 +56,44 @@
 {/if}
 
 <style>
+    .fab {
+        display: none;
+    }
+
+    .fab-menu {
+        display: none;
+    }
+
     @media screen and (max-width: 690px) {
         .fab {
+            display: initial;
+            position: fixed;
+            bottom: 10px;
+            right: 30px;
+            border-radius: 50px;
+            transition: 500ms all;
+            fill: none;
+            stroke-width: 3px;
             stroke: var(--theme-primary);
             box-shadow: 0 0 10px var(--theme-primary);
         }
 
+        .fab-menu {
+            display: initial;
+            position: fixed;
+            bottom: 75px;
+            right: 5px;
+            text-align: center;
+        }
+
         .fab-menu h1 {
+            border-radius: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            padding: 10px;
+            padding-left: 2px;
+            padding-right: 2px;
+            cursor: default;
             border: 2px solid var(--theme-primary);
             box-shadow: 0 0 10px var(--theme-primary);
         }

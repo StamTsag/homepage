@@ -1,6 +1,5 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
-    import 'styles/__error.css';
     import { onMount } from 'svelte';
 
     let mountReady = false;
@@ -17,3 +16,26 @@
         <button on:click={() => goto('/')}>Go back</button>
     </div>
 {/if}
+
+<style>
+    .error-container {
+        position: absolute;
+        margin: auto;
+        height: fit-content;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .error-container h1 {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 600px), (max-height: 500px) {
+        .error-container h1 {
+            font-size: 2rem;
+        }
+    }
+</style>

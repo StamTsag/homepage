@@ -26,7 +26,7 @@
                     <Github />
                 </div>
 
-                <h1><a href={link}>{name}</a></h1>
+                <h1><a href={link} target="_blank">{name}</a></h1>
             {:else}
                 <div id="icon">
                     <Discord />

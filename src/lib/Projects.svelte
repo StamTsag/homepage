@@ -39,6 +39,13 @@
             description: 'A reactive christmas counter',
             url: 'https://github.com/Shadofer/xmas-counter',
         },
+
+        {
+            title: 'Spicetify Welcomer',
+            description:
+                'A very simple spicetify extension which greets you on startup',
+            url: 'https://github.com/Shadofer/spicetify-welcomer',
+        },
     ];
 </script>
 

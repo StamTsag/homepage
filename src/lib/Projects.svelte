@@ -46,6 +46,13 @@
                 'A very simple spicetify extension which greets you on startup',
             url: 'https://github.com/Shadofer/spicetify-welcomer',
         },
+
+        {
+            title: 'Linux Setup',
+            description:
+                'Quick and easy linux setup utility to facilitate distro hopping',
+            url: 'https://github.com/Shadofer/linux-setup',
+        },
     ];
 </script>
 

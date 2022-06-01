@@ -10,6 +10,18 @@
         },
 
         {
+            title: 'Ezier',
+            description: 'Lightweight solutions to popular packages for NodeJS',
+            url: 'https://github.com/ezier-project',
+        },
+
+        {
+            title: 'TowerVerse',
+            description: 'An online, cross-platform, medieval-themed game',
+            url: 'https://github.com/towerverse',
+        },
+
+        {
             title: 'Basicpyapi',
             description: 'A barebones websocket server & client made in python',
             url: 'https://github.com/shadofer/basicpyapi',
@@ -20,12 +32,6 @@
             description:
                 'A pythonic, asynchronous API for the deprecated platform of dogehouse',
             url: 'https://github.com/shadofer/dogey',
-        },
-
-        {
-            title: 'TowerVerse',
-            description: 'An online, cross-platform, medieval-themed game',
-            url: 'https://github.com/towerverse',
         },
 
         {

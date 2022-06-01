@@ -6,9 +6,9 @@ import preprocess from 'svelte-preprocess';
 const config = {
     kit: {
         adapter: adapter({
-            out: 'docs',
-            assets: 'docs',
-            pages: 'docs',
+            out: 'build',
+            assets: 'build',
+            pages: 'build',
             fallback: null,
             precompress: false,
         }),

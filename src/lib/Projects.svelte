@@ -46,7 +46,9 @@
             >
                 <div class="project-box">
                     <div id="project-top">
-                        <h1 id="title"><a href={url} target="_blank">{title}</a></h1>
+                        <h1 id="title">
+                            <a href={url} target="_blank">{title}</a>
+                        </h1>
                     </div>
 
                     <h1 id="description">{description}</h1>

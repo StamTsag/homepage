@@ -11,28 +11,33 @@
 
         {
             title: 'Basicpyapi',
-            description:
-                'A barebones websocket server & client made in python.',
+            description: 'A barebones websocket server & client made in python',
             url: 'https://github.com/shadofer/basicpyapi',
         },
 
         {
             title: 'Dogey',
             description:
-                'A pythonic, asynchronous API for the deprecated platform of dogehouse.',
+                'A pythonic, asynchronous API for the deprecated platform of dogehouse',
             url: 'https://github.com/shadofer/dogey',
         },
 
         {
             title: 'TowerVerse',
-            description: 'An online, cross-platform, medieval-themed game!',
+            description: 'An online, cross-platform, medieval-themed game',
             url: 'https://github.com/towerverse',
         },
 
         {
             title: 'Homepage',
-            description: 'My homepage, made with Svelte.',
+            description: 'My homepage, made with Svelte',
             url: 'https://github.com/shadofer/shadofer.github.io',
+        },
+
+        {
+            title: 'XMAS Counter',
+            description: 'A reactive christmas counter',
+            url: 'https://github.com/Shadofer/xmas-counter',
         },
     ];
 </script>

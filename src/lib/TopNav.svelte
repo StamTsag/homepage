@@ -3,6 +3,7 @@
     import { getContext } from 'svelte';
     import Switch from 'svelte-switch';
     import { fly } from 'svelte/transition';
+    import { scrollTo } from 'svelte-scrolling';
 
     let { toggle, current }: ThemeContext = getContext('theme');
 </script>
@@ -11,21 +12,17 @@
     in:fly={{ y: -100, duration: 750, opacity: 0.5 }}
     class="top-nav-container"
 >
-    <div class="info-container">
-        <h1 class="logo">Shadofer</h1>
-    </div>
-
     <div class="categories-container">
-        <h1>About me</h1>
-        <h1>Projects</h1>
-        <h1>Socials</h1>
+        <h1 use:scrollTo={'about'}>About me</h1>
+        <h1 use:scrollTo={'projects'}>Projects</h1>
+        <h1 use:scrollTo={'socials'}>Socials</h1>
     </div>
 
     <Switch
         checked={$current == 'dark'}
         on:change={toggle}
-        onColor={'#000000'}
-        offColor={'#ffffff'}
+        onColor={'#0e0e0e'}
+        offColor={'#e6e6e6'}
         height="32"
         width="64"
         offHandleColor={'#ffffff'}
@@ -83,17 +80,6 @@
         margin: 0;
     }
 
-    .top-nav-container .info-container {
-        display: flex;
-        align-items: center;
-        margin-right: 50px;
-    }
-
-    .top-nav-container .info-container .logo {
-        cursor: default;
-        font-size: 2.2rem;
-    }
-
     .top-nav-container .categories-container {
         display: flex;
         align-items: center;
@@ -113,30 +99,14 @@
     }
 
     @media screen and (max-width: 800px) {
-        .top-nav-container {
-            position: static;
-            right: auto;
-            left: auto;
-            width: auto;
-            margin: auto;
-            border-radius: 0;
-        }
-
-        .top-nav-container .info-container {
-            margin-right: 5%;
-        }
-
-        .top-nav-container .info-container h1 {
-            font-size: 1.5rem;
-        }
-
         .top-nav-container .categories-container h1 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
         }
     }
 
     @media screen and (max-width: 690px) {
         .top-nav-container {
+            margin-top: 0;
             justify-content: center;
         }
 

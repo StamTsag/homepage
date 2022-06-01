@@ -1,7 +1,15 @@
 <script lang="ts">
     import themes from 'src/themes';
+    import { setGlobalOptions } from 'svelte-scrolling';
     import { ThemeWrapper } from 'svelte-themer';
+    import { sineInOut } from 'svelte/easing';
     import '../app.css';
+
+    setGlobalOptions({
+        duration: 1000,
+        easing: sineInOut,
+        offset: -300,
+    });
 </script>
 
 <!-- Sanity check for users before entering the white realm -->
@@ -12,6 +20,10 @@
 <style>
     :global(body) {
         background-color: var(--theme-bg_color);
+    }
+
+    :global(p) {
+        color: var(--theme-text_color);
     }
 
     :global(h1) {

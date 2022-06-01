@@ -5,14 +5,25 @@ body {
     transition: 500ms background;
 }
 
+p {
+    transition: 500ms all;
+    font-family: Quicksand;
+}
+
 h1 {
     transition: 500ms all;
     font-family: Quicksand;
 }
 
+hr {
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 a {
     cursor: pointer;
-    color: rgb(255, 86, 86);
+    color: rgb(255, 116, 116);
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -21,7 +32,7 @@ a {
 a::after {
     content: '';
     display: block;
-    height: 3px;
+    height: 2px;
     width: 0px;
     transition: width 0.7s ease, background-color 0.7s ease;
 }
@@ -59,8 +70,9 @@ button {
     background: rgb(255, 101, 101);
 }
 
-/* General */
-.center-container {
-    text-align: center;
-    justify-content: center;
+@media screen and (max-width: 800px) {
+    hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }

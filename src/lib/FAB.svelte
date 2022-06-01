@@ -1,10 +1,10 @@
 <script lang="ts">
+    import { scrollTo } from 'svelte-scrolling';
     import { draw, fly } from 'svelte/transition';
 
     let FABMenuVisible = false;
 
     function toggleFAB(): void {
-        // TODO: Scroll content id optional param
         FABMenuVisible = !FABMenuVisible;
     }
 </script>
@@ -32,21 +32,21 @@
 {#if FABMenuVisible}
     <div class="fab-menu">
         <h1
-            on:click={toggleFAB}
+            use:scrollTo={'about'}
             in:fly={{ y: 10, duration: 250, delay: 100 }}
             out:fly={{ y: 10, duration: 250 }}
         >
             About me
         </h1>
         <h1
-            on:click={toggleFAB}
+            use:scrollTo={'projects'}
             in:fly={{ y: 10, duration: 250, delay: 50 }}
             out:fly={{ y: 10, duration: 250, delay: 50 }}
         >
             Projects
         </h1>
         <h1
-            on:click={toggleFAB}
+            use:scrollTo={'socials'}
             in:fly={{ y: 10, duration: 250 }}
             out:fly={{ y: 10, duration: 250, delay: 100 }}
         >
@@ -72,10 +72,11 @@
             right: 30px;
             border-radius: 50px;
             transition: 500ms all;
-            fill: none;
+            fill: var(--theme-fab_bg_color);
             stroke-width: 3px;
             stroke: var(--theme-primary);
             box-shadow: 0 0 10px var(--theme-primary);
+            z-index: 1;
         }
 
         .fab-menu {
@@ -96,6 +97,8 @@
             cursor: default;
             border: 2px solid var(--theme-primary);
             box-shadow: 0 0 10px var(--theme-primary);
+            background: var(--theme-fab_button_bg);
+            z-index: 1;
         }
 
         .fab-menu h1:hover {

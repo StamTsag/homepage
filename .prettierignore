@@ -8,8 +8,5 @@ package.json
 build/
 .svelte-kit/
 
-# Generated site
-docs/
-
 # Static assets
 static/

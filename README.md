@@ -1,4 +1,9 @@
-<p align='center'><img src='https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/logo.svg' alt='Homepage logo'></p>
+<p align='center'>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/logo.svg">
+  <img alt="Homepage logo" src="https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/logo-dark.svg">
+</picture>
+</p>
 <p align='center'><b>My own homepage</b></p>
 <p align='center'><b>Built with Svelte for incredible performance</b></p>
 

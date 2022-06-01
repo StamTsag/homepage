@@ -4,8 +4,6 @@
   <img alt="Homepage logo" src="https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/logo-dark.svg">
 </picture>
 </p>
-<p align='center'><b>My own homepage</b></p>
-<p align='center'><b>Built with Svelte for incredible performance</b></p>
 
 <h2 align='center'>
 

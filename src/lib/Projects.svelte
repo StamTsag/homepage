@@ -66,7 +66,6 @@
     <div class="projects">
         {#each projects as { title, description, url }, _}
             <Saos
-                once={true}
                 animation={`fade-in 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
                 <div class="project-box">

@@ -4,4 +4,4 @@ export interface Socials {
     link?: string;
 }
 
-type SocialsType = 'github' | 'discord';
+type SocialsType = 'github' | 'discord' | 'spotify' | 'instagram' | 'steam';

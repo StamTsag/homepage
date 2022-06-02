@@ -75,7 +75,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 75px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .container {

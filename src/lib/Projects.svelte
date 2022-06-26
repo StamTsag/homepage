@@ -1,5 +1,6 @@
 <script lang="ts">
     import Saos from 'saos';
+    import githubStars from 'src/github-stars';
     import type { Project } from 'src/interfaces/projects';
 
     const projects: Project[] = [
@@ -60,10 +61,28 @@
             url: 'https://github.com/Shadofer/linux-setup',
         },
     ];
+
+    async function getRepoStars(url: string): Promise<number> {
+        const urlArray = url.split('/');
+        const owner = urlArray[3];
+
+        // May be undefined
+        const repo = urlArray[4];
+
+        return new Promise((resolve) => {
+            githubStars(
+                `${owner}${repo ? `/${repo}` : ''}`,
+                (stars: number) => {
+                    resolve(stars);
+                }
+            );
+        });
+    }
 </script>
 
 <div class="projects-container">
     <div class="projects">
+        <!-- TODO: Order by stars -->
         {#each projects as { title, description, url }, _}
             <Saos
                 animation={`fade-in 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
@@ -76,6 +95,27 @@
                     </div>
 
                     <h1 id="description">{description}</h1>
+
+                    {#await getRepoStars(url) then stars}
+                        <div id="project-bottom">
+                            <h1 id="stars">{stars}</h1>
+                            <svg
+                                version="1.2"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 48 48"
+                                width="48"
+                                height="48"
+                                ><style>
+                                    .a {
+                                        fill: #ffba00;
+                                    }
+                                </style><path
+                                    class="a"
+                                    d="m45.5 17.2q1.5 0.3 1.5 1.3 0 0.6-0.7 1.4l-10.1 10.1 2.4 14.2q0.1 0.2 0.1 0.6 0 0.6-0.3 1-0.3 0.4-0.9 0.4-0.5 0-1.1-0.4l-12.4-6.7-12.4 6.7q-0.6 0.4-1.1 0.4-0.6 0-0.9-0.4-0.3-0.4-0.3-1 0-0.2 0.1-0.6l2.4-14.2-10.1-10.1q-0.7-0.8-0.7-1.4 0-1 1.5-1.3l13.9-2.1 6.2-12.9q0.6-1.2 1.4-1.2 0.8 0 1.4 1.2l6.2 12.9 13.9 2.1z"
+                                /></svg
+                            >
+                        </div>
+                    {/await}
                 </div>
             </Saos>
         {/each}
@@ -121,6 +161,27 @@
         font-size: 1.7rem;
     }
 
+    .project-box #stars {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .project-box #project-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-box #project-bottom #stars {
+        font-size: 2.3rem;
+        margin-right: 10px;
+    }
+
+    .project-box #project-bottom svg {
+        width: 48px;
+        height: 48px;
+    }
+
     @media screen and (max-width: 800px) {
         .projects-container {
             margin-top: 50px;
@@ -137,6 +198,16 @@
 
         .project-box #description {
             font-size: 1.2rem;
+        }
+
+        .project-box #project-bottom #stars {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .project-box #project-bottom svg {
+            width: 30px;
+            height: 30px;
         }
     }
 

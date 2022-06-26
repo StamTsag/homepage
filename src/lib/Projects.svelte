@@ -82,7 +82,6 @@
 
 <div class="projects-container">
     <div class="projects">
-        <!-- TODO: Order by stars -->
         {#each projects as { title, description, url }, _}
             <Saos
                 animation={`fade-in 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}

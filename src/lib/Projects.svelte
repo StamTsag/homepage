@@ -84,7 +84,7 @@
     <div class="projects">
         {#each projects as { title, description, url }, _}
             <Saos
-                animation={`fade-in 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
+                animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
                 <div class="project-box">
                     <div id="project-top">
@@ -210,13 +210,13 @@
         }
     }
 
-    @keyframes -global-fade-in {
+    @keyframes -global-slide-in {
         0% {
-            opacity: 0%;
+            transform: translateY(50px);
         }
 
         100% {
-            opacity: 100%;
+            transform: translateY(0px);
         }
     }
 </style>

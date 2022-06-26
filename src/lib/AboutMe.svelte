@@ -39,8 +39,9 @@
         <br />
 
         <i
-            >I play <a href="https://rocketleague.com" target="_blank"
-                >Rocket League</a
+            >I play <a
+                href="https://rocketleague.tracker.network/rocket-league/profile/epic/Shadofer/overview"
+                target="_blank">Rocket League</a
             > too</i
         >
     </p>

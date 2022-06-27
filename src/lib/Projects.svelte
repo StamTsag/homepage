@@ -112,7 +112,7 @@
                     <h1 id="description">{description}</h1>
 
                     <div id="project-bottom">
-                        <h1 id="stars">{stars}</h1>
+                        <h1 id="stars">{stars || 0}</h1>
                         <svg
                             version="1.2"
                             xmlns="http://www.w3.org/2000/svg"

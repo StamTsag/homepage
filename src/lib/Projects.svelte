@@ -3,6 +3,23 @@
     import githubStars from 'src/github-stars';
     import type { Project } from 'src/interfaces/projects';
 
+    async function getRepoStars(url: string): Promise<number> {
+        const urlArray = url.split('/');
+        const owner = urlArray[3];
+
+        // May be undefined
+        const repo = urlArray[4];
+
+        return new Promise((resolve) => {
+            githubStars(
+                `${owner}${repo ? `/${repo}` : ''}`,
+                (stars: number) => {
+                    resolve(stars);
+                }
+            );
+        });
+    }
+
     const projects: Project[] = [
         {
             title: 'Fronvo',
@@ -62,27 +79,26 @@
         },
     ];
 
-    async function getRepoStars(url: string): Promise<number> {
-        const urlArray = url.split('/');
-        const owner = urlArray[3];
+    function countProjectStars(): void {
+        // Add the stars attribute to each project automatically
+        for (const projectIndex in projects) {
+            const project = projects[projectIndex];
 
-        // May be undefined
-        const repo = urlArray[4];
+            // No await, no blocking
+            getRepoStars(project.url).then((stars) => {
+                project.stars = stars;
 
-        return new Promise((resolve) => {
-            githubStars(
-                `${owner}${repo ? `/${repo}` : ''}`,
-                (stars: number) => {
-                    resolve(stars);
-                }
-            );
-        });
+                projects[projectIndex] = project;
+            });
+        }
     }
+
+    $: countProjectStars();
 </script>
 
 <div class="projects-container">
     <div class="projects">
-        {#each projects as { title, description, url }, _}
+        {#each projects as { title, description, url, stars }, _}
             <Saos
                 animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
@@ -95,26 +111,24 @@
 
                     <h1 id="description">{description}</h1>
 
-                    {#await getRepoStars(url) then stars}
-                        <div id="project-bottom">
-                            <h1 id="stars">{stars}</h1>
-                            <svg
-                                version="1.2"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 48 48"
-                                width="48"
-                                height="48"
-                                ><style>
-                                    .a {
-                                        fill: #ffba00;
-                                    }
-                                </style><path
-                                    class="a"
-                                    d="m45.5 17.2q1.5 0.3 1.5 1.3 0 0.6-0.7 1.4l-10.1 10.1 2.4 14.2q0.1 0.2 0.1 0.6 0 0.6-0.3 1-0.3 0.4-0.9 0.4-0.5 0-1.1-0.4l-12.4-6.7-12.4 6.7q-0.6 0.4-1.1 0.4-0.6 0-0.9-0.4-0.3-0.4-0.3-1 0-0.2 0.1-0.6l2.4-14.2-10.1-10.1q-0.7-0.8-0.7-1.4 0-1 1.5-1.3l13.9-2.1 6.2-12.9q0.6-1.2 1.4-1.2 0.8 0 1.4 1.2l6.2 12.9 13.9 2.1z"
-                                /></svg
-                            >
-                        </div>
-                    {/await}
+                    <div id="project-bottom">
+                        <h1 id="stars">{stars}</h1>
+                        <svg
+                            version="1.2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 48 48"
+                            width="48"
+                            height="48"
+                            ><style>
+                                .a {
+                                    fill: #ffba00;
+                                }
+                            </style><path
+                                class="a"
+                                d="m45.5 17.2q1.5 0.3 1.5 1.3 0 0.6-0.7 1.4l-10.1 10.1 2.4 14.2q0.1 0.2 0.1 0.6 0 0.6-0.3 1-0.3 0.4-0.9 0.4-0.5 0-1.1-0.4l-12.4-6.7-12.4 6.7q-0.6 0.4-1.1 0.4-0.6 0-0.9-0.4-0.3-0.4-0.3-1 0-0.2 0.1-0.6l2.4-14.2-10.1-10.1q-0.7-0.8-0.7-1.4 0-1 1.5-1.3l13.9-2.1 6.2-12.9q0.6-1.2 1.4-1.2 0.8 0 1.4 1.2l6.2 12.9 13.9 2.1z"
+                            /></svg
+                        >
+                    </div>
                 </div>
             </Saos>
         {/each}

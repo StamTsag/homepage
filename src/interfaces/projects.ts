@@ -1,6 +1,6 @@
 export interface Project {
     title: string;
     description: string;
-    url: string;
+    github: string;
     stars?: number;
 }

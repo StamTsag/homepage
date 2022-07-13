@@ -5,10 +5,10 @@
 
     async function getRepoStars(url: string): Promise<number> {
         const urlArray = url.split('/');
-        const owner = urlArray[3];
+        const owner = urlArray[0];
 
         // May be undefined
-        const repo = urlArray[4];
+        const repo = urlArray[1];
 
         return new Promise((resolve) => {
             githubStars(
@@ -24,58 +24,58 @@
         {
             title: 'Fronvo',
             description: 'The secure, next-generation social media app',
-            url: 'https://github.com/fronvo',
+            github: 'Fronvo',
         },
 
         {
             title: 'Ezier',
             description: 'Lightweight solutions to popular packages for NodeJS',
-            url: 'https://github.com/ezier-project',
+            github: 'Ezier-Project',
         },
 
         {
             title: 'TowerVerse',
             description: 'An online, cross-platform, medieval-themed game',
-            url: 'https://github.com/towerverse',
+            github: 'TowerVerse',
         },
 
         {
             title: 'Basicpyapi',
             description: 'A barebones websocket server & client made in python',
-            url: 'https://github.com/shadofer/basicpyapi',
+            github: 'Shadofer/basicpyapi',
         },
 
         {
             title: 'Dogey',
             description:
                 'A pythonic, asynchronous API for the deprecated platform of dogehouse',
-            url: 'https://github.com/shadofer/dogey',
+            github: 'Shadofer/dogey',
         },
 
         {
             title: 'Homepage',
             description: 'My homepage, made with Svelte',
-            url: 'https://github.com/shadofer/shadofer.github.io',
+            github: 'Shadofer/shadofer.github.io',
         },
 
         {
             title: 'XMAS Counter',
             description: 'A reactive christmas counter',
-            url: 'https://github.com/Shadofer/xmas-counter',
+            github: 'Shadofer/xmas-counter',
         },
 
         {
             title: 'Spicetify Welcomer',
             description:
                 'A very simple spicetify extension which greets you on startup',
-            url: 'https://github.com/Shadofer/spicetify-welcomer',
+            github: 'Shadofer/spicetify-welcomer',
         },
 
         {
             title: 'Linux Setup',
             description:
                 'Quick and easy linux setup utility to facilitate distro hopping',
-            url: 'https://github.com/Shadofer/linux-setup',
+            github: 'Shadofer/linux-setup',
         },
     ];
 
@@ -85,7 +85,7 @@
             const project = projects[projectIndex];
 
             // No await, no blocking
-            getRepoStars(project.url).then((stars) => {
+            getRepoStars(project.github).then((stars) => {
                 project.stars = stars;
 
                 projects[projectIndex] = project;
@@ -98,14 +98,17 @@
 
 <div class="projects-container">
     <div class="projects">
-        {#each projects as { title, description, url, stars }, _}
+        {#each projects as { title, description, github, stars }, _}
             <Saos
                 animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
                 <div class="project-box">
                     <div id="project-top">
                         <h1 id="title">
-                            <a href={url} target="_blank">{title}</a>
+                            <a
+                                href={`https://github.com/${github}`}
+                                target="_blank">{title}</a
+                            >
                         </h1>
                     </div>
 

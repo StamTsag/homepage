@@ -168,6 +168,12 @@
     .project-box #project-top #title {
         margin: 0;
         font-size: 2.6rem;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     .project-box #description {
@@ -191,6 +197,12 @@
     .project-box #project-bottom #stars {
         font-size: 2.3rem;
         margin-right: 10px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     .project-box #project-bottom svg {

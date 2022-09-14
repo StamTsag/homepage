@@ -92,6 +92,12 @@
         transition: 250ms all;
         margin-right: 20px;
         font-size: 1.9rem;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     .top-nav-container .categories-container h1:hover {

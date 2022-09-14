@@ -28,7 +28,7 @@
     "husky": "^8.0.1",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
-    "svelte": "^3.48.0",
+    "svelte": "^3.49.0",
     "svelte-check": "^2.7.0",
     "svelte-switch": "^0.0.5",
     "svelte-themer": "^0.5.5",

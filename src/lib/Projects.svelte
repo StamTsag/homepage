@@ -77,6 +77,11 @@
                 'Quick and easy linux setup utility to facilitate distro hopping',
             github: 'Shadofer/linux-setup',
         },
+        {
+            title: 'Youtube Homepage',
+            description: 'The homepage of my Youtube page',
+            github: 'Shadofer/youtube-homepage',
+        },
     ];
 
     function countProjectStars(): void {

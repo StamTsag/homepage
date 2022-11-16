@@ -2,23 +2,7 @@
     import Saos from 'saos';
     import githubStars from 'src/github-stars';
     import type { Project } from 'src/interfaces/projects';
-
-    async function getRepoStars(url: string): Promise<number> {
-        const urlArray = url.split('/');
-        const owner = urlArray[0];
-
-        // May be undefined
-        const repo = urlArray[1];
-
-        return new Promise((resolve) => {
-            githubStars(
-                `${owner}${repo ? `/${repo}` : ''}`,
-                (stars: number) => {
-                    resolve(stars);
-                }
-            );
-        });
-    }
+    import { onMount } from 'svelte';
 
     const projects: Project[] = [
         {
@@ -88,26 +72,61 @@
         },
     ];
 
-    function countProjectStars(): void {
-        // Add the stars attribute to each project automatically
-        for (const projectIndex in projects) {
-            const project = projects[projectIndex];
+    let sortedProjects: Project[] = [];
 
-            // No await, no blocking
-            getRepoStars(project.github).then((stars) => {
-                project.stars = stars;
+    async function getRepoStars(url: string): Promise<number> {
+        const urlArray = url.split('/');
+        const owner = urlArray[0];
 
-                projects[projectIndex] = project;
-            });
-        }
+        // May be undefined
+        const repo = urlArray[1];
+
+        return new Promise((resolve) => {
+            githubStars(
+                `${owner}${repo ? `/${repo}` : ''}`,
+                (stars: number) => {
+                    resolve(stars);
+                }
+            );
+        });
     }
 
-    $: countProjectStars();
+    async function countProjectStars(): Promise<void> {
+        return new Promise((resolve) => {
+            let totalCounted = 0;
+
+            // Add the stars attribute to each project automatically
+            for (const projectIndex in projects) {
+                const project = projects[projectIndex];
+
+                // No await, no blocking
+                getRepoStars(project.github).then((stars) => {
+                    project.stars = stars;
+
+                    projects[projectIndex] = project;
+
+                    totalCounted += 1;
+
+                    if (totalCounted == projects.length) {
+                        resolve();
+                    }
+                });
+            }
+        });
+    }
+
+    onMount(async () => {
+        await countProjectStars();
+
+        sortedProjects = projects.sort((a, b) => {
+            return b.stars - a.stars;
+        });
+    });
 </script>
 
 <div class="projects-container">
     <div class="projects">
-        {#each projects as { title, description, github, stars, customGradient }}
+        {#each sortedProjects as { title, description, github, stars, customGradient }}
             <Saos
                 animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >

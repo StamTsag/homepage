@@ -3,4 +3,5 @@ export interface Project {
     description: string;
     github: string;
     stars?: number;
+    customGradient?: string[];
 }

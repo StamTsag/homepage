@@ -25,6 +25,10 @@
             title: 'Fronvo',
             description: 'The secure, next-generation social media app',
             github: 'Fronvo',
+            customGradient: [
+                'rgba(146, 73, 255, 5%)',
+                'rgba(146, 73, 255, 40%)',
+            ],
         },
 
         {
@@ -103,11 +107,24 @@
 
 <div class="projects-container">
     <div class="projects">
-        {#each projects as { title, description, github, stars }, _}
+        {#each projects as { title, description, github, stars, customGradient }}
             <Saos
                 animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
-                <div class="project-box">
+                <div
+                    class="project-box"
+                    style={customGradient
+                        ? `
+                        background-size: 200% auto;
+                        background-image: linear-gradient(
+                            to right,
+                            ${customGradient[0]} 0%,
+                            ${customGradient[1]} 51%,
+                            ${customGradient[0]} 100%
+                        );
+                `
+                        : ''}
+                >
                     <div id="project-top">
                         <h1 id="title">
                             <a

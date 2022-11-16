@@ -9,22 +9,21 @@
             title: 'Fronvo',
             description: 'The secure, next-generation social media app',
             github: 'Fronvo',
-            customGradient: [
-                'rgba(146, 73, 255, 5%)',
-                'rgba(146, 73, 255, 40%)',
-            ],
+            customGradient: '146, 73, 255',
         },
 
         {
             title: 'Ezier',
             description: 'Lightweight solutions to popular packages for NodeJS',
             github: 'Ezier-Project',
+            customGradient: '48, 255, 97',
         },
 
         {
             title: 'TowerVerse',
             description: 'An online, cross-platform, medieval-themed game',
             github: 'TowerVerse',
+            customGradient: '26, 0, 193',
         },
 
         {
@@ -38,6 +37,7 @@
             description:
                 'A pythonic, asynchronous API for the deprecated platform of dogehouse',
             github: 'Shadofer/dogey',
+            customGradient: '243, 109, 14',
         },
 
         {
@@ -50,6 +50,7 @@
             title: 'XMAS Counter',
             description: 'A reactive christmas counter',
             github: 'Shadofer/xmas-counter',
+            customGradient: '255, 0, 0',
         },
 
         {
@@ -137,9 +138,9 @@
                         background-size: 200% auto;
                         background-image: linear-gradient(
                             to right,
-                            ${customGradient[0]} 0%,
-                            ${customGradient[1]} 51%,
-                            ${customGradient[0]} 100%
+                            rgba(${customGradient}, 5%) 0%,
+                            rgba(${customGradient}, 30%) 51%,
+                            rgba(${customGradient}, 5%) 100%
                         );
                 `
                         : ''}

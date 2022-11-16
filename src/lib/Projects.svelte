@@ -23,7 +23,7 @@
             title: 'TowerVerse',
             description: 'An online, cross-platform, medieval-themed game',
             github: 'TowerVerse',
-            customGradient: '26, 0, 193',
+            customGradient: '0, 144, 215',
         },
 
         {
@@ -129,6 +129,7 @@
     <div class="projects">
         {#each sortedProjects as { title, description, github, stars, customGradient }}
             <Saos
+                once
                 animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
                 <div
@@ -142,6 +143,7 @@
                             rgba(${customGradient}, 30%) 51%,
                             rgba(${customGradient}, 5%) 100%
                         );
+                        box-shadow: -10px 0px 0px rgb(${customGradient});
                 `
                         : ''}
                 >
@@ -190,21 +192,27 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .project-box {
-        transition: 500ms all;
+        display: flex;
+        flex-direction: column;
+        transition: 250ms all;
         background: var(--theme-project_box_bg);
-        box-shadow: 0 0 5px var(--theme-project_box_shadow);
-        border-radius: 10px;
+        border-radius: 15px;
+        padding: 30px;
+        margin: 30px;
+        width: 600px;
+        height: 175px;
         text-align: center;
-        padding: 20px;
-        margin: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-box:hover {
-        box-shadow: 0 0 15px var(--theme-project_box_shadow);
-        transform: scale(1.03, 1.03);
+        transform: translateY(-5px);
+        background-position: right center;
     }
 
     .project-box #project-top #title {
@@ -216,13 +224,14 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        text-align: center;
     }
 
     .project-box #description {
         margin: 0;
         cursor: default;
-        max-width: 550px;
         font-size: 1.7rem;
+        text-align: center;
     }
 
     .project-box #stars {
@@ -258,8 +267,10 @@
         }
 
         .project-box {
-            padding: 10px;
-            margin: 10px;
+            padding: 15px;
+            margin: 15px;
+            height: 125px;
+            width: 400px;
         }
 
         .project-box #project-top #title {

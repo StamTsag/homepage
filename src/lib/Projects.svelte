@@ -268,9 +268,9 @@
 
         .project-box {
             padding: 15px;
-            margin: 15px;
+            margin: 10px;
             height: 125px;
-            width: 400px;
+            width: 65vw;
         }
 
         .project-box #project-top #title {

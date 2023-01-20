@@ -1,6 +1,6 @@
 <div class="about-container">
     <p id="info">
-        I'm a 17-year-old self-taught programmer and designer, located in <a
+        I'm an 18-year-old self-taught programmer and designer, located in <a
             href="https://en.wikipedia.org/wiki/Greece"
             target="_blank">Greece</a
         >

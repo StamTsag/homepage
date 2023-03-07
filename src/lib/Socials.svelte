@@ -1,17 +1,11 @@
 <script lang="ts">
     import type { Socials } from 'src/interfaces/socials';
-    import Discord from './svgs/Discord.svelte';
     import Github from './svgs/Github.svelte';
     import Instagram from './svgs/Instagram.svelte';
     import Spotify from './svgs/Spotify.svelte';
     import Steam from './svgs/Steam.svelte';
 
     const socials: Socials[] = [
-        {
-            name: 'Shadofer#6681',
-            type: 'discord',
-        },
-
         {
             name: 'Shadofer',
             type: 'github',
@@ -39,12 +33,10 @@
 </script>
 
 <div class="socials-container">
-    {#each socials as { name, type, link }, _}
+    {#each socials as { name, type, link }}
         <div class="container">
             <div id="icon">
-                {#if type == 'discord'}
-                    <Discord />
-                {:else if type == 'github'}
+                {#if type == 'github'}
                     <Github />
                 {:else if type == 'spotify'}
                     <Spotify />
@@ -56,13 +48,9 @@
             </div>
 
             <h1>
-                {#if !(type == 'discord')}
-                    <a href={link} target="_blank">
-                        {name}
-                    </a>
-                {:else}
+                <a href={link} target="_blank">
                     {name}
-                {/if}
+                </a>
             </h1>
         </div>
     {/each}

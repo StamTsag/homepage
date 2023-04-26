@@ -7,7 +7,8 @@
     const projects: Project[] = [
         {
             title: 'Fronvo',
-            description: 'The secure, next-generation social media app',
+            description:
+                'The secure, next-generation social media app powered by blazing-fast tech',
             github: 'Fronvo',
             customGradient: '146, 73, 255',
         },
@@ -133,10 +134,12 @@
                 animation={`slide-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both`}
             >
                 <div
+                    on:click={() =>
+                        (location.href = `https://github.com/${github}`)}
                     class="project-box"
                     style={customGradient
                         ? `
-                        background-size: 200% auto;
+                        background-size: 150% auto;
                         background-image: linear-gradient(
                             to right,
                             rgba(${customGradient}, 5%) 0%,
@@ -149,10 +152,7 @@
                 >
                     <div id="project-top">
                         <h1 id="title">
-                            <a
-                                href={`https://github.com/${github}`}
-                                target="_blank">{title}</a
-                            >
+                            {title}
                         </h1>
                     </div>
 
@@ -204,10 +204,11 @@
         padding: 30px;
         margin: 30px;
         width: 600px;
-        height: 175px;
+        height: 130px;
         text-align: center;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     .project-box:hover {
@@ -217,7 +218,7 @@
 
     .project-box #project-top #title {
         margin: 0;
-        font-size: 2.6rem;
+        font-size: 2.5rem;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -229,8 +230,7 @@
 
     .project-box #description {
         margin: 0;
-        cursor: default;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
@@ -246,8 +246,9 @@
     }
 
     .project-box #project-bottom #stars {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         margin-right: 10px;
+        margin-bottom: 7px;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -257,8 +258,8 @@
     }
 
     .project-box #project-bottom svg {
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 36px;
     }
 
     @media screen and (max-width: 800px) {

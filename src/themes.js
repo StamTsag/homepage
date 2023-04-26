@@ -5,7 +5,7 @@ const themes = {
         primary: 'rgb(255, 95, 95)',
 
         // Body background color
-        bg_color: 'rgba(0, 0, 0, 0.9)',
+        bg_color: 'rgba(30, 30, 30)',
 
         // Header colors
         text_color: '#ffffff',
@@ -20,7 +20,7 @@ const themes = {
         nav_bg_color: 'rgba(30, 30, 30, 0.7)',
 
         // Top nav shadow color
-        nav_shadow_color: 'rgba(255, 255, 255, 0.2)',
+        nav_shadow_color: 'rgba(0, 0, 0, 0.5)',
 
         // FAB bg
         fab_bg_color: 'rgba(0, 0, 0, 0.4)',
@@ -29,7 +29,7 @@ const themes = {
         fab_button_bg: 'rgba(0, 0, 0, 0.5)',
 
         // Project box background
-        project_box_bg: 'rgba(30, 30, 30, 1)',
+        project_box_bg: 'rgba(35, 35, 35)',
 
         // Project box box shadow
         project_box_shadow: 'rgba(255, 255, 255, 0.2)',
@@ -40,7 +40,7 @@ const themes = {
         primary: 'rgb(255, 95, 95)',
 
         // Body background color
-        bg_color: 'rgba(200, 200, 200, 0.3)',
+        bg_color: 'rgba(245, 245, 245)',
 
         // Header colors
         text_color: '#000000',
@@ -55,7 +55,7 @@ const themes = {
         nav_bg_color: 'rgba(255, 255, 255, 0.7)',
 
         // Top nav shadow color
-        nav_shadow_color: 'rgba(40, 40, 40, 0.15)',
+        nav_shadow_color: 'rgba(0, 0, 0, 0.15)',
 
         // FAB bg
         fab_bg_color: 'rgba(255, 255, 255, 0.4)',

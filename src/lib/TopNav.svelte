@@ -3,19 +3,71 @@
     import { getContext } from 'svelte';
     import Switch from 'svelte-switch';
     import { fly } from 'svelte/transition';
-    import { scrollTo } from 'svelte-scrolling';
+    import type { Socials } from 'src/interfaces/socials';
+    import Github from './svgs/Github.svelte';
+    import Spotify from './svgs/Spotify.svelte';
 
     let { toggle, current }: ThemeContext = getContext('theme');
+
+    const socials: Socials[] = [
+        {
+            name: 'Shadofer',
+            type: 'github',
+            link: 'https://github.com/shadofer',
+        },
+
+        {
+            name: 'shadofer',
+            type: 'spotify',
+            link: 'https://open.spotify.com/user/shadofer',
+        },
+
+        {
+            name: 'Shadofer_RL',
+            type: 'instagram',
+            link: 'https://instagram.com/shadofer_rl',
+        },
+
+        {
+            name: 'Shadofer',
+            type: 'steam',
+            link: 'https://steamcommunity.com/profiles/76561199167070009/',
+        },
+    ];
 </script>
 
 <div
     in:fly={{ y: -100, duration: 750, opacity: 0.5 }}
     class="top-nav-container"
 >
-    <div class="categories-container">
-        <h1 use:scrollTo={'about'}>About me</h1>
-        <h1 use:scrollTo={'projects'}>Projects</h1>
-        <h1 use:scrollTo={'socials'}>Socials</h1>
+    <h1 id="logo-text">Shadofer</h1>
+
+    <div class="socials">
+        {#each socials as { type, link }}
+            <div class="container">
+                <div class="social-container">
+                    {#if type == 'github'}
+                        <Github />
+                    {:else if type == 'spotify'}
+                        <Spotify />
+                    {:else if type == 'instagram'}
+                        <img
+                            src="/socials/instagram.webp"
+                            draggable={false}
+                            alt="Instagram logo"
+                            on:click={() => (location.href = link)}
+                        />
+                    {:else if type == 'steam'}
+                        <img
+                            src="/socials/steam.webp"
+                            draggable={false}
+                            alt="Steam logo"
+                            on:click={() => (location.href = link)}
+                        />
+                    {/if}
+                </div>
+            </div>
+        {/each}
     </div>
 
     <Switch
@@ -61,63 +113,70 @@
 
 <style>
     .top-nav-container {
+        transition: 350ms all;
         position: fixed;
         top: 0;
-        right: 0;
         left: 0;
-        width: fit-content;
+        right: 0;
+        width: 80%;
         margin: auto;
-        margin-top: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         display: flex;
-        border-radius: 5px;
         padding: 10px;
+        padding-right: 20px;
         align-items: center;
+        justify-content: center;
         background: var(--theme-nav_bg_color);
         box-shadow: 0 0 15px var(--theme-nav_shadow_color);
+        backdrop-filter: blur(2.5px);
     }
 
-    .top-nav-container h1 {
+    #logo-text {
         margin: 0;
-    }
-
-    .top-nav-container .categories-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .top-nav-container .categories-container h1 {
-        border-radius: 5px;
-        padding: 5px;
-        cursor: pointer;
-        transition: 250ms all;
+        transition: 250ms color;
         margin-right: 20px;
-        font-size: 1.9rem;
+        margin-bottom: 5px;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        flex: 1;
+        font-size: 2rem;
     }
 
-    .top-nav-container .categories-container h1:hover {
-        color: var(--theme-text_color_hover);
+    .socials {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .social-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .social-container img {
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
     }
 
     @media screen and (max-width: 800px) {
-        .top-nav-container .categories-container h1 {
-            font-size: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width: 690px) {
         .top-nav-container {
-            margin-top: 0;
-            justify-content: center;
+            width: 90%;
         }
 
-        .top-nav-container .categories-container {
-            display: none;
+        #logo-text {
+            font-size: 1.6rem;
+        }
+
+        .social-container img {
+            cursor: default;
+            width: 42px;
+            height: 42px;
         }
     }
 </style>

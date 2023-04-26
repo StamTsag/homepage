@@ -1,18 +1,23 @@
 /* General */
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
-    transition: 500ms background;
+    transition: 350ms background;
 }
 
 p {
-    transition: 500ms all;
-    font-family: Quicksand;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 h1 {
-    transition: 500ms all;
-    font-family: Quicksand;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 hr {
@@ -45,29 +50,24 @@ a:hover::after {
 button {
     cursor: pointer;
     color: #ff1d4e;
-    font-family: Quicksand;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 45px;
     transition: 0.4s all;
     margin-left: 10px;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #ffd3d3;
-    border-radius: 20px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 125, 125);
+    background: rgb(179, 179, 179);
     border-radius: 20px;
-    box-shadow: 0 0 10px black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 101, 101);
+    background: rgb(158, 158, 158);
 }
 
 @media screen and (max-width: 800px) {

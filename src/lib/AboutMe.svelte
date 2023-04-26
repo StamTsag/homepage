@@ -50,13 +50,14 @@
 <style>
     .about-container {
         text-align: center;
-        margin-top: 50px;
+        height: 75vh;
     }
 
     .about-container #info {
         margin: 0;
         font-size: 2rem;
-        font-family: 'Quicksand';
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
         margin-left: 100px;
         margin-right: 100px;
     }

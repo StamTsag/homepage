@@ -45,7 +45,6 @@
     "postcss": "^8.4.13",
     "postcss-load-config": "^3.1.4",
     "saos": "^1.3.1",
-    "svelte-preprocess": "^4.10.6",
-    "svelte-scrolling": "^1.1.1"
+    "svelte-preprocess": "^4.10.6"
   }
 }

@@ -1,7 +1,10 @@
-<script>
+<script lang="ts">
     import { getContext } from 'svelte';
 
+    // @ts-ignore
     const { theme } = getContext('theme');
+
+    export let link: string;
 </script>
 
 <svg
@@ -9,6 +12,7 @@
     width="42"
     height="42"
     viewBox="0 0 256 250"
+    on:click={() => (location.href = link)}
     ><rect
         x="0"
         y="0"
@@ -23,10 +27,15 @@
 >
 
 <style>
+    svg {
+        cursor: pointer;
+    }
+
     @media screen and (max-width: 800px) {
         svg {
             width: 42px;
             height: 42px;
+            cursor: default;
         }
     }
 </style>

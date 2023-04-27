@@ -1,8 +1,13 @@
+<script lang="ts">
+    export let link: string;
+</script>
+
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="42"
     height="42"
     viewBox="0 0 256 256"
+    on:click={() => (location.href = link)}
     ><rect
         x="0"
         y="0"
@@ -17,10 +22,13 @@
 >
 
 <style>
+    svg {
+        cursor: pointer;
+    }
+
     @media screen and (max-width: 800px) {
         svg {
-            width: 42px;
-            height: 42px;
+            cursor: default;
         }
     }
 </style>

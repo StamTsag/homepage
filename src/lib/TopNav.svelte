@@ -47,9 +47,9 @@
             <div class="container">
                 <div class="social-container">
                     {#if type == 'github'}
-                        <Github />
+                        <Github {link} />
                     {:else if type == 'spotify'}
-                        <Spotify />
+                        <Spotify {link} />
                     {:else if type == 'instagram'}
                         <img
                             src="/socials/instagram.webp"
@@ -175,8 +175,6 @@
 
         .social-container img {
             cursor: default;
-            width: 42px;
-            height: 42px;
         }
     }
 </style>

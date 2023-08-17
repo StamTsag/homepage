@@ -5,34 +5,27 @@ const themes = {
         primary: 'rgb(255, 95, 95)',
 
         // Body background color
-        bg_color: 'rgba(30, 30, 30)',
+        bg: 'rgba(20, 20, 20)',
 
         // Header colors
-        text_color: '#ffffff',
+        text: '#ffffff',
 
         // Header color on hover
-        text_color_hover: 'rgba(255, 255, 255, 0.65)',
+        text_hover: 'rgba(255, 255, 255, 0.65)',
 
         // Button background color
-        button_bg_color: '#ffffff',
+        button_bg: '#ffffff',
 
         // Top nav background color
-        nav_bg_color: 'rgba(30, 30, 30, 0.7)',
+        nav_bg: 'rgba(20, 20, 20, 0.7)',
 
         // Top nav shadow color
-        nav_shadow_color: 'rgba(0, 0, 0, 0.5)',
-
-        // FAB bg
-        fab_bg_color: 'rgba(0, 0, 0, 0.4)',
-
-        // FAB button background
-        fab_button_bg: 'rgba(0, 0, 0, 0.5)',
+        nav_shadow: 'rgba(5, 5, 5)',
 
         // Project box background
-        project_box_bg: 'rgba(35, 35, 35)',
+        project_box: 'rgba(23, 23, 23)',
 
-        // Project box box shadow
-        project_box_shadow: 'rgba(255, 255, 255, 0.2)',
+        scrollbar: 'rgb(40, 40, 40)',
     },
 
     light: {
@@ -40,34 +33,27 @@ const themes = {
         primary: 'rgb(255, 95, 95)',
 
         // Body background color
-        bg_color: 'rgba(245, 245, 245)',
+        bg: 'rgba(245, 245, 245)',
 
         // Header colors
-        text_color: '#000000',
+        text: '#000000',
 
         // Header color on hover
-        text_color_hover: 'rgba(0, 0, 0, 0.5)',
+        text_hover: 'rgba(0, 0, 0, 0.5)',
 
         // Button background color
-        button_bg_color: '#000000',
+        button_bg: '#000000',
 
         // Top nav background color
-        nav_bg_color: 'rgba(255, 255, 255, 0.7)',
+        nav_bg: 'rgba(255, 255, 255, 0.7)',
 
         // Top nav shadow color
-        nav_shadow_color: 'rgba(0, 0, 0, 0.15)',
-
-        // FAB bg
-        fab_bg_color: 'rgba(255, 255, 255, 0.4)',
-
-        // FAB button background
-        fab_button_bg: 'rgba(255, 255, 255, 0.8)',
+        nav_shadow: 'rgba(0, 0, 0, 0.15)',
 
         // Project box background
-        project_box_bg: 'rgba(255, 255, 255, 0.7)',
+        project_box: 'rgba(255, 255, 255, 1)',
 
-        // Project box box shadow
-        project_box_shadow: 'rgba(200, 200, 200, 1)',
+        scrollbar: 'rgb(160, 160, 160)',
     },
 };
 

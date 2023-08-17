@@ -28,8 +28,8 @@
 
     .intro-container #logo {
         fill: none;
-        stroke: var(--theme-text_color);
-        stroke-width: 3px;
+        stroke: var(--theme-text);
+        stroke-width: 4px;
     }
 
     @media screen and (max-width: 800px) {

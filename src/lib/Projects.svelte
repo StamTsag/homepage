@@ -137,18 +137,6 @@
                     on:click={() =>
                         (location.href = `https://github.com/${github}`)}
                     class="project-box"
-                    style={customGradient
-                        ? `
-                        background-size: 150% auto;
-                        background-image: linear-gradient(
-                            to right,
-                            rgba(${customGradient}, 5%) 0%,
-                            rgba(${customGradient}, 30%) 51%,
-                            rgba(${customGradient}, 5%) 100%
-                        );
-                        box-shadow: -10px 0px 0px rgb(${customGradient});
-                `
-                        : ''}
                 >
                     <div id="project-top">
                         <h1 id="title">
@@ -198,8 +186,8 @@
     .project-box {
         display: flex;
         flex-direction: column;
-        transition: 250ms all;
-        background: var(--theme-project_box_bg);
+        transition: transform 250ms;
+        background: var(--theme-project_box);
         border-radius: 15px;
         padding: 30px;
         margin: 30px;
@@ -246,7 +234,7 @@
     }
 
     .project-box #project-bottom #stars {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
         margin-right: 10px;
         margin-bottom: 7px;
         -webkit-touch-callout: none;
@@ -258,8 +246,9 @@
     }
 
     .project-box #project-bottom svg {
-        width: 36px;
-        height: 36px;
+        width: 26px;
+        height: 26px;
+        margin-top: 3px;
     }
 
     @media screen and (max-width: 800px) {

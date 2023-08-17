@@ -7,16 +7,15 @@ html {
 body {
     padding: 0;
     margin: 0;
-    transition: 350ms background;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Manrope, sans-serif;
     font-weight: 300;
 }
 
@@ -39,7 +38,7 @@ a::after {
     display: block;
     height: 2px;
     width: 0px;
-    transition: width 0.7s ease, background-color 0.7s ease;
+    transition: width 0.25s ease, background-color 0.25s ease;
 }
 
 a:hover::after {
@@ -53,21 +52,16 @@ button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 45px;
-    transition: 0.4s all;
     margin-left: 10px;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(179, 179, 179);
+    background: var(--theme-scrollbar);
     border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(158, 158, 158);
 }
 
 @media screen and (max-width: 800px) {

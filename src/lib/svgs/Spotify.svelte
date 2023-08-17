@@ -4,8 +4,8 @@
 
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="42"
-    height="42"
+    width="38"
+    height="38"
     viewBox="0 0 256 256"
     on:click={() => (location.href = link)}
     ><rect

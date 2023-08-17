@@ -11,24 +11,24 @@
 
 <style>
     :global(body) {
-        background-color: var(--theme-bg_color);
+        background-color: var(--theme-bg);
     }
 
     :global(p) {
-        color: var(--theme-text_color);
+        color: var(--theme-text);
     }
 
     :global(h1) {
-        color: var(--theme-text_color);
+        color: var(--theme-text);
     }
 
     :global(button) {
-        background: var(--theme-button_bg_color);
-        border: 7px solid var(--theme-button_bg_color);
-        box-shadow: 0 0 5px var(--theme-button_bg_color);
+        background: var(--theme-button_bg);
+        border: 7px solid var(--theme-button_bg);
+        box-shadow: 0 0 5px var(--theme-button_bg);
     }
 
     :global(button):hover {
-        box-shadow: 0 0 15px var(--theme-button_bg_color);
+        box-shadow: 0 0 15px var(--theme-button);
     }
 </style>

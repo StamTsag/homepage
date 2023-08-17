@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-    <title>Shadofer Homepage</title>
+    <title>Shadofer</title>
 </svelte:head>
 
 {#if mountReady}

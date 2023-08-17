@@ -1,7 +1,7 @@
 {
-  "name": "shadofer-homepage",
+  "name": "shadofer",
   "version": "1.0.0",
-  "description": "Shadofer's homepage made with the power of SvelteKit.",
+  "description": "Shadofer's homepage.",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -29,7 +29,6 @@
     "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.49.0",
     "svelte-check": "^2.7.0",
-    "svelte-themer": "^0.5.5",
     "svelte-toggle": "^3.1.0",
     "typescript": "^4.6.4"
   },

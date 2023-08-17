@@ -1,4 +1,3 @@
-/* General */
 html {
     padding: 0;
     margin: 0;
@@ -9,64 +8,12 @@ body {
     margin: 0;
 }
 
-p {
-    font-family: Manrope, sans-serif;
-    font-weight: 400;
-}
-
 h1 {
-    font-family: Manrope, sans-serif;
-    font-weight: 300;
+    font-family: Inter, sans-serif;
 }
 
 hr {
     width: 40%;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-a {
-    cursor: pointer;
-    color: rgb(255, 116, 116);
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-a::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0px;
-    transition: width 0.25s ease, background-color 0.25s ease;
-}
-
-a:hover::after {
-    width: 100%;
-    background: rgb(255, 86, 86);
-}
-
-button {
-    cursor: pointer;
-    color: #ff1d4e;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 45px;
-    margin-left: 10px;
-}
-
-::-webkit-scrollbar {
-    width: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--theme-scrollbar);
-    border-radius: 20px;
-}
-
-@media screen and (max-width: 800px) {
-    hr {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
 }

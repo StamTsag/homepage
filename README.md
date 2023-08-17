@@ -7,9 +7,6 @@
 
 <h2 align='center'>
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
-
 <img src='https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/demo-build.svg' alt='Homepage demo build'>
   
 </h2>

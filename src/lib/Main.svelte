@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+    import { onMount } from 'svelte';
     import Brave from './apps/Brave.svelte';
     import Discord from './apps/Discord.svelte';
     import Fronvo from './apps/Fronvo.svelte';
@@ -7,6 +8,18 @@
     import Welcomer from './startup/Welcomer.svelte';
     import { showGrub, showZorin } from './stores';
     import Zorin from './zorin/Zorin.svelte';
+
+    function preloadImages(): void {
+        setTimeout(() => {
+            const img = new Image();
+            img.src = '/images/grub/background.png';
+
+            const img2 = new Image();
+            img2.src = '/images/zorin/wallpaper.jpg';
+        }, 500);
+    }
+
+    onMount(preloadImages);
 </script>
 
 <svelte:head>

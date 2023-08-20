@@ -164,4 +164,10 @@
         background: rgb(190, 229, 255);
         transform: translateY(30px);
     }
+
+    @media screen and (max-width: 1200px) {
+        .taskbar {
+            padding-left: 20vw;
+        }
+    }
 </style>

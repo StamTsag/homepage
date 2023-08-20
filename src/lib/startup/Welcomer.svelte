@@ -1,6 +1,6 @@
 <script>
     import { fade } from 'svelte/transition';
-    import { showGrub, showWelcomer } from '../stores';
+    import { showGrub, showWelcomer, showZorin } from '../stores';
 
     $showWelcomer = true;
 
@@ -8,7 +8,12 @@
         $showWelcomer = false;
 
         setTimeout(() => {
-            $showGrub = true;
+            // Skip grub on mobile
+            if (document.body.clientWidth <= 1200) {
+                $showZorin = true;
+            } else {
+                $showGrub = true;
+            }
         }, 1500);
     }, 2000);
 </script>

@@ -213,4 +213,16 @@
         text-align: center;
         text-shadow: 0 0 10px black;
     }
+
+    @media screen and (max-width: 1200px) {
+        #time {
+            top: 0;
+            height: 100%;
+        }
+
+        #time-2 {
+            top: 175px;
+            height: 100%;
+        }
+    }
 </style>

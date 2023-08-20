@@ -170,4 +170,30 @@
             padding-left: 20vw;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        .taskbar {
+            height: 48px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        #indicator {
+            width: 50px;
+            transform: translateY(22px);
+        }
+
+        h1 {
+            display: none;
+        }
+
+        #placeholder {
+            display: none;
+        }
+    }
 </style>

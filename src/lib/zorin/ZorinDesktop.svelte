@@ -204,6 +204,7 @@
     .shortcuts div svg {
         width: 48px;
         height: 48px;
+        border-radius: 10px;
     }
 
     .shortcuts div h1 {
@@ -223,6 +224,37 @@
         #time-2 {
             top: 175px;
             height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        #time {
+            font-size: 3rem;
+            left: 25px;
+            text-shadow: 0 0 3px black;
+        }
+
+        #time-2 {
+            font-size: 2rem;
+            left: 25px;
+            top: 100px;
+            text-shadow: 0 0 3px black;
+        }
+
+        .shortcuts {
+            right: 0;
+            max-width: 350px;
+            justify-content: center;
+        }
+
+        .shortcuts div img,
+        .shortcuts div svg {
+            width: 36px;
+            height: 36px;
+        }
+
+        .shortcuts div h1 {
+            font-size: 0.7rem;
         }
     }
 </style>

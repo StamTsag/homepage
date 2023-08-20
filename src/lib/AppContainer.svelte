@@ -6,9 +6,6 @@
     export let appName: Apps;
     export let fullscreen = false;
 
-    let windowContainer: HTMLDivElement;
-    let topContainer: HTMLDivElement;
-
     function closeApp(): void {
         if (!$openedApps.includes(appName)) return;
 
@@ -18,11 +15,10 @@
 </script>
 
 <div
-    bind:this={windowContainer}
     class={`container ${fullscreen ? 'fullscreen' : ''}`}
     transition:scale={{ start: 0.85, duration: 450, opacity: 0 }}
 >
-    <div class={`top`} bind:this={topContainer}>
+    <div class={`top`}>
         <h1>{title}</h1>
 
         <svg
@@ -117,5 +113,15 @@
 
     #close:active {
         background: rgba(233, 107, 107, 0.2);
+    }
+
+    @media screen and (max-width: 800px) {
+        .container {
+            min-width: none;
+            min-height: none;
+            height: 100vh;
+            bottom: 0;
+            width: 100vw;
+        }
     }
 </style>

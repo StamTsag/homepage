@@ -1,11 +1,10 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { fly } from 'svelte/transition';
+    import { fly, scale, slide } from 'svelte/transition';
     import { openedApps, showTaskbar, type Apps } from '../stores';
 
     let hours: number;
     let minutes: number;
-    let monitorMouse = false;
 
     interface AppEntry {
         appName: Apps;
@@ -48,38 +47,6 @@
         updateHours();
         updateMinutes();
 
-        openedApps.subscribe((state) => {
-            if (!state) return;
-
-            if (state.length > 0) {
-                $showTaskbar = true;
-            }
-        });
-
-        document.onmousemove = (ev) => {
-            if (!monitorMouse) return;
-
-            if (!$showTaskbar) {
-                if (document.body.clientHeight - ev.clientY < 10) {
-                    $showTaskbar = true;
-                } else {
-                    $showTaskbar = false;
-                }
-            } else {
-                if (document.body.clientHeight - ev.clientY < 90) {
-                    $showTaskbar = true;
-                } else {
-                    setTimeout(() => {
-                        $showTaskbar = false;
-                    }, 500);
-                }
-            }
-        };
-
-        setTimeout(() => {
-            monitorMouse = true;
-        }, 2000);
-
         setInterval(() => {
             updateHours();
             updateMinutes();
@@ -101,7 +68,7 @@
                 />
 
                 {#if $openedApps.includes(appName)}
-                    <span id="indicator" />
+                    <span transition:scale={{ duration: 250 }} id="indicator" />
                 {/if}
             </div>
         {/each}
@@ -191,9 +158,10 @@
     }
 
     #indicator {
-        width: 100%;
+        position: fixed;
+        width: 60px;
         height: 3px;
         background: rgb(190, 229, 255);
-        transform: translateY(5px);
+        transform: translateY(30px);
     }
 </style>

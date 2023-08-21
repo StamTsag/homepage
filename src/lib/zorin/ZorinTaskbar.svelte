@@ -8,6 +8,8 @@
 
     interface AppEntry {
         appName: Apps;
+        isUrl?: boolean;
+        url?: string;
     }
 
     let taskbarApps: AppEntry[] = [
@@ -26,6 +28,11 @@
         {
             appName: 'Spotify',
         },
+        {
+            appName: 'Shadofer',
+            isUrl: true,
+            url: 'https://github.com/Shadofer',
+        },
     ];
 
     function updateHours(): void {
@@ -36,7 +43,13 @@
         minutes = new Date().getMinutes();
     }
 
-    function openApp(appName: Apps): void {
+    function openApp(appName: Apps, isUrl?: boolean, url?: string): void {
+        if (isUrl) {
+            window.open(url, '_blank');
+
+            return;
+        }
+
         if ($openedApps.includes(appName)) return;
 
         $openedApps.push(appName);
@@ -56,10 +69,10 @@
 
 {#if $showTaskbar}
     <div class="taskbar" transition:fly={{ y: 64, duration: 200, opacity: 1 }}>
-        {#each taskbarApps as { appName }}
+        {#each taskbarApps as { appName, isUrl, url }}
             <div
-                on:click={() => openApp(appName)}
-                on:keydown={() => openApp(appName)}
+                on:click={() => openApp(appName, isUrl, url)}
+                on:keydown={() => openApp(appName, isUrl, url)}
             >
                 <img
                     src="/images/zorin/apps/{appName.toLowerCase()}.png"
@@ -101,7 +114,7 @@
         border-radius: 10px;
         background: rgba(10, 10, 10, 0.4);
         height: 64px;
-        padding-left: 38%;
+        padding-left: 36%;
         padding-right: 20px;
         user-select: none;
         z-index: 1;

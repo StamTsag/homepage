@@ -90,7 +90,7 @@
 
         <h1>en</h1>
 
-        <h1>
+        <h1 id="time">
             {new Date().toLocaleDateString('en-us', {
                 day: '2-digit',
             })}
@@ -148,6 +148,8 @@
     h1 {
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         margin: 0;
         font-size: 0.85rem;
         font-weight: 700;
@@ -176,6 +178,10 @@
         height: 3px;
         background: rgb(190, 229, 255);
         transform: translateY(30px);
+    }
+
+    #time {
+        min-width: 100px;
     }
 
     @media screen and (max-width: 1200px) {

@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { fly, scale } from 'svelte/transition';
+    import { fade } from 'svelte/transition';
     import { openedApps, showTaskbar, type Apps } from '../stores';
 
     let hours: number;
@@ -68,7 +68,7 @@
 </script>
 
 {#if $showTaskbar}
-    <div class="taskbar" transition:fly={{ y: 64, duration: 200, opacity: 1 }}>
+    <div class="taskbar" transition:fade={{ duration: 300 }}>
         {#each taskbarApps as { appName, isUrl, url }}
             <div
                 on:click={() => openApp(appName, isUrl, url)}
@@ -81,21 +81,18 @@
                 />
 
                 {#if $openedApps.includes(appName)}
-                    <span transition:scale={{ duration: 250 }} id="indicator" />
+                    <span id="indicator" />
                 {/if}
             </div>
         {/each}
 
         <h1 id="placeholder">placeholder</h1>
 
-        <h1>en</h1>
+        <h1>ENG</h1>
 
         <h1 id="time">
             {new Date().toLocaleDateString('en-us', {
-                day: '2-digit',
-            })}
-            {new Date().toLocaleDateString('en-us', {
-                month: 'short',
+                weekday: 'short',
             })}
             {hours}:{minutes < 10 ? '0' : ''}{minutes}
         </h1>
@@ -105,17 +102,13 @@
 <style>
     .taskbar {
         display: flex;
-        align-items: center;
-        justify-content: center;
         position: fixed;
-        bottom: 10px;
-        right: 10px;
-        left: 10px;
-        border-radius: 10px;
-        background: rgba(10, 10, 10, 0.4);
-        height: 64px;
-        padding-left: 36%;
-        padding-right: 20px;
+        bottom: 0;
+        left: 0;
+        background: rgb(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 48px;
         user-select: none;
         z-index: 1;
     }
@@ -128,8 +121,7 @@
         height: 100%;
         padding-left: 10px;
         padding-right: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        transition: 75ms;
     }
 
     .taskbar div:hover {
@@ -141,8 +133,8 @@
     }
 
     img {
-        width: 48px;
-        height: 48px;
+        width: 28px;
+        height: 28px;
     }
 
     h1 {
@@ -151,16 +143,14 @@
         justify-content: center;
         text-align: center;
         margin: 0;
-        font-size: 0.85rem;
-        font-weight: 700;
+        font-size: 0.8rem;
+        font-family: sans-serif;
+        font-weight: 400;
         color: rgb(182, 233, 233);
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 56px;
-        transition: 150ms;
-        border-radius: 10px;
+        padding-left: 7px;
+        padding-right: 7px;
+        height: 100%;
+        transition: 75ms;
     }
 
     h1:hover {
@@ -174,14 +164,15 @@
 
     #indicator {
         position: fixed;
-        width: 60px;
-        height: 3px;
-        background: rgb(190, 229, 255);
-        transform: translateY(30px);
+        width: 45px;
+        height: 2px;
+        background: rgb(135, 207, 255);
+        transform: translateY(23px);
     }
 
     #time {
-        min-width: 100px;
+        min-width: 75px;
+        margin-right: 20px;
     }
 
     @media screen and (max-width: 1200px) {
@@ -198,8 +189,8 @@
         }
 
         img {
-            width: 32px;
-            height: 32px;
+            width: 26px;
+            height: 26px;
         }
 
         #indicator {

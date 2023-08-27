@@ -6,8 +6,9 @@
     import VsCode from './apps/VSCode.svelte';
     import Grub from './grub/Grub.svelte';
     import Welcomer from './startup/Welcomer.svelte';
-    import { showGrub, showZorin } from './stores';
+    import { showGrub, showWindows, showZorin } from './stores';
     import Zorin from './zorin/Zorin.svelte';
+    import Windows from './windows/Windows.svelte';
 
     function preloadImages(): void {
         setTimeout(() => {
@@ -16,6 +17,9 @@
 
             const img2 = new Image();
             img2.src = '/images/zorin/wallpaper.jpg';
+
+            const img3 = new Image();
+            img3.src = '/images/windows/wallpaper.jpg';
         }, 500);
     }
 
@@ -26,10 +30,15 @@
     <title>Shadofer</title>
 </svelte:head>
 
-<div class={`main ${!$showZorin && !$showGrub ? 'loading' : ''}`}>
+<div
+    class={`main ${
+        !$showZorin && !$showWindows && !$showGrub ? 'loading' : ''
+    }`}
+>
     <Welcomer />
     <Grub />
     <Zorin />
+    <Windows />
 
     <!-- Apps -->
     <Brave />

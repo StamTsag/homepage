@@ -88,18 +88,6 @@
 </script>
 
 <div class="desktop">
-    <h1 id="time">{hours}:{minutes < 10 ? '0' : ''}{minutes}</h1>
-    <h1 id="time-2">
-        {new Date().toLocaleDateString('en-us', {
-            weekday: 'long',
-        })}, {new Date().toLocaleDateString('en-us', {
-            month: 'long',
-        })}
-        {new Date().toLocaleDateString('en-us', {
-            day: '2-digit',
-        })}
-    </h1>
-
     <div class="shortcuts">
         {#each shortcuts as { title, url, noImage }}
             <div on:click={() => openUrl(url)} on:keydown={() => openUrl(url)}>
@@ -133,7 +121,7 @@
 
 <style>
     .desktop {
-        background-image: url('/images/zorin/wallpaper.jpg');
+        background-image: url('/images/windows/wallpaper.jpg');
         width: 100vw;
         height: 100vh;
         background-position: center;
@@ -144,42 +132,17 @@
         user-select: none;
     }
 
-    #time {
-        position: fixed;
-        top: -140px;
-        left: 60px;
-        bottom: 0;
-        height: fit-content;
-        margin: auto;
-        font-size: 5rem;
-        font-family: Manrope;
-        font-weight: 200;
-    }
-
-    #time-2 {
-        position: fixed;
-        top: 10px;
-        left: 60px;
-        bottom: 0;
-        height: fit-content;
-        margin: auto;
-        font-size: 3rem;
-        font-family: Manrope;
-        font-weight: 200;
-    }
-
     .shortcuts {
         position: fixed;
         display: flex;
         flex-wrap: wrap;
-        top: 0;
+        top: 20px;
         left: 0;
-        right: 200px;
+        right: 0;
         bottom: 0;
         width: max-content;
-        max-width: 600px;
         height: fit-content;
-        margin: auto;
+        max-width: 250px;
     }
 
     .shortcuts div {
@@ -187,30 +150,32 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
-        padding: 10px;
+        padding: 7px;
         cursor: pointer;
         margin-left: 10px;
         margin-right: 10px;
         width: 64px;
         height: min-content;
+        border: 1px solid transparent;
     }
 
     .shortcuts div:hover {
         background: rgb(184, 218, 248, 0.3);
+        border: 1px solid rgb(216, 234, 255);
     }
 
     .shortcuts div img,
     .shortcuts div svg {
-        width: 48px;
-        height: 48px;
+        width: 46px;
+        height: 46px;
         border-radius: 10px;
     }
 
     .shortcuts div h1 {
         margin: 0;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 200;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         text-shadow: 0 0 10px black;
     }

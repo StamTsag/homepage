@@ -1,11 +1,16 @@
 <script lang="ts">
-    // Selected boot option if more added
+    import { selectedGrub } from '../stores';
 </script>
 
 <div class="options">
-    <div class="selected">
+    <div class={`${$selectedGrub == 0 ? 'selected' : ''}`}>
         <img src="/images/grub/zorin.png" draggable={false} alt="Zorin" />
         <h1>Zorin</h1>
+    </div>
+
+    <div class={`${$selectedGrub == 1 ? 'selected' : ''}`}>
+        <img src="/images/grub/windows.png" draggable={false} alt="Windows" />
+        <h1>Windows</h1>
     </div>
 </div>
 
@@ -27,6 +32,7 @@
         padding: 5px;
         cursor: default;
         user-select: none;
+        margin-bottom: 10px;
     }
 
     img {

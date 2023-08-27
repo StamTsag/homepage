@@ -1,13 +1,17 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { showGrub, showZorin } from '../stores';
+    import { selectedGrub, showGrub, showWindows, showZorin } from '../stores';
 
     let showTimer = true;
     let targetSeconds = 10;
 
     function showNext(): void {
         setTimeout(() => {
-            $showZorin = true;
+            if ($selectedGrub == 0) {
+                $showZorin = true;
+            } else {
+                $showWindows = true;
+            }
         }, 3000);
     }
 
@@ -33,6 +37,16 @@
         document.onkeydown = (ev) => {
             if (ev.key == 'ArrowDown' || ev.key == 'ArrowUp') {
                 showTimer = false;
+
+                if (ev.key == 'ArrowDown') {
+                    if ($selectedGrub == 1) return;
+
+                    $selectedGrub += 1;
+                } else {
+                    if ($selectedGrub == 0) return;
+
+                    $selectedGrub -= 1;
+                }
             } else if (ev.key == 'ArrowRight' || ev.key == 'Enter') {
                 showTimer = false;
                 $showGrub = false;

@@ -1,10 +1,11 @@
 <script lang="ts">
     import { scale } from 'svelte/transition';
-    import { openedApps, type Apps } from './stores';
+    import { openedApps, type Apps, showWindows } from './stores';
 
     export let title: string;
     export let appName: Apps;
     export let fullscreen = false;
+    export let windows = $showWindows;
 
     function closeApp(): void {
         if (!$openedApps.includes(appName)) return;
@@ -15,26 +16,49 @@
 </script>
 
 <div
-    class={`container ${fullscreen ? 'fullscreen' : ''}`}
-    transition:scale={{ start: 0.85, duration: 450, opacity: 0 }}
+    class={`container ${fullscreen ? 'fullscreen' : ''} ${
+        $showWindows ? 'windows-app' : ''
+    }`}
+    in:scale={{
+        start: 0.85,
+        duration: !windows ? 450 : 0,
+        delay: windows ? 150 : 0,
+        opacity: 0,
+    }}
+    out:scale={{ start: 0.85, duration: 450, opacity: 0 }}
 >
-    <div class={`top`}>
+    <div class={`top ${showWindows ? 'windows' : ''}`}>
         <h1>{title}</h1>
 
-        <svg
-            on:click={closeApp}
-            on:keydown={closeApp}
-            id="close"
-            version="1.2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 16"
-            width="16"
-            height="16"
-            fill="currentColor"
-            ><path
-                d="m5 4q-0.2 0-0.4 0.1-0.2 0.1-0.3 0.2-0.1 0.1-0.2 0.3-0.1 0.2-0.1 0.4 0 0.1 0 0.2 0 0.1 0.1 0.2 0 0.1 0.1 0.2 0 0 0.1 0.1l2.3 2.3-2.3 2.3q-0.1 0.1-0.1 0.1-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.2 0 0.1 0 0.2 0 0.2 0.1 0.4 0.1 0.2 0.2 0.3 0.1 0.2 0.3 0.2 0.2 0.1 0.4 0.1 0.1 0 0.2 0 0.1 0 0.2-0.1 0.1 0 0.2-0.1 0 0 0.1-0.1l2.3-2.3 2.3 2.3q0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0.1 0.1 0 0.2 0 0.2 0 0.4-0.1 0.2 0 0.3-0.2 0.1-0.1 0.2-0.3 0.1-0.2 0.1-0.4 0-0.1 0-0.2 0-0.1-0.1-0.2 0-0.1-0.1-0.2 0 0-0.1-0.1l-2.3-2.3 2.3-2.3q0.1-0.1 0.1-0.1 0.1-0.1 0.1-0.2 0.1-0.1 0.1-0.2 0-0.1 0-0.2 0-0.2-0.1-0.4-0.1-0.2-0.2-0.3-0.1-0.1-0.3-0.2-0.2-0.1-0.4-0.1-0.1 0-0.2 0-0.1 0-0.2 0.1-0.1 0-0.2 0.1 0 0-0.1 0.1l-2.3 2.3-2.3-2.3q0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0-0.1-0.1-0.1-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.1 0-0.2 0z"
-            /></svg
-        >
+        {#if !$showWindows}
+            <svg
+                on:click={closeApp}
+                on:keydown={closeApp}
+                id="close"
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                ><path
+                    d="m5 4q-0.2 0-0.4 0.1-0.2 0.1-0.3 0.2-0.1 0.1-0.2 0.3-0.1 0.2-0.1 0.4 0 0.1 0 0.2 0 0.1 0.1 0.2 0 0.1 0.1 0.2 0 0 0.1 0.1l2.3 2.3-2.3 2.3q-0.1 0.1-0.1 0.1-0.1 0.1-0.1 0.2-0.1 0.1-0.1 0.2 0 0.1 0 0.2 0 0.2 0.1 0.4 0.1 0.2 0.2 0.3 0.1 0.2 0.3 0.2 0.2 0.1 0.4 0.1 0.1 0 0.2 0 0.1 0 0.2-0.1 0.1 0 0.2-0.1 0 0 0.1-0.1l2.3-2.3 2.3 2.3q0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.2 0.1 0.1 0 0.2 0 0.2 0 0.4-0.1 0.2 0 0.3-0.2 0.1-0.1 0.2-0.3 0.1-0.2 0.1-0.4 0-0.1 0-0.2 0-0.1-0.1-0.2 0-0.1-0.1-0.2 0 0-0.1-0.1l-2.3-2.3 2.3-2.3q0.1-0.1 0.1-0.1 0.1-0.1 0.1-0.2 0.1-0.1 0.1-0.2 0-0.1 0-0.2 0-0.2-0.1-0.4-0.1-0.2-0.2-0.3-0.1-0.1-0.3-0.2-0.2-0.1-0.4-0.1-0.1 0-0.2 0-0.1 0-0.2 0.1-0.1 0-0.2 0.1 0 0-0.1 0.1l-2.3 2.3-2.3-2.3q0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0-0.1-0.1-0.1-0.1-0.1-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.1 0-0.2 0z"
+                /></svg
+            >{:else}
+            <svg
+                on:click={closeApp}
+                on:keydown={closeApp}
+                id="close"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                ><path
+                    d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z"
+                /></svg
+            >
+        {/if}
     </div>
 
     <slot />
@@ -85,7 +109,8 @@
         flex: 1;
     }
 
-    .fullscreen h1 {
+    .fullscreen h1,
+    .windows-app h1 {
         visibility: hidden;
     }
 
@@ -96,6 +121,15 @@
         fill: rgb(184, 218, 248);
         border-radius: 20px;
         margin-left: 3px;
+    }
+
+    .windows svg {
+        padding: 0;
+        border-radius: 0;
+        padding: 5px;
+        margin-left: 0;
+        height: 20px;
+        width: 20px;
     }
 
     svg:hover {
@@ -113,6 +147,11 @@
 
     #close:active {
         background: rgba(233, 107, 107, 0.2);
+    }
+
+    .windows #close:hover {
+        background: rgb(255, 55, 55);
+        fill: white;
     }
 
     @media screen and (max-width: 800px) {

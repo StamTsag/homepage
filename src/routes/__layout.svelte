@@ -1,7 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import '../app.css';
-    import Main from 'src/lib/Main.svelte';
 
     let mountReady = false;
 
@@ -11,15 +10,15 @@
 </script>
 
 {#if mountReady}
-    <Main />
+    <slot />
 {/if}
 
 <style>
     :global(body) {
-        background-color: rgb(10, 10, 10);
+        background-color: #f5f7fa;
     }
 
     :global(h1) {
-        color: #ffffff;
+        color: #000000;
     }
 </style>

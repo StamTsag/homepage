@@ -1,7 +1,7 @@
 html {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,11 +10,51 @@ body {
 }
 
 h1 {
-    font-family: Inter, sans-serif;
+    font-family: Manrope, sans-serif;
+    font-weight: 300;
+    margin: 0;
 }
 
 hr {
     width: 40%;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+    font-family: Manrope, sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    background: red;
+    color: white;
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px red;
+    transition: 150ms;
+}
+
+button:hover {
+    background: rgb(194, 0, 0);
+}
+
+button:active {
+    background: rgb(150, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: rgb(255, 137, 137);
 }

@@ -5,14 +5,6 @@
     export let description: string;
     export let github: string;
     export let site = '';
-
-    function openGithub(): void {
-        window.open(github, '_blank');
-    }
-
-    function openSite(): void {
-        window.open(site, '_blank');
-    }
 </script>
 
 <span />
@@ -23,14 +15,16 @@
         <h1 id="description">{description}</h1>
 
         <div class="options">
-            <button
-                class={`${!site ? 'single' : ''}`}
-                on:click={openGithub}
-                id="github">View on Github</button
-            >
+            <a href={github} target="_blank">
+                <button class={`${!site ? 'single' : ''}`} id="github"
+                    >View on Github</button
+                >
+            </a>
 
             {#if site}
-                <button on:click={openSite} id="visit">Visit site</button>
+                <a href={site} target="_blank"
+                    ><button id="visit">Visit site</button></a
+                >
             {/if}
         </div>
     </div>

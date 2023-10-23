@@ -1,10 +1,6 @@
 <script lang="ts">
     import { scrollToId } from 'src/funcs';
     import { fly, scale } from 'svelte/transition';
-
-    function visitGithub(): void {
-        window.open('https://github.com/Shadofer', '_blank');
-    }
 </script>
 
 <div class="about">
@@ -48,11 +44,11 @@
         and cutting-edge tech stacks
     </h1>
 
-    <button
-        on:click={visitGithub}
-        in:scale={{ duration: 500, delay: 1500, start: 0.9 }}
-        >Visit Github</button
-    >
+    <a href="https://github.com/Shadofer" target="_blank">
+        <button in:scale={{ duration: 500, delay: 1500, start: 0.9 }}
+            >Visit Github</button
+        >
+    </a>
 
     <svg
         on:click={() => scrollToId('about')}

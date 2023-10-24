@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { scrollToId } from 'src/funcs';
+    import { scrollToId } from '../funcs';
     import { fly, scale } from 'svelte/transition';
 </script>
 

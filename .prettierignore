@@ -1,12 +1,15 @@
 # Node
 node_modules/
+.DS_Store
 package-lock.json
 package.json
-.DS_Store
 
-# Svelte-kit
-build/
+# Github
+.github/assets
+
+# SvelteKit
 .svelte-kit/
+.vercel/
 
-# Static assets
-static/
+# Lock file
+pnpm-lock.yaml

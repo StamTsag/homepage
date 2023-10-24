@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { scrollToId } from 'src/funcs';
+    import { scrollToId } from '../funcs';
     import { blur, fly } from 'svelte/transition';
 
     function scrollTop(): void {

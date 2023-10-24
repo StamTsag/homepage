@@ -1,45 +1,28 @@
 {
-  "name": "shadofer",
-  "version": "1.0.0",
-  "description": "Shadofer's homepage.",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "prepare": "husky install",
-    "preview": "svelte-kit preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "format": "prettier --plugin-search-dir=. --write .",
-    "format:check": "prettier --check ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Shadofer/shadofer.github.io.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Shadofer/shadofer.github.io/issues"
-  },
-  "homepage": "https://github.com/Shadofer/shadofer.github.io#readme",
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.29",
-    "@sveltejs/kit": "^1.0.0-next.347",
-    "autoprefixer": "^10.4.7",
-    "cssnano": "^5.1.7",
-    "husky": "^8.0.1",
-    "postcss": "^8.4.13",
-    "postcss-load-config": "^3.1.4",
-    "prettier": "^2.6.2",
-    "prettier-plugin-svelte": "^2.7.0",
-    "saos": "^1.3.1",
-    "svelte": "^3.49.0",
-    "svelte-check": "^2.7.0",
-    "svelte-preprocess": "^4.10.6",
-    "typescript": "^4.6.4"
-  },
-  "type": "module",
-  "engines": {
-    "node": "16.x",
-    "npm": "8.x"
-  }
+	"name": "shadofer",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json --compiler-warnings \"a11y-no-static-element-interactions:ignore,a11y-no-noninteractive-element-interactions:ignore\"",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --plugin-search-dir=. --write .",
+		"format:check": "prettier --check ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^3.0.3",
+		"@sveltejs/kit": "^1.20.4",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"saos": "^1.3.1",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
 }

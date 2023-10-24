@@ -1,0 +1,17 @@
+<script>
+    import About from '$lib/About.svelte';
+    import Contact from '$lib/Contact.svelte';
+    import Projects from '$lib/Projects.svelte';
+    import Top from '$lib/Top.svelte';
+    import TopAbout from '$lib/TopAbout.svelte';
+</script>
+
+<svelte:head>
+    <title>Shadofer</title>
+</svelte:head>
+
+<Top />
+<TopAbout />
+<About />
+<Projects />
+<Contact />

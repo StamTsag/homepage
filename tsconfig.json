@@ -1,15 +1,8 @@
 {
-    "extends": "./.svelte-kit/tsconfig.json",
-    "compilerOptions": {
-        "module": "ES2015",
-        "moduleResolution": "node",
-        "paths": {
-            "src/*": ["src/*"],
-            "interfaces/*": ["src/interfaces/*"],
-            "$lib": ["src/lib"],
-            "$lib/*": ["src/lib/*"]
-        },
-        "pretty": true,
-        "allowSyntheticDefaultImports": true
-    }
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"pretty": true,
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true
+	}
 }

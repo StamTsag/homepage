@@ -19,7 +19,7 @@
 
         <h1>
             I have been coding from the young age of 11, ranging from humble
-            begginings of discord bots to full-scale production servers
+            beginnings of discord bots to full-scale production servers
         </h1>
     </div>
 </Saos>

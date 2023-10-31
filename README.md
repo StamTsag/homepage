@@ -7,12 +7,10 @@
 
 <h2 align='center'>
 
-<img src='https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/demo-build.svg' alt='Homepage demo build'>
+<img src="https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/preview.svg" alt='Homepage preview'>
   
 </h2>
 
 ### Get started
 
 **[Running](https://github.com/Shadofer/shadofer.github.io/blob/master/.github/markdown/RUNNING.md)**
-
-**[Tools used](https://github.com/Shadofer/shadofer.github.io/blob/master/.github/markdown/TOOLS.md)**

@@ -1,9 +1,11 @@
-<p align='center'>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/logo.svg">
-  <img alt="Homepage logo" src="https://raw.githubusercontent.com/Shadofer/shadofer.github.io/master/.github/assets/logo-dark.svg">
-</picture>
-</p>
+<a href='https://shadofer.com'>
+    <p align='center'>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shadofer/Shadofer/main/.github/assets/shadofer-banner-white.svg">
+            <img alt="Shadofer logo" src="https://raw.githubusercontent.com/Shadofer/Shadofer/main/.github/assets/shadofer-banner-dark.svg">
+        </picture>
+    </p>
+</a>
 
 <h2 align='center'>
 

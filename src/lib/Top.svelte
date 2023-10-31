@@ -10,11 +10,7 @@
     }
 </script>
 
-<div
-    class="top"
-    in:blur={{ duration: 500, amount: 5 }}
-    out:fly={{ duration: 250, y: -50 }}
->
+<div class="top" in:blur={{ duration: 500, amount: 5 }}>
     <img on:click={scrollTop} src="favicon.png" alt="Pfp" draggable={false} />
 
     <span />

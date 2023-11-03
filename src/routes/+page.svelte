@@ -1,9 +1,9 @@
 <script>
-    import About from '$lib/About.svelte';
     import Contact from '$lib/Contact.svelte';
     import Projects from '$lib/Projects.svelte';
     import Top from '$lib/Top.svelte';
     import TopAbout from '$lib/TopAbout.svelte';
+    import Journey from '$lib/Journey.svelte';
 </script>
 
 <svelte:head>
@@ -12,6 +12,6 @@
 
 <Top />
 <TopAbout />
-<About />
+<Journey />
 <Projects />
 <Contact />

@@ -37,7 +37,7 @@
         in:fly={{
             duration: 1000,
             y: 50,
-            delay: 850,
+            delay: 800,
             opacity: 0,
         }}
     >
@@ -45,25 +45,27 @@
     </h1>
 
     <a href="https://github.com/Shadofer" target="_blank">
-        <button in:scale={{ duration: 500, delay: 1500, start: 0.9 }}
+        <button in:scale={{ duration: 500, delay: 1300, start: 0.9 }}
             >Visit Github</button
         >
     </a>
 
     <svg
-        on:click={() => scrollToId('about')}
-        in:scale={{ delay: 2000, duration: 500, start: 0.8 }}
+        on:click={() => scrollToId('journey')}
+        in:scale={{ delay: 1500, duration: 500, start: 0.8 }}
         xmlns="http://www.w3.org/2000/svg"
         width="32"
         height="32"
         viewBox="0 0 24 24"
-        fill="currentColor"
+        stroke="currentColor"
         ><g
-            ><path
-                d="m8.303 12.404l3.327 3.431c.213.22.527.22.74 0l6.43-6.63C19.201 8.79 18.958 8 18.43 8h-5.723l-4.404 4.404Z"
-            /><path
-                d="M11.293 8H5.57c-.528 0-.771.79-.37 1.205l2.406 2.481L11.293 8Z"
-                opacity="1"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            ><path d="m19 11l-7 6l-7-6" /><path
+                d="m19 7l-7 6l-7-6"
+                opacity=".7"
             /></g
         ></svg
     >
@@ -80,13 +82,20 @@
 
     #intro {
         font-size: 4.5rem;
-        color: #7794a8;
+        color: #2e2e2e;
         letter-spacing: 1px;
         font-weight: 800;
     }
 
     span {
-        background: -webkit-linear-gradient(45deg, #ff0000, #f09a9a);
+        background: -webkit-linear-gradient(
+            50deg,
+            #000000,
+            #ff2600,
+            #000000,
+            #04ffab,
+            #000000
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -111,9 +120,9 @@
     }
 
     svg {
-        fill: red;
+        stroke: rgb(255, 0, 0);
         animation-name: up-n-down;
-        animation-duration: 2500ms;
+        animation-duration: 2000ms;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
         cursor: pointer;

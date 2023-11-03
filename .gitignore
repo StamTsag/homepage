@@ -5,3 +5,4 @@ node_modules/
 # Svelte-kit
 build/
 .svelte-kit/
+.vercel/

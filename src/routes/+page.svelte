@@ -4,6 +4,7 @@
     import Top from '$lib/Top.svelte';
     import TopAbout from '$lib/TopAbout.svelte';
     import Journey from '$lib/Journey.svelte';
+    import BlurredBackground from '$lib/BlurredBackground.svelte';
 </script>
 
 <svelte:head>
@@ -15,3 +16,4 @@
 <Journey />
 <Projects />
 <Contact />
+<BlurredBackground />

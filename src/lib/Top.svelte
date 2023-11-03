@@ -28,7 +28,7 @@
         left: 0;
         width: 1000px;
         padding: 10px;
-        background: rgb(255, 255, 255, 0.7);
+        background: rgb(255, 255, 255, 0.5);
         backdrop-filter: blur(15px);
         box-shadow: 0 0 5px rgba(65, 65, 65, 0.05);
         z-index: 1;

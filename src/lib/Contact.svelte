@@ -66,7 +66,7 @@
 
 <style>
     .contact {
-        background: red;
+        background: rgb(255, 0, 0, 0.75);
         box-shadow: 0 0 15px red;
         color: white;
         display: flex;

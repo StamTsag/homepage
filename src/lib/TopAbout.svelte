@@ -141,8 +141,8 @@
         }
 
         button {
-            font-size: 1.2rem;
-            width: 150px;
+            font-size: 1.1rem;
+            width: 140px;
             cursor: default;
         }
 

@@ -121,9 +121,10 @@
 
     <JourneyPoint text="2023 -- Finalisation" lineHeight={250} />
     <JourneyPoint
-        creationText={'Finished'}
+        creationText={'Finished the'}
         creation={'Fronvo'}
-        creationUrl={'https://github.com/Fronvo'}
+        creationSuffix={'social media'}
+        creationUrl={'https://fronvo.com/app'}
         lineHeight={150}
         skipPoint
     />

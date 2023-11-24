@@ -1,6 +1,7 @@
 html {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -38,16 +39,18 @@ button {
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 10px red;
     transition: 150ms;
 }
 
 button:hover {
     background: rgb(194, 0, 0);
+    box-shadow: 0 0 10px rgb(194, 0, 0);
 }
 
 button:active {
     background: rgb(150, 0, 0);
+    box-shadow: 0 0 10px rgb(150, 0, 0);
 }
 
 ::-webkit-scrollbar {

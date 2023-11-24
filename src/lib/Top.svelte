@@ -1,6 +1,6 @@
 <script lang="ts">
+    import { fly } from 'svelte/transition';
     import { scrollToId } from '../funcs';
-    import { blur, fly } from 'svelte/transition';
 
     function scrollTop(): void {
         scrollTo({
@@ -10,7 +10,7 @@
     }
 </script>
 
-<div class="top" in:blur={{ duration: 500, amount: 5 }}>
+<div class="top" in:fly={{ y: -50, duration: 500, opacity: 1 }}>
     <img on:click={scrollTop} src="favicon.png" alt="Pfp" draggable={false} />
 
     <span />
@@ -27,8 +27,8 @@
         right: 0;
         left: 0;
         width: 1000px;
-        padding: 10px;
-        background: rgb(255, 255, 255, 0.5);
+        padding: 6px;
+        background: rgb(255, 255, 255, 0.75);
         backdrop-filter: blur(15px);
         box-shadow: 0 0 5px rgba(65, 65, 65, 0.05);
         z-index: 1;
@@ -63,16 +63,21 @@
     }
 
     h1 {
+        padding: 10px;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        border-radius: 10px;
         font-size: 1.3rem;
         margin-right: 20px;
         cursor: pointer;
         color: rgb(80, 80, 80);
-        transition: 150ms;
+        transition: 175ms;
         font-weight: 500;
     }
 
     h1:hover {
         color: rgb(255, 91, 91);
+        background: rgb(255, 91, 91, 0.05);
     }
 
     h1:active {

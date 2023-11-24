@@ -29,6 +29,12 @@
             github: 'https://github.com/Ezier-Project',
         },
         {
+            title: 'Homepage',
+            description: 'This homepage, showcasing my work.',
+            github: 'https://github.com/Shadofer/homepage',
+            site: 'https://shadofer.com',
+        },
+        {
             title: 'Dogey',
             description:
                 'A pythonic wrapper of the deprecated stage platform, DogeHouse',

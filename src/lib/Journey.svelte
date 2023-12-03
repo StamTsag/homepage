@@ -132,7 +132,14 @@
         creationText={'Created this'}
         creation={'homepage'}
         creationUrl={'https://github.com/Shadofer/homepage'}
-        lineHeight={100}
+        lineHeight={50}
+        skipPoint
+    />
+    <JourneyPoint
+        creationText={'Started development of'}
+        creation={'Fronvo V2'}
+        creationUrl={'https://github.com/Fronvo/site-discord'}
+        lineHeight={50}
         skipPoint
     />
 

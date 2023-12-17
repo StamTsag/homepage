@@ -58,7 +58,7 @@
         skipPoint
     />
 
-    <JourneyPoint text="2021 -- Open source begginings" lineHeight={50} />
+    <JourneyPoint text="2021 -- Open source beginnings" lineHeight={50} />
     <JourneyPoint text="Joined Github" lineHeight={75} skipPoint />
     <JourneyPoint
         creationText={'Created'}

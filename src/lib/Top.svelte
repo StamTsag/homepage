@@ -30,7 +30,6 @@
         padding: 6px;
         background: rgb(255, 255, 255, 0.75);
         backdrop-filter: blur(15px);
-        box-shadow: 0 0 5px rgba(65, 65, 65, 0.05);
         z-index: 1;
         margin: auto;
         display: flex;

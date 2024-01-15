@@ -7,6 +7,7 @@
     import BlurredBackground from '$lib/BlurredBackground.svelte';
     import { onMount } from 'svelte';
     import { blur } from 'svelte/transition';
+    import MusicPlayer from '$lib/MusicPlayer.svelte';
 
     let mountReady = false;
 
@@ -27,5 +28,6 @@
         <Projects />
         <Contact />
         <BlurredBackground />
+        <MusicPlayer />
     </div>
 {/if}

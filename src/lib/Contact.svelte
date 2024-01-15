@@ -76,6 +76,7 @@
         padding: 20px;
         margin: auto;
         border-radius: 0px;
+        padding-bottom: calc(20px + 120px);
     }
 
     .top {

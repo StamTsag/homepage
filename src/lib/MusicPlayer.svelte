@@ -20,7 +20,6 @@
 
     function togglePlay(): void {
         if (!playing) {
-            audioElement.src = `/tracks/${song.title.toLowerCase()}.mp3`;
             audioElement.play();
         } else {
             audioElement.pause();
@@ -30,7 +29,11 @@
     }
 </script>
 
-<audio loop bind:this={audioElement} />
+<audio
+    src={`/tracks/${song.title.toLowerCase()}.mp3`}
+    loop
+    bind:this={audioElement}
+/>
 
 <div
     class="player"

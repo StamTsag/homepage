@@ -13,7 +13,7 @@
             #04ffab,
             #000000
         );
-        opacity: 0.1;
+        opacity: 0.075;
         top: 0;
         z-index: -1;
     }

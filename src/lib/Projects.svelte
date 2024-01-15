@@ -6,6 +6,7 @@
         description: string;
         github: string;
         site?: string;
+        glow?: boolean;
     }
 
     const projects: Project[] = [
@@ -15,6 +16,7 @@
                 'A social media app promoting free speech and tracking-less usage',
             github: 'https://github.com/Fronvo',
             site: 'https://fronvo.com',
+            glow: true,
         },
         {
             title: 'TowerVerse',
@@ -50,8 +52,8 @@
 </script>
 
 <div class="projects" id="projects">
-    {#each projects as { title, description, github, site }}
-        <ProjectBox {title} {description} {github} {site} />
+    {#each projects as { title, description, github, site, glow }}
+        <ProjectBox {title} {description} {github} {site} {glow} />
     {/each}
 </div>
 

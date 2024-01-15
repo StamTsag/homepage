@@ -5,12 +5,13 @@
     export let description: string;
     export let github: string;
     export let site = '';
+    export let glow = false;
 </script>
 
 <span />
 
 <Saos once animation={'blur-in 0.35s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>
-    <div class="box">
+    <div class={`box`}>
         <h1 id="title">{title}</h1>
         <h1 id="description">{description}</h1>
 
@@ -23,7 +24,9 @@
 
             {#if site}
                 <a href={site} target="_blank"
-                    ><button id="visit">Visit site</button></a
+                    ><button id="visit" class={`${glow ? 'glow' : ''}`}
+                        >Visit site</button
+                    ></a
                 >
             {/if}
         </div>
@@ -73,6 +76,21 @@
         margin-right: 35px;
         margin-left: 10px;
         font-size: 1.4rem;
+    }
+
+    .glow {
+        background: rgb(0, 255, 157);
+        box-shadow: 0 0 10px rgb(0, 255, 157);
+    }
+
+    .glow:hover {
+        background: rgb(0, 226, 139);
+        box-shadow: 0 0 10px rgb(0, 226, 139);
+    }
+
+    .glow:active {
+        background: rgb(0, 199, 123);
+        box-shadow: 0 0 10px rgb(0, 199, 123);
     }
 
     #github {

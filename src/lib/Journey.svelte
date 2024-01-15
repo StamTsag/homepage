@@ -143,6 +143,9 @@
         skipPoint
     />
 
+    <JourneyPoint text="2024 -- Refined visions" lineHeight={25} />
+    <JourneyPoint text={'Started music production'} lineHeight={25} skipPoint />
+
     <JourneyDestination text="Now" />
 </div>
 

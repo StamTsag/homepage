@@ -1,8 +1,7 @@
 <script lang="ts">
     import { fly } from 'svelte/transition';
     import { quadInOut } from 'svelte/easing';
-
-    let audioElement: HTMLAudioElement;
+    import { onMount } from 'svelte';
 
     interface Song {
         title: string;
@@ -11,29 +10,72 @@
         artists: string[];
     }
 
-    let song: Song = {
-        title: 'Majestic',
-        artists: ['Shadofer'],
-    };
+    let audioElement: HTMLAudioElement;
+
+    let songs: Song[] = [
+        {
+            title: 'Resonance',
+            artists: ['Home'],
+        },
+        {
+            title: 'Wii Shop Channel',
+            artists: ['Toasty'],
+        },
+        {
+            title: 'Rest Area',
+            artists: ['Tsundere Twintails'],
+        },
+    ];
 
     let playing = false;
+    let currentSongIndex = 0;
+    let currentSong = songs[currentSongIndex];
 
     function togglePlay(): void {
-        if (!playing) {
-            audioElement.play();
-        } else {
-            audioElement.pause();
-        }
-
-        playing = !playing;
+        setTimeout(() => {
+            if (!playing) {
+                audioElement.play();
+            } else {
+                audioElement.pause();
+            }
+        }, 0);
     }
+
+    function goNext(): void {
+        // If at the end, loop
+        updateSong(
+            currentSongIndex + 1 > songs.length - 1 ? 0 : currentSongIndex + 1
+        );
+    }
+
+    function goPrev(): void {
+        // If at the start, go to the end
+        updateSong(
+            currentSongIndex == 0 ? songs.length - 1 : currentSongIndex - 1
+        );
+    }
+
+    function updateSong(index: number): void {
+        playing = false;
+
+        currentSongIndex = index;
+        currentSong = songs[currentSongIndex];
+
+        togglePlay();
+    }
+
+    onMount(() => {
+        if (audioElement) {
+            audioElement.onplay = () => (playing = true);
+
+            audioElement.onpause = () => (playing = false);
+
+            audioElement.onended = goNext;
+        }
+    });
 </script>
 
-<audio
-    src={`/tracks/${song.title.toLowerCase()}.mp3`}
-    loop
-    bind:this={audioElement}
-/>
+<audio src={`/tracks/${currentSong.title}.mp3`} bind:this={audioElement} />
 
 <div
     class="player"
@@ -58,43 +100,81 @@
     >
 
     <div class="song">
-        <h1 id="title">{song.title}</h1>
-        <h1 id="artists">{song.artists.join(', ')}</h1>
+        <h1 id="title">{currentSong.title}</h1>
+        <h1 id="artists">{currentSong.artists.join(', ')}</h1>
     </div>
 
-    {#if !playing}
+    <div class="actions">
         <svg
-            id="toggle"
+            id="action"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            fill="currentColor"
-            on:click={togglePlay}
-            on:keydown={togglePlay}
-            ><path
-                fill-rule="evenodd"
-                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10Zm-1.306-6.154l4.72-2.787c.781-.462.781-1.656 0-2.118l-4.72-2.787C9.934 7.706 9 8.29 9 9.214v5.573c0 .923.934 1.507 1.694 1.059Z"
-                clip-rule="evenodd"
-            /></svg
+            stroke="currentColor"
+            on:click={goPrev}
+            on:keydown={goPrev}
+            ><g fill="none" stroke-width="1.5"
+                ><circle cx="12" cy="12" r="10" /><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m15.5 9l-3 3l3 3m-4-6l-3 3l3 3"
+                /></g
+            ></svg
         >
-    {:else}
+
+        {#if !playing}
+            <svg
+                id="toggle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                on:click={togglePlay}
+                on:keydown={togglePlay}
+                ><path
+                    fill-rule="evenodd"
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10Zm-1.306-6.154l4.72-2.787c.781-.462.781-1.656 0-2.118l-4.72-2.787C9.934 7.706 9 8.29 9 9.214v5.573c0 .923.934 1.507 1.694 1.059Z"
+                    clip-rule="evenodd"
+                /></svg
+            >
+        {:else}
+            <svg
+                id="toggle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                on:click={togglePlay}
+                on:keydown={togglePlay}
+                ><path
+                    fill-rule="evenodd"
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM8.076 8.617C8 8.801 8 9.034 8 9.5v5c0 .466 0 .699.076.883a1 1 0 0 0 .541.54c.184.077.417.077.883.077s.699 0 .883-.076a1 1 0 0 0 .54-.541c.077-.184.077-.417.077-.883v-5c0-.466 0-.699-.076-.883a1 1 0 0 0-.541-.54C10.199 8 9.966 8 9.5 8s-.699 0-.883.076a1 1 0 0 0-.54.541Zm5 0C13 8.801 13 9.034 13 9.5v5c0 .466 0 .699.076.883a1 1 0 0 0 .541.54c.184.077.417.077.883.077s.699 0 .883-.076a1 1 0 0 0 .54-.541c.077-.184.077-.417.077-.883v-5c0-.466 0-.699-.076-.883a1 1 0 0 0-.541-.54C15.199 8 14.966 8 14.5 8s-.699 0-.883.076a1 1 0 0 0-.54.541Z"
+                    clip-rule="evenodd"
+                /></svg
+            >
+        {/if}
+
         <svg
-            id="toggle"
+            id="action"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            fill="currentColor"
-            on:click={togglePlay}
-            on:keydown={togglePlay}
-            ><path
-                fill-rule="evenodd"
-                d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM8.076 8.617C8 8.801 8 9.034 8 9.5v5c0 .466 0 .699.076.883a1 1 0 0 0 .541.54c.184.077.417.077.883.077s.699 0 .883-.076a1 1 0 0 0 .54-.541c.077-.184.077-.417.077-.883v-5c0-.466 0-.699-.076-.883a1 1 0 0 0-.541-.54C10.199 8 9.966 8 9.5 8s-.699 0-.883.076a1 1 0 0 0-.54.541Zm5 0C13 8.801 13 9.034 13 9.5v5c0 .466 0 .699.076.883a1 1 0 0 0 .541.54c.184.077.417.077.883.077s.699 0 .883-.076a1 1 0 0 0 .54-.541c.077-.184.077-.417.077-.883v-5c0-.466 0-.699-.076-.883a1 1 0 0 0-.541-.54C15.199 8 14.966 8 14.5 8s-.699 0-.883.076a1 1 0 0 0-.54.541Z"
-                clip-rule="evenodd"
-            /></svg
+            stroke="currentColor"
+            on:click={goNext}
+            on:keydown={goNext}
+            ><g fill="none" stroke-width="1.5"
+                ><circle cx="12" cy="12" r="10" /><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.5 9l3 3l-3 3m4-6l3 3l-3 3"
+                /></g
+            ></svg
         >
-    {/if}
+    </div>
 </div>
 
 <style>
@@ -104,7 +184,7 @@
         bottom: 20px;
         left: 0;
         right: 0;
-        width: max-content;
+        width: 500px;
         align-items: center;
         margin: auto;
         padding: 20px;
@@ -134,22 +214,41 @@
         display: flex;
         flex-direction: column;
         margin-left: 20px;
+        flex: 1;
     }
 
     #title {
         font-size: 1.3rem;
         font-weight: 400;
+        text-transform: capitalize;
     }
 
     #artists {
         font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
     }
 
     #toggle {
         fill: red;
         min-width: 40px;
         min-height: 40px;
-        margin-left: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #action {
+        stroke: red;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        min-height: 30px;
         cursor: pointer;
     }
 
@@ -181,11 +280,22 @@
             font-size: 0.8rem;
         }
 
+        .actions {
+            margin-right: 50px;
+        }
+
         #toggle {
             min-width: 24px;
             min-height: 24px;
             cursor: default;
-            margin-right: 20px;
+        }
+
+        #action {
+            width: 24px;
+            min-width: 18px;
+            height: 24px;
+            min-height: 18px;
+            cursor: default;
         }
     }
 </style>

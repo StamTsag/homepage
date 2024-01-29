@@ -61,7 +61,7 @@
         <br />
     </div>
 
-    <h1>© Shadofer 2023</h1>
+    <h1>© Shadofer 2024</h1>
 </div>
 
 <style>

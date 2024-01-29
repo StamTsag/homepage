@@ -8,22 +8,27 @@
 
         // Could have more in the future ig
         artists: string[];
+        volume?: number;
     }
 
     let audioElement: HTMLAudioElement;
 
     let songs: Song[] = [
         {
-            title: 'Resonance',
-            artists: ['Home'],
-        },
-        {
             title: 'Wii Shop Channel',
             artists: ['Toasty'],
+            volume: 0.4,
         },
+        {
+            title: 'Resonance',
+            artists: ['Home'],
+            volume: 0.3,
+        },
+
         {
             title: 'Rest Area',
             artists: ['Tsundere Twintails'],
+            volume: 0.35,
         },
     ];
 
@@ -33,6 +38,8 @@
 
     function togglePlay(): void {
         setTimeout(() => {
+            audioElement.volume = currentSong.volume;
+
             if (!playing) {
                 audioElement.play();
             } else {

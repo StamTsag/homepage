@@ -53,7 +53,12 @@
     }
 
     a {
+        text-decoration: none;
         color: red;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     .point {

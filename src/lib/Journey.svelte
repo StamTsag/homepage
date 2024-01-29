@@ -164,6 +164,7 @@
     #first {
         margin-bottom: 10px;
         font-size: 1.6rem;
+        user-select: none;
     }
 
     h1 {

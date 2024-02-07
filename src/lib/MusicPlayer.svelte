@@ -240,7 +240,6 @@
     .actions {
         display: flex;
         align-items: center;
-        margin-left: 100px;
     }
 
     #toggle {

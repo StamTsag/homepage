@@ -3,7 +3,7 @@
     import { scrollToId } from '../funcs';
 
     function scrollTop(): void {
-        scrollTo({
+        document.getElementsByClassName('main')[0].scrollTo({
             top: 0,
             behavior: 'smooth',
         });

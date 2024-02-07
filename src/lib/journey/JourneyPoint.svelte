@@ -65,7 +65,7 @@
     .point {
         width: 25px;
         height: 25px;
-        border: 3px solid white;
+        border: 3px solid rgb(255, 255, 255, 0.5);
         border-radius: 30px;
         margin-bottom: 5px;
     }
@@ -78,7 +78,7 @@
     .line {
         width: 3px;
         height: 200px;
-        background: white;
+        background: rgb(255, 255, 255, 0.25);
     }
 
     @media screen and (max-width: 800px) {

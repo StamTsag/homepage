@@ -162,13 +162,14 @@
     }
 
     #first {
+        color: white;
         margin-bottom: 10px;
         font-size: 1.6rem;
         user-select: none;
     }
 
     h1 {
-        color: black;
+        color: white;
         font-weight: 600;
         font-size: 1.5rem;
         white-space: pre-wrap;
@@ -185,7 +186,7 @@
 
     .one h1 {
         font-size: 2.2rem;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .one img {

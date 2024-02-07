@@ -61,13 +61,12 @@
         <br />
     </div>
 
-    <h1>© Shadofer 2024</h1>
+    <h1 id="copyright">© Shadofer 2024</h1>
 </div>
 
 <style>
     .contact {
-        background: rgb(255, 0, 0, 0.75);
-        box-shadow: 0 0 15px red;
+        background: rgb(255, 255, 255, 0.2);
         color: white;
         display: flex;
         align-items: center;
@@ -102,6 +101,10 @@
 
     span {
         margin-right: 30px;
+    }
+
+    #copyright {
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 800px) {

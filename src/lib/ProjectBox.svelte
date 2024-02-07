@@ -49,13 +49,15 @@
         margin: auto;
         height: 400px;
         border-radius: 10px;
-        box-shadow: 0 0 30px rgb(20, 20, 20, 0.075);
+        background: rgb(255, 255, 255, 0.1);
+        box-shadow: 0 0 5px rgb(255, 255, 255, 0.25);
         transition: 250ms;
     }
 
     #title {
         font-size: 4.5rem;
         font-weight: 700;
+        color: white;
     }
 
     #description {
@@ -65,6 +67,7 @@
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;
+        color: white;
     }
 
     .options {
@@ -76,27 +79,20 @@
         margin-right: 35px;
         margin-left: 10px;
         font-size: 1.4rem;
+        color: white;
     }
 
     .glow {
-        background: rgb(0, 255, 157);
-        box-shadow: 0 0 10px rgb(0, 255, 157);
+        background: rgb(255, 255, 255, 0.2);
     }
 
     .glow:hover {
-        background: rgb(0, 226, 139);
-        box-shadow: 0 0 10px rgb(0, 226, 139);
-    }
-
-    .glow:active {
-        background: rgb(0, 199, 123);
-        box-shadow: 0 0 10px rgb(0, 199, 123);
+        background: rgb(255, 255, 255, 0.3);
     }
 
     #github {
         background: transparent;
         box-shadow: none;
-        color: black;
     }
 
     #github:hover {

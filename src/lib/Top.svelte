@@ -28,7 +28,7 @@
         left: 0;
         width: 1000px;
         padding: 6px;
-        background: rgb(255, 255, 255, 0.75);
+        background: rgb(255, 255, 255, 0.15);
         backdrop-filter: blur(15px);
         z-index: 1;
         margin: auto;
@@ -65,22 +65,21 @@
         padding: 10px;
         padding-left: 7.5px;
         padding-right: 7.5px;
-        border-radius: 10px;
+        border-radius: 5px;
         font-size: 1.3rem;
         margin-right: 20px;
         cursor: pointer;
-        color: rgb(80, 80, 80);
+        color: white;
         transition: 175ms;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     h1:hover {
-        color: rgb(255, 91, 91);
-        background: rgb(255, 91, 91, 0.05);
+        background: rgb(255, 255, 255, 0.1);
     }
 
     h1:active {
-        opacity: 0.5;
+        opacity: 0.75;
     }
 
     @media screen and (max-width: 1200px) {

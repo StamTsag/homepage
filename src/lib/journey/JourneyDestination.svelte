@@ -25,12 +25,13 @@
     h1 {
         font-weight: 600;
         font-size: 1.6rem;
+        color: white;
     }
 
     .point {
         width: 25px;
         height: 25px;
-        border: 3px solid black;
+        border: 3px solid white;
         border-radius: 30px;
         margin-bottom: 5px;
     }

@@ -195,10 +195,9 @@
         align-items: center;
         margin: auto;
         padding: 20px;
-        background: rgb(255, 255, 255, 0.75);
+        background: rgb(255, 255, 255, 0.15);
         backdrop-filter: blur(5px);
         border-radius: 20px;
-        box-shadow: 0 0 2px rgb(0, 0, 0, 0.1);
         user-select: none;
     }
 
@@ -209,7 +208,7 @@
     #cover {
         min-width: 36px;
         min-height: 36px;
-        fill: red;
+        fill: white;
         animation-name: rotating;
         animation-duration: 5000ms;
         animation-delay: 750ms;
@@ -225,14 +224,17 @@
     }
 
     #title {
+        color: white;
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 600;
         text-transform: capitalize;
     }
 
     #artists {
+        color: white;
         font-size: 1.1rem;
         text-transform: capitalize;
+        font-weight: 500;
     }
 
     .actions {
@@ -242,7 +244,7 @@
     }
 
     #toggle {
-        fill: red;
+        fill: white;
         min-width: 40px;
         min-height: 40px;
         margin-left: 10px;
@@ -251,7 +253,7 @@
     }
 
     #action {
-        stroke: red;
+        stroke: white;
         width: 30px;
         min-width: 30px;
         height: 30px;

@@ -24,20 +24,20 @@
     }
 
     #intro {
-        font-size: 4.5rem;
-        color: #2e2e2e;
+        font-size: 4rem;
         letter-spacing: 1px;
         font-weight: 800;
+        color: white;
     }
 
     span {
         background: -webkit-linear-gradient(
-            120deg,
-            #000000,
+            140deg,
+            #ffffff,
             #ff2600,
-            #000000,
+            #ffffff,
             #00db92,
-            #000000
+            #ffffff
         );
         background-clip: text;
         -webkit-background-clip: text;
@@ -51,15 +51,18 @@
     #descriptor {
         font-size: 1.5rem;
         letter-spacing: 0.25px;
-        color: rgb(58, 72, 82);
-        font-weight: 500;
+        font-weight: 600;
         text-align: center;
+        color: white;
+    }
+
+    a {
+        margin-top: 30px;
     }
 
     button {
         font-size: 1.5rem;
         width: 200px;
-        margin-top: 30px;
     }
 
     @media screen and (max-width: 800px) {

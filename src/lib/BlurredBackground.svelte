@@ -2,19 +2,15 @@
 
 <style>
     .bg {
-        width: 100vw;
-        height: 100vh;
+        width: 120vw;
+        height: 120vh;
+        top: -40px;
+        left: -40px;
         position: fixed;
-        background: -webkit-linear-gradient(
-            50deg,
-            #000000,
-            #ff2600,
-            #000000,
-            #04ffab,
-            #000000
-        );
-        opacity: 0.075;
-        top: 0;
+        background: url('/images/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         z-index: -1;
+        filter: brightness(20%) blur(10px);
     }
 </style>

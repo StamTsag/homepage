@@ -50,11 +50,12 @@
         font-weight: 600;
         font-size: 1.6rem;
         text-align: center;
+        color: white;
     }
 
     a {
         text-decoration: none;
-        color: red;
+        color: rgb(202, 202, 202);
     }
 
     a:hover {
@@ -64,7 +65,7 @@
     .point {
         width: 25px;
         height: 25px;
-        border: 3px solid black;
+        border: 3px solid white;
         border-radius: 30px;
         margin-bottom: 5px;
     }
@@ -77,7 +78,7 @@
     .line {
         width: 3px;
         height: 200px;
-        background: black;
+        background: white;
     }
 
     @media screen and (max-width: 800px) {

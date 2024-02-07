@@ -4,7 +4,6 @@
     import Top from '$lib/Top.svelte';
     import TopAbout from '$lib/TopAbout.svelte';
     import Journey from '$lib/Journey.svelte';
-    import BlurredBackground from '$lib/BlurredBackground.svelte';
     import { onMount } from 'svelte';
     import { blur } from 'svelte/transition';
     import MusicPlayer from '$lib/MusicPlayer.svelte';
@@ -27,7 +26,6 @@
         <Journey />
         <Projects />
         <Contact />
-        <BlurredBackground />
         <MusicPlayer />
     </div>
 {/if}

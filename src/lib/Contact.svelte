@@ -129,5 +129,9 @@
         span {
             margin-right: 25px;
         }
+
+        #copyright {
+            font-size: 0.8rem;
+        }
     }
 </style>

@@ -5,7 +5,6 @@
     import TopAbout from '$lib/TopAbout.svelte';
     import Journey from '$lib/Journey.svelte';
     import { onMount } from 'svelte';
-    import { blur } from 'svelte/transition';
     import MusicPlayer from '$lib/MusicPlayer.svelte';
 
     let mountReady = false;
@@ -20,7 +19,7 @@
 </svelte:head>
 
 {#if mountReady}
-    <div in:blur={{ duration: 500, opacity: 0.25, amount: 15 }}>
+    <div>
         <Top />
         <TopAbout />
         <Journey />

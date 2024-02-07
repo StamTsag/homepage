@@ -31,6 +31,7 @@
     .main {
         height: 100vh;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .main::-webkit-scrollbar {

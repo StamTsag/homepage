@@ -49,8 +49,8 @@
         margin: auto;
         height: 400px;
         border-radius: 10px;
-        background: rgb(255, 255, 255, 0.1);
-        box-shadow: 0 0 5px rgb(255, 255, 255, 0.25);
+        background: rgb(255, 255, 255, 0.05);
+        box-shadow: 0 0 2px rgb(255, 255, 255, 0.3);
         transition: 250ms;
     }
 

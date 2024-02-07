@@ -1,6 +1,6 @@
 <script lang="ts">
     import { fly } from 'svelte/transition';
-    import { quadInOut } from 'svelte/easing';
+    import { quintOut } from 'svelte/easing';
     import { onMount } from 'svelte';
 
     interface Song {
@@ -87,11 +87,11 @@
 <div
     class="player"
     in:fly={{
-        y: 150,
+        y: 200,
         duration: 750,
-        delay: 250,
-        opacity: 1,
-        easing: quadInOut,
+        delay: 500,
+        opacity: 0,
+        easing: quintOut,
     }}
 >
     <svg
@@ -195,7 +195,7 @@
         align-items: center;
         margin: auto;
         padding: 20px;
-        background: rgb(255, 255, 255, 0.15);
+        background: rgb(255, 255, 255, 0.1);
         backdrop-filter: blur(5px);
         border-radius: 10px;
         user-select: none;

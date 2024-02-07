@@ -66,7 +66,7 @@
 
 <style>
     .contact {
-        background: rgb(255, 255, 255, 0.2);
+        background: rgb(255, 255, 255, 0.1);
         color: white;
         display: flex;
         align-items: center;

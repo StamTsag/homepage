@@ -1,4 +1,18 @@
-<div class="about">
+<script>
+    import { quintIn, quintInOut, quintOut } from 'svelte/easing';
+    import { scale } from 'svelte/transition';
+</script>
+
+<div
+    class="about"
+    in:scale={{
+        start: 1.15,
+        duration: 750,
+        delay: 125,
+        opacity: 0,
+        easing: quintOut,
+    }}
+>
     <h1 id="intro">The story of</h1>
     <h1 id="intro">
         a <span>Fullstack dev.</span>
@@ -20,7 +34,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 95vh;
     }
 
     #intro {
@@ -32,11 +46,11 @@
 
     span {
         background: -webkit-linear-gradient(
-            140deg,
+            245deg,
             #ffffff,
-            #ff0000,
+            #ff4b4b,
             #ffffff,
-            #00db80,
+            #437eff,
             #ffffff
         );
         background-clip: text;

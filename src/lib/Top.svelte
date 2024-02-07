@@ -10,7 +10,7 @@
     }
 </script>
 
-<div class="top" in:fly={{ y: -50, duration: 500, opacity: 1 }}>
+<div class="top" in:fly={{ y: -100, duration: 500, opacity: 1 }}>
     <img on:click={scrollTop} src="favicon.png" alt="Pfp" draggable={false} />
 
     <span />
@@ -23,21 +23,19 @@
 <style>
     .top {
         position: fixed;
-        top: 20px;
+        top: 0px;
         right: 0;
         left: 0;
-        width: 1000px;
+        width: 97.5%;
+        margin: auto;
         padding: 6px;
-        background: rgb(255, 255, 255, 0.15);
         backdrop-filter: blur(15px);
         z-index: 1;
-        margin: auto;
         display: flex;
         align-items: center;
         justify-content: start;
         user-select: none;
         transition: 150ms;
-        border-radius: 30px;
     }
 
     img {
@@ -63,8 +61,8 @@
 
     h1 {
         padding: 10px;
-        padding-left: 7.5px;
-        padding-right: 7.5px;
+        padding-left: 10px;
+        padding-right: 10px;
         border-radius: 5px;
         font-size: 1.3rem;
         margin-right: 20px;
@@ -75,27 +73,17 @@
     }
 
     h1:hover {
-        background: rgb(255, 255, 255, 0.1);
+        background: rgb(255, 255, 255, 0.05);
     }
 
     h1:active {
         opacity: 0.75;
     }
 
-    @media screen and (max-width: 1200px) {
-        .top {
-            width: 800px;
-        }
-    }
-
     @media screen and (max-width: 800px) {
         .top {
-            border-radius: 0;
-            top: 0;
             width: 100%;
-            margin: 0;
         }
-
         img {
             width: 38px;
             height: 38px;

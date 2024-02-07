@@ -34,9 +34,9 @@
         background: -webkit-linear-gradient(
             140deg,
             #ffffff,
-            #ff2600,
+            #ff0000,
             #ffffff,
-            #00db92,
+            #00db80,
             #ffffff
         );
         background-clip: text;

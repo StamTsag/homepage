@@ -124,7 +124,7 @@
         creationText={'Finished the'}
         creation={'Fronvo'}
         creationSuffix={'social media'}
-        creationUrl={'https://fronvo.com/app'}
+        creationUrl={'https://fronvo.com'}
         lineHeight={150}
         skipPoint
     />
@@ -138,7 +138,7 @@
     <JourneyPoint
         creationText={'Started development of'}
         creation={'Fronvo V2'}
-        creationUrl={'https://github.com/Fronvo/site-discord'}
+        creationUrl={'https://github.com/Fronvo/site'}
         lineHeight={50}
         skipPoint
     />

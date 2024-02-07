@@ -197,7 +197,7 @@
         padding: 20px;
         background: rgb(255, 255, 255, 0.15);
         backdrop-filter: blur(5px);
-        border-radius: 20px;
+        border-radius: 10px;
         user-select: none;
     }
 

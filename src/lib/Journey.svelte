@@ -145,6 +145,13 @@
 
     <JourneyPoint text="2024 -- Refined visions" lineHeight={50} />
 
+    <JourneyPoint
+        creationText={'Finished'}
+        creation={'Fronvo V2'}
+        creationUrl={'https://fronvo.com'}
+        lineHeight={50}
+        skipPoint
+    />
     <JourneyDestination text="Now" />
 </div>
 

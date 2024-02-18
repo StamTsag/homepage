@@ -5,26 +5,33 @@
     export let description: string;
     export let github: string;
     export let site = '';
-    export let glow = false;
 </script>
 
-<span />
+<span class="m-50" />
 
 <Saos once animation={'blur-in 0.35s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>
-    <div class={`box`}>
-        <h1 id="title">{title}</h1>
-        <h1 id="description">{description}</h1>
+    <div
+        class="mobile:w-full mobile:rounded-none mobile:h-300 flex flex-col items-center justify-center w-80% h-400 m-auto rounded-10 bg-project border-2 border-project-shadow"
+    >
+        <h1 class="mobile:text-25 text-white font-normal text-4">{title}</h1>
+        <h1
+            class="mobile:text-12 text-2xl font-normal tracking-25 pl-3 pr-3 text-center text-white"
+        >
+            {description}
+        </h1>
 
-        <div class="options">
+        <div class="flex mt-8">
             <a href={github} target="_blank">
-                <button class={`${!site ? 'single' : ''}`} id="github"
-                    >View on Github</button
+                <button
+                    class={`mobile:text-9 mobile:cursor-default mobile:w-125 hover:underline hover:shadow-none hover:bg-transparent shadow-none bg-transparent text-white text-xl mr-10 ml-10 font-semibold`}
+                    id="github">View on Github</button
                 >
             </a>
 
             {#if site}
                 <a href={site} target="_blank"
-                    ><button id="visit" class={`${glow ? 'glow' : ''}`}
+                    ><button
+                        class="mobile:text-9 mobile:cursor-default mobile:w-125 text-white mr-7 text-xl font-semibold w-44"
                         >Visit site</button
                     ></a
                 >
@@ -33,105 +40,9 @@
     </div>
 </Saos>
 
-<span />
+<span class="m-50" />
 
 <style>
-    span {
-        margin: 50px;
-    }
-
-    .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        height: 400px;
-        border-radius: 10px;
-        background: rgb(255, 255, 255, 0.05);
-        box-shadow: 0 0 2px rgb(255, 255, 255, 0.3);
-        transition: 250ms;
-    }
-
-    #title {
-        font-size: 4.5rem;
-        font-weight: 700;
-        color: white;
-    }
-
-    #description {
-        font-size: 1.5rem;
-        font-weight: 500;
-        letter-spacing: 0.25px;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        color: white;
-    }
-
-    .options {
-        display: flex;
-        margin-top: 35px;
-    }
-
-    button {
-        margin-right: 35px;
-        margin-left: 10px;
-        font-size: 1.4rem;
-        color: white;
-    }
-
-    .glow {
-        background: rgb(255, 255, 255, 0.2);
-    }
-
-    .glow:hover {
-        background: rgb(255, 255, 255, 0.3);
-    }
-
-    #github {
-        background: transparent;
-        box-shadow: none;
-    }
-
-    #github:hover {
-        text-decoration: underline;
-    }
-
-    #visit {
-        width: 150px;
-    }
-
-    .single {
-        margin: 0;
-    }
-
-    @media screen and (max-width: 800px) {
-        .box {
-            width: 100%;
-            height: 300px;
-            border-radius: 0;
-        }
-
-        #title {
-            font-size: 2.6rem;
-        }
-
-        #description {
-            font-size: 1.1rem;
-        }
-
-        button {
-            font-size: 0.9rem;
-            cursor: default;
-        }
-
-        #visit {
-            width: 125px;
-        }
-    }
-
     @keyframes -global-blur-in {
         0% {
             opacity: 0;

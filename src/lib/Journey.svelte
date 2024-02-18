@@ -3,12 +3,24 @@
     import JourneyPoint from './journey/JourneyPoint.svelte';
 </script>
 
-<div class="journey" id="journey">
-    <h1 id="first">The journey of</h1>
+<div
+    class="flex flex-col items-center p-50 -z-10 mt-100 mb-250 min-h-screen"
+    id="journey"
+>
+    <h1
+        class="mobile:text-12 text-white mb-10 mt-10 text-2xl select-none font-normal"
+    >
+        The journey of
+    </h1>
 
-    <div class="one">
-        <img src="/favicon.png" draggable={false} alt="Avatar" />
-        <h1>Shadofer</h1>
+    <div class="flex items-center justify-center mb-75 select-none">
+        <img
+            class="mobile:w-48 mobile:h-48 w-56 h-56 mr-10"
+            src="/favicon.png"
+            draggable={false}
+            alt="Avatar"
+        />
+        <h1 class="mobile:text-16 text-25 font-normal text-white">Shadofer</h1>
     </div>
 
     <JourneyPoint text="2015 -- Started coding" lineHeight={150} />
@@ -154,72 +166,3 @@
     />
     <JourneyDestination text="Now" />
 </div>
-
-<style>
-    .journey {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-        z-index: -1;
-        padding-top: 100px;
-        margin-top: 100px;
-        margin-bottom: 250px;
-        min-height: 100vh;
-    }
-
-    #first {
-        color: white;
-        margin-bottom: 10px;
-        font-size: 1.6rem;
-        user-select: none;
-    }
-
-    h1 {
-        color: white;
-        font-weight: 600;
-        font-size: 1.5rem;
-        white-space: pre-wrap;
-        text-align: center;
-    }
-
-    .one {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 75px;
-        user-select: none;
-    }
-
-    .one h1 {
-        font-size: 2.2rem;
-        font-weight: 600;
-    }
-
-    .one img {
-        width: 56px;
-        height: 56px;
-        border-radius: 20px;
-        margin-right: 10px;
-    }
-
-    @media screen and (max-width: 800px) {
-        #first {
-            font-size: 1.2rem;
-        }
-
-        h1 {
-            font-size: 1.2rem;
-        }
-
-        .one h1 {
-            font-size: 1.6rem;
-        }
-
-        .one img {
-            width: 48px;
-            height: 48px;
-            margin-right: 8px;
-        }
-    }
-</style>

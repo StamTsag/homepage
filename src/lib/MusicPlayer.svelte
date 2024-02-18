@@ -85,7 +85,7 @@
 <audio src={`/tracks/${currentSong.title}.mp3`} bind:this={audioElement} />
 
 <div
-    class="player"
+    class="mobile:w-full mobile:rounded-none mobile:bottom-0 mobile:h-16 flex fixed bottom-6 left-0 right-0 w-500 items-center m-auto p-4 bg-player backdrop-blur rounded-10 select-none"
     in:fly={{
         y: 200,
         duration: 750,
@@ -95,10 +95,8 @@
     }}
 >
     <svg
-        id="cover"
+        class="mobile:min-w-24 mobile:w-24 mobile:min-h-24 mobile:h-24 min-w-36 w-36 min-h-36 h-36 fill-white animate-spin"
         xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
         viewBox="0 0 24 24"
         fill="currentColor"
         ><path
@@ -106,17 +104,24 @@
         /></svg
     >
 
-    <div class="song">
-        <h1 id="title">{currentSong.title}</h1>
-        <h1 id="artists">{currentSong.artists.join(', ')}</h1>
+    <div class="flex flex-col ml-4 flex-1">
+        <h1
+            class="mobile:text-base text-white text-xl font-semibold capitalise"
+        >
+            {currentSong.title}
+        </h1>
+        <h1
+            class="mobile:text-xs text-white text-sm font-medium capitalise"
+            id="atists"
+        >
+            {currentSong.artists.join(', ')}
+        </h1>
     </div>
 
-    <div class="actions">
+    <div class="flex items-center">
         <svg
-            id="action"
+            class="mobile:min-w-24 mobile:w-24 mobile:min-h-24 mobile:h-24 mobile:cursor-default stroke-white min-w-30 w-30 min-h-30 h-30 cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
             viewBox="0 0 24 24"
             stroke="currentColor"
             on:click={goPrev}
@@ -132,10 +137,8 @@
 
         {#if !playing}
             <svg
-                id="toggle"
+                class="mobile:min-w-30 mobile:w-30 mobile:min-h-30 mobile:h-30 mobile:cursor-default fill-white min-w-40 w-40 min-h-40 h-40 ml-3 mr-3 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 on:click={togglePlay}
@@ -148,10 +151,8 @@
             >
         {:else}
             <svg
-                id="toggle"
+                class="mobile:min-w-30 mobile:w-30 mobile:min-h-30 mobile:h-30 mobile:cursor-default fill-white min-w-40 w-40 min-h-40 h-40 ml-3 mr-3 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 on:click={togglePlay}
@@ -165,10 +166,8 @@
         {/if}
 
         <svg
-            id="action"
+            class="mobile:min-w-24 mobile:w-24 mobile:min-h-24 mobile:h-24 mobile:cursor-default stroke-white min-w-30 w-30 min-h-30 h-30 cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
             viewBox="0 0 24 24"
             stroke="currentColor"
             on:click={goNext}
@@ -183,127 +182,3 @@
         >
     </div>
 </div>
-
-<style>
-    .player {
-        display: flex;
-        position: fixed;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        width: 500px;
-        align-items: center;
-        margin: auto;
-        padding: 20px;
-        background: rgb(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        border-radius: 10px;
-        user-select: none;
-    }
-
-    h1 {
-        margin: 0;
-    }
-
-    #cover {
-        min-width: 36px;
-        min-height: 36px;
-        fill: white;
-        animation-name: rotating;
-        animation-duration: 5000ms;
-        animation-delay: 750ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    .song {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        flex: 1;
-    }
-
-    #title {
-        color: white;
-        font-size: 1.3rem;
-        font-weight: 600;
-        text-transform: capitalize;
-    }
-
-    #artists {
-        color: white;
-        font-size: 1.1rem;
-        text-transform: capitalize;
-        font-weight: 500;
-    }
-
-    .actions {
-        display: flex;
-        align-items: center;
-    }
-
-    #toggle {
-        fill: white;
-        min-width: 40px;
-        min-height: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
-        cursor: pointer;
-    }
-
-    #action {
-        stroke: white;
-        width: 30px;
-        min-width: 30px;
-        height: 30px;
-        min-height: 30px;
-        cursor: pointer;
-    }
-
-    @keyframes rotating {
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        .player {
-            width: 100%;
-            height: 24px;
-            border-radius: 0;
-            bottom: 0;
-            justify-content: center;
-        }
-
-        #cover {
-            min-width: 24px;
-            min-height: 24px;
-        }
-
-        #title {
-            font-size: 1rem;
-        }
-
-        #artists {
-            font-size: 0.8rem;
-        }
-
-        .actions {
-            margin-right: 50px;
-        }
-
-        #toggle {
-            min-width: 24px;
-            min-height: 24px;
-            cursor: default;
-        }
-
-        #action {
-            width: 24px;
-            min-width: 18px;
-            height: 24px;
-            min-height: 18px;
-            cursor: default;
-        }
-    }
-</style>

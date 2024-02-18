@@ -1,10 +1,10 @@
 <script>
-    import { quintIn, quintInOut, quintOut } from 'svelte/easing';
+    import { quintOut } from 'svelte/easing';
     import { scale } from 'svelte/transition';
 </script>
 
 <div
-    class="about"
+    class="flex flex-col items-center justify-center h-95 select-none"
     in:scale={{
         start: 1.15,
         duration: 750,
@@ -13,37 +13,40 @@
         easing: quintOut,
     }}
 >
-    <h1 id="intro">The story of</h1>
-    <h1 id="intro">
-        a <span>Fullstack dev.</span>
+    <h1
+        class="mobile:text-5xl mobile:-translate-y-4 text-4 spacing-1 text-white font-normal"
+    >
+        The story of
+    </h1>
+    <h1
+        class="mobile:text-5xl mobile:mb-2 text-4 -translate-y-3 spacing-1 text-white font-normal"
+    >
+        a <span class="bg-clip-text">Fullstack dev.</span>
     </h1>
 
-    <span id="spacer" />
+    <span class="mt-1" />
 
-    <h1 id="descriptor">Experienced in production-ready apps</h1>
-    <h1 id="descriptor">and cutting-edge tech stacks</h1>
+    {#each ['Experienced in production-ready apps', 'and cutting-edge tech stacks'] as description}
+        <h1
+            class="mobile:text-xl text-white text-2xl text-center font-normal spacing-25 -translate-y-2"
+        >
+            {description}
+        </h1>
+    {/each}
 
-    <a href="https://github.com/Shadofer" target="_blank">
-        <button>Visit Github</button>
+    <a
+        class="mobile:mt-2 mt-4"
+        href="https://github.com/Shadofer"
+        target="_blank"
+    >
+        <button
+            class="mobile:w-44 mobile:h-12 mobile:text-xl mobile:cursor-default font-semibold w-52 h-14 text-2xl"
+            >Visit Github</button
+        >
     </a>
 </div>
 
 <style>
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 95vh;
-    }
-
-    #intro {
-        font-size: 4rem;
-        letter-spacing: 1px;
-        font-weight: 800;
-        color: white;
-    }
-
     span {
         background: -webkit-linear-gradient(
             245deg,
@@ -56,42 +59,5 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-
-    #spacer {
-        margin-top: 15px;
-    }
-
-    #descriptor {
-        font-size: 1.5rem;
-        letter-spacing: 0.25px;
-        font-weight: 600;
-        text-align: center;
-        color: white;
-    }
-
-    a {
-        margin-top: 30px;
-    }
-
-    button {
-        font-size: 1.5rem;
-        width: 200px;
-    }
-
-    @media screen and (max-width: 800px) {
-        #intro {
-            font-size: 2.5rem;
-        }
-
-        #descriptor {
-            font-size: 1.2rem;
-        }
-
-        button {
-            font-size: 1.1rem;
-            width: 140px;
-            cursor: default;
-        }
     }
 </style>

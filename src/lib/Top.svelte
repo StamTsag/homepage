@@ -10,89 +10,26 @@
     }
 </script>
 
-<div class="top" in:fly={{ y: -100, duration: 500, opacity: 1 }}>
-    <img on:click={scrollTop} src="favicon.png" alt="Pfp" draggable={false} />
+<div
+    class="mobile:mr-0 fixed top-0 right-0 left-0 m-auto mr-4 z-10 pt-2 p-1 w-full flex items-center justify-center select-none backdrop-blur"
+    in:fly={{ y: -100, duration: 500, opacity: 1 }}
+>
+    <img
+        class="mobile:ml-3 mobile:w-8 mobile:h-8 mobile:cursor-default active:translate-y-0.5 hover:brightness-150 ml-9 w-10 h-10 cursor-pointer rounded duration-100"
+        on:click={scrollTop}
+        src="favicon.png"
+        alt="Pfp"
+        draggable={false}
+    />
 
-    <span />
+    <span class="flex-1" />
 
-    <h1 on:click={() => scrollToId('journey')}>Journey</h1>
-    <h1 on:click={() => scrollToId('projects')}>Projects</h1>
-    <h1 on:click={() => scrollToId('contact')}>Contact</h1>
+    {#each ['Journey', 'Projects', 'Contact'] as title}
+        <h1
+            class="mobile:text-base mobile:cursor-default hover:bg-top-hover active:opacity-75 p-2 rounded-md duration-150 text-white font-normal text-2xl mr-6 cursor-pointer"
+            on:click={() => scrollToId(title.toLowerCase())}
+        >
+            {title}
+        </h1>
+    {/each}
 </div>
-
-<style>
-    .top {
-        position: fixed;
-        top: 0px;
-        right: 0;
-        left: 0;
-        width: 97.5%;
-        margin: auto;
-        padding: 6px;
-        backdrop-filter: blur(15px);
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        user-select: none;
-        transition: 150ms;
-    }
-
-    img {
-        width: 42px;
-        height: 42px;
-        margin-right: 10px;
-        border-radius: 100px;
-        cursor: pointer;
-        transition: 300ms;
-    }
-
-    img:hover {
-        filter: brightness(200%);
-    }
-
-    img:active {
-        transform: translateY(2px);
-    }
-
-    span {
-        flex: 1;
-    }
-
-    h1 {
-        padding: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 5px;
-        font-size: 1.3rem;
-        margin-right: 20px;
-        cursor: pointer;
-        color: white;
-        transition: 175ms;
-        font-weight: 400;
-    }
-
-    h1:hover {
-        background: rgb(255, 255, 255, 0.05);
-    }
-
-    h1:active {
-        opacity: 0.75;
-    }
-
-    @media screen and (max-width: 800px) {
-        .top {
-            width: 100%;
-        }
-        img {
-            width: 38px;
-            height: 38px;
-            cursor: default;
-        }
-
-        h1 {
-            font-size: 1.1rem;
-            cursor: default;
-        }
-    }
-</style>

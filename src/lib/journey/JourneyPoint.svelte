@@ -12,9 +12,13 @@
 </script>
 
 <Saos animation={'move-up .5s cubic-bezier(0.8, 0.9, 0.9, 0.9) forwards'}>
-    <div class="journey-point">
+    <div
+        class="flex flex-col items-center justify-center animation-150 mt-10 w-500"
+    >
         {#if creation}
-            <h1 id="point-info">
+            <h1
+                class="mobile:text-12 text-2xl text-center text-white font-medium select-none mb-2"
+            >
                 {text}
                 {creationText ? creationText : 'Created'}
                 {creationPrefix ? `${creationPrefix} ` : ''}<a
@@ -24,75 +28,27 @@
                 {creationSuffix ? `${creationSuffix} ` : ''}
             </h1>
         {:else}
-            <h1 id="point-info">{text}</h1>
+            <h1
+                class="mobile:text-12 text-2xl text-center text-white font-medium select-none mb-2"
+            >
+                {text}
+            </h1>
         {/if}
 
         {#if !skipPoint}
-            <div class="point" />
+            <div
+                class="mobile:w-20 mobile:h-20 point w-25 h-25 border-2 border-point mb-2 rounded-full"
+            />
         {/if}
 
-        <div class="line" style={`height: ${lineHeight}px;`} />
+        <div
+            class="line w-1 h-200 bg-line"
+            style={`height: ${lineHeight}px;`}
+        />
     </div>
 </Saos>
 
 <style>
-    .journey-point {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 150ms;
-        margin-top: 20px;
-        max-width: 500px;
-    }
-
-    h1 {
-        font-weight: 600;
-        font-size: 1.6rem;
-        text-align: center;
-        color: white;
-    }
-
-    a {
-        text-decoration: underline;
-        color: white;
-    }
-
-    .point {
-        width: 25px;
-        height: 25px;
-        border: 3px solid rgb(255, 255, 255, 1);
-        border-radius: 30px;
-        margin-bottom: 5px;
-    }
-
-    #point-info {
-        font-size: 1.4rem;
-        margin-bottom: 5px;
-    }
-
-    .line {
-        width: 3px;
-        height: 200px;
-        background: rgb(255, 255, 255, 0.5);
-    }
-
-    @media screen and (max-width: 800px) {
-        #point-info {
-            font-size: 1.1rem;
-        }
-
-        .point {
-            width: 20px;
-            height: 20px;
-            border: 2px solid black;
-        }
-
-        .line {
-            width: 2px;
-        }
-    }
-
     @keyframes -global-move-up {
         0% {
             opacity: 0;

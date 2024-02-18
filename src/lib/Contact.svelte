@@ -14,7 +14,7 @@
         >
 
         <a
-            class="mobile:text-lg text-white text-xl font-semibold"
+            class="mobile:text-sm text-white text-xl font-semibold"
             href="mailto:shadoferapps@gmail.com">Email me</a
         >
 
@@ -36,7 +36,7 @@
             /></svg
         >
         <a
-            class="mobile:text-lg text-white text-xl font-semibold"
+            class="mobile:text-sm text-white text-xl font-semibold"
             href="https://github.com/Shadofer"
             target="_blank">Shadofer</a
         >
@@ -67,12 +67,12 @@
             ></svg
         >
 
-        <h1 class="mobile:text-lg text-white text-xl font-medium">@shadofer</h1>
+        <h1 class="mobile:text-sm text-white text-xl font-medium">@shadofer</h1>
 
         <br />
     </div>
 
-    <h1 class="mobile:text-lg mobile:ml-2 text-1xl font-semibold text-white">
+    <h1 class="mobile:text-sm mobile:ml-2 text-1xl font-semibold text-white">
         © Shadofer 2024
     </h1>
 </div>

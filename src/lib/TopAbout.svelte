@@ -14,12 +14,12 @@
     }}
 >
     <h1
-        class="mobile:text-5xl mobile:-translate-y-4 text-4 spacing-1 text-white font-normal"
+        class="mobile:text-4xl mobile:-translate-y-4 text-4 spacing-1 text-white font-normal"
     >
         The story of
     </h1>
     <h1
-        class="mobile:text-5xl mobile:mb-2 text-4 -translate-y-3 spacing-1 text-white font-normal"
+        class="mobile:text-4xl mobile:mb-2 text-4 -translate-y-3 spacing-1 text-white font-normal"
     >
         a <span class="bg-clip-text">Fullstack dev.</span>
     </h1>
@@ -28,7 +28,7 @@
 
     {#each ['Experienced in production-ready apps', 'and cutting-edge tech stacks'] as description}
         <h1
-            class="mobile:text-xl text-white text-2xl text-center font-normal spacing-25 -translate-y-2"
+            class="mobile:text-base text-white text-2xl text-center font-normal spacing-25 -translate-y-2"
         >
             {description}
         </h1>
@@ -40,7 +40,7 @@
         target="_blank"
     >
         <button
-            class="mobile:w-44 mobile:h-12 mobile:text-xl mobile:cursor-default font-semibold w-52 h-14 text-2xl"
+            class="mobile:w-44 mobile:h-12 mobile:text-base mobile:cursor-default font-semibold w-52 h-14 text-2xl"
             >Visit Github</button
         >
     </a>

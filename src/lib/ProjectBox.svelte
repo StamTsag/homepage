@@ -11,7 +11,7 @@
 
 <Saos once animation={'blur-in 0.35s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}>
     <div
-        class="mobile:w-full mobile:rounded-none mobile:h-300 flex flex-col items-center justify-center w-80% h-400 m-auto rounded-10 bg-project border-2 border-project-shadow"
+        class="mobile:w-full mobile:rounded-none mobile:border-none mobile:h-300 flex flex-col items-center justify-center w-80% h-400 m-auto rounded-10 bg-project border-2 border-project-shadow"
     >
         <h1 class="mobile:text-25 text-white font-normal text-4">{title}</h1>
         <h1

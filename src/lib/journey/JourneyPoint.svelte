@@ -17,7 +17,7 @@
     >
         {#if creation}
             <h1
-                class="mobile:text-12 text-2xl text-center text-white font-medium select-none mb-2"
+                class="mobile:text-base text-2xl text-center text-white font-medium select-none mb-2"
             >
                 {text}
                 {creationText ? creationText : 'Created'}
@@ -29,7 +29,7 @@
             </h1>
         {:else}
             <h1
-                class="mobile:text-12 text-2xl text-center text-white font-medium select-none mb-2"
+                class="mobile:text-base text-2xl text-center text-white font-medium select-none mb-2"
             >
                 {text}
             </h1>

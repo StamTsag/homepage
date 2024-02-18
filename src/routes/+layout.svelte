@@ -35,7 +35,7 @@
     }
 
     .main::-webkit-scrollbar {
-        width: 8px;
+        width: 5px;
     }
 
     .main::-webkit-scrollbar-track {
@@ -44,6 +44,6 @@
 
     .main::-webkit-scrollbar-thumb {
         background: rgb(255, 255, 255, 0.25);
-        border-radius: 20px;
+        border-radius: 90px;
     }
 </style>

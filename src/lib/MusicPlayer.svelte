@@ -88,7 +88,7 @@
     class="mobile:w-full mobile:rounded-none mobile:bottom-0 mobile:h-16 flex fixed bottom-6 left-0 right-0 w-500 items-center m-auto p-4 bg-player backdrop-blur rounded-10 select-none"
     in:fly={{
         y: 200,
-        duration: 750,
+        duration: 600,
         delay: 500,
         opacity: 0,
         easing: quintOut,

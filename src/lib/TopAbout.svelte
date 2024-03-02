@@ -1,16 +1,22 @@
 <script>
-    import { quintOut } from 'svelte/easing';
+    import {
+        quartIn,
+        quartInOut,
+        quartOut,
+        quintIn,
+        quintOut,
+    } from 'svelte/easing';
     import { scale } from 'svelte/transition';
 </script>
 
 <div
     class="flex flex-col items-center justify-center h-95 select-none"
     in:scale={{
-        start: 1.15,
-        duration: 750,
+        start: 1.5,
+        duration: 500,
         delay: 125,
         opacity: 0,
-        easing: quintOut,
+        easing: quartOut,
     }}
 >
     <h1

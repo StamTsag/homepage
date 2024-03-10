@@ -38,7 +38,7 @@
         <a
             class="mobile:text-sm text-white text-xl font-semibold"
             href="https://github.com/Shadofer"
-            target="_blank">Shadofer</a
+            target="_blank">Github</a
         >
         <br />
     </div>

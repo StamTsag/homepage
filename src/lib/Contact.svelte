@@ -15,7 +15,7 @@
 
         <a
             class="mobile:text-sm text-white text-xl font-semibold"
-            href="mailto:shadoferapps@gmail.com">Email me</a
+            href="mailto:stamatiostsag@gmail.com">Email me</a
         >
 
         <span class="mobile:ml-8 ml-6" />
@@ -44,6 +44,6 @@
     </div>
 
     <h1 class="mobile:text-sm mobile:ml-2 text-1xl font-semibold text-white">
-        © Shadofer 2024
+        © Stam Tsag 2024
     </h1>
 </div>

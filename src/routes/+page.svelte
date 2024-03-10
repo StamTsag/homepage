@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-    <title>Shadofer</title>
+    <title>Stam Tsag</title>
 </svelte:head>
 
 {#if mountReady}

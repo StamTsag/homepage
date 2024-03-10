@@ -14,13 +14,7 @@
     </h1>
 
     <div class="flex items-center justify-center mb-75 select-none">
-        <img
-            class="mobile:w-48 mobile:h-48 w-56 h-56 mr-10"
-            src="/favicon.png"
-            draggable={false}
-            alt="Avatar"
-        />
-        <h1 class="mobile:text-16 text-25 font-normal text-white">Shadofer</h1>
+        <h1 class="mobile:text-16 text-25 font-normal text-white">Stam Tsag</h1>
     </div>
 
     <JourneyPoint text="2015 -- Started coding" lineHeight={150} />

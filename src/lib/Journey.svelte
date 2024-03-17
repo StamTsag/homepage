@@ -158,5 +158,13 @@
         lineHeight={50}
         skipPoint
     />
+
+    <JourneyPoint
+        creationText={'Created'}
+        creation={'Litestore'}
+        creationUrl={'https://litestore.shadofer.com/'}
+        lineHeight={50}
+        skipPoint
+    />
     <JourneyDestination text="Now" />
 </div>

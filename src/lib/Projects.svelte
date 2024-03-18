@@ -17,6 +17,13 @@
             site: 'https://fronvo.com',
         },
         {
+            title: 'Litestore',
+            description:
+                'Your own tracker-less, private, lite-weight online file storage',
+            github: 'https://github.com/Shadofer/Litestore',
+            site: 'https://litestore.shadofer.com',
+        },
+        {
             title: 'TowerVerse',
             description:
                 'A dungeon-themed online multiplayer game made in Godot',

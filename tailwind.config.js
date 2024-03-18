@@ -83,7 +83,7 @@ export default {
             },
 
             fontSize: {
-                4: '4.25rem',
+                4: '4rem',
                 9: '0.9rem',
                 12: '1.2rem',
                 16: '1.6rem',

@@ -1,16 +1,10 @@
 <script>
-    import {
-        quartIn,
-        quartInOut,
-        quartOut,
-        quintIn,
-        quintOut,
-    } from 'svelte/easing';
+    import { quartOut } from 'svelte/easing';
     import { scale } from 'svelte/transition';
 </script>
 
 <div
-    class="flex flex-col items-center justify-center h-95 select-none"
+    class="flex flex-col items-center justify-center h-[95vh] select-none"
     in:scale={{
         start: 1.5,
         duration: 500,
@@ -20,28 +14,28 @@
     }}
 >
     <h1
-        class="mobile:text-4xl mobile:-translate-y-4 text-4 spacing-1 text-white font-normal"
+        class="mobile:text-4xl mobile:-translate-y-4 text-[4rem] spacing-[1px] text-white font-normal"
     >
         The story of
     </h1>
     <h1
-        class="mobile:text-4xl mobile:mb-2 text-4 -translate-y-3 spacing-1 text-white font-normal"
+        class="mobile:text-4xl mobile:mb-2 text-[4rem] -translate-y-3 spacing-[1px] text-white font-normal"
     >
-        a <span class="bg-clip-text">Fullstack dev.</span>
+        a <span class="bg-clip-text font-semibold">Fullstack dev.</span>
     </h1>
 
     <span class="mt-1" />
 
     {#each ['Experienced in production-ready apps', 'and cutting-edge tech stacks'] as description}
         <h1
-            class="mobile:text-base text-white text-2xl text-center font-normal spacing-25 -translate-y-2"
+            class="mobile:text-base text-white text-2xl text-center font-normal spacing-[0.25px] -translate-y-2"
         >
             {description}
         </h1>
     {/each}
 
     <a
-        class="mobile:mt-2 mt-4"
+        class="mobile:mt-3 mt-5"
         href="https://github.com/Shadofer"
         target="_blank"
     >

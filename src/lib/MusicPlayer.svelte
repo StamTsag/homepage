@@ -85,7 +85,7 @@
 <audio src={`/tracks/${currentSong.title}.mp3`} bind:this={audioElement} />
 
 <div
-    class="mobile:w-full mobile:rounded-none mobile:bottom-0 mobile:h-16 flex fixed bottom-6 left-0 right-0 w-500 items-center m-auto p-4 bg-player backdrop-blur rounded-10 select-none"
+    class="mobile:w-full mobile:rounded-none mobile:bottom-0 mobile:h-16 flex fixed bottom-6 left-0 right-0 w-[500px] items-center m-auto p-4 bg-player backdrop-blur rounded-[10px] select-none"
     in:fly={{
         y: 200,
         duration: 600,
@@ -95,7 +95,7 @@
     }}
 >
     <svg
-        class="mobile:min-w-24 mobile:w-24 mobile:min-h-24 mobile:h-24 min-w-36 w-36 min-h-36 h-36 fill-white animate-spin"
+        class="mobile:min-w-[24px] mobile:w-[24px] mobile:min-h-[24px] mobile:h-[24px] min-w-[36px] w-[36px] min-h-[36px] h-[36px] fill-white animate-spin"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
@@ -120,7 +120,7 @@
 
     <div class="flex items-center">
         <svg
-            class="mobile:min-w-24 mobile:w-24 mobile:min-h-24 mobile:h-24 mobile:cursor-default stroke-white min-w-30 w-30 min-h-30 h-30 cursor-pointer"
+            class="mobile:min-w-[24px] mobile:w-[24px] mobile:min-h-[24px] mobile:h-[24px] mobile:cursor-default stroke-white min-w-[30px] w-[30px] min-h-[30px] h-[30px] cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -137,7 +137,7 @@
 
         {#if !playing}
             <svg
-                class="mobile:min-w-30 mobile:w-30 mobile:min-h-30 mobile:h-30 mobile:cursor-default fill-white min-w-40 w-40 min-h-40 h-40 ml-3 mr-3 cursor-pointer"
+                class="mobile:min-w-[30px] mobile:w-[30px] mobile:min-h-[30px] mobile:h-[30px] mobile:cursor-default fill-white min-w-[40px] w-[40px] min-h-[40px] h-[40px] ml-3 mr-3 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -151,7 +151,7 @@
             >
         {:else}
             <svg
-                class="mobile:min-w-30 mobile:w-30 mobile:min-h-30 mobile:h-30 mobile:cursor-default fill-white min-w-40 w-40 min-h-40 h-40 ml-3 mr-3 cursor-pointer"
+                class="mobile:min-w-[30px] mobile:w-[30px] mobile:min-h-[30px] mobile:h-[30px] mobile:cursor-default fill-white min-w-[40px] w-[40px] min-h-[40px] h-[40px] ml-3 mr-3 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -166,7 +166,7 @@
         {/if}
 
         <svg
-            class="mobile:min-w-24 mobile:w-24 mobile:min-h-24 mobile:h-24 mobile:cursor-default stroke-white min-w-30 w-30 min-h-30 h-30 cursor-pointer"
+            class="mobile:min-w-[24px] mobile:w-[24px] mobile:min-h-[24px] mobile:h-[24px] mobile:cursor-default stroke-white min-w-[30px] w-[30px] min-h-[30px] h-[30px] cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             stroke="currentColor"

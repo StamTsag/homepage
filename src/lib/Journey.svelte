@@ -4,17 +4,19 @@
 </script>
 
 <div
-    class="flex flex-col items-center p-50 -z-10 mt-100 mb-250 min-h-screen"
+    class="flex flex-col items-center p-[50px] -z-10 mt-[100px] mb-[250px] min-h-screen"
     id="journey"
 >
     <h1
-        class="mobile:text-12 text-white mb-10 mt-10 text-2xl select-none font-normal"
+        class="mobile:text-[1.2rem] text-white mb-[10px] mt-[10px] text-2xl select-none font-normal"
     >
         The journey of
     </h1>
 
-    <div class="flex items-center justify-center mb-75 select-none">
-        <h1 class="mobile:text-16 text-25 font-normal text-white">Stam Tsag</h1>
+    <div class="flex items-center justify-center mb-[75px] select-none">
+        <h1 class="mobile:text-[1.6rem] text-[2.5rem] font-semibold text-white">
+            Stam Tsag
+        </h1>
     </div>
 
     <JourneyPoint text="2015 -- Started coding" lineHeight={150} />

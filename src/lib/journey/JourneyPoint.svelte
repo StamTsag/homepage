@@ -13,7 +13,7 @@
 
 <Saos animation={'move-up .5s cubic-bezier(0.8, 0.9, 0.9, 0.9) forwards'}>
     <div
-        class="flex flex-col items-center justify-center animation-150 mt-10 w-500"
+        class="flex flex-col items-center justify-center animation-150 mt-[10px] w-full"
     >
         {#if creation}
             <h1
@@ -37,12 +37,12 @@
 
         {#if !skipPoint}
             <div
-                class="mobile:w-20 mobile:h-20 point w-25 h-25 border-2 border-point mb-2 rounded-full"
+                class="mobile:w-[20px] mobile:h-[20px] point w-[25px] h-[25px] border-2 border-point mb-2 rounded-full"
             />
         {/if}
 
         <div
-            class="line w-1 h-200 bg-line"
+            class="line w-[1.5px] h-[200px] bg-line"
             style={`height: ${lineHeight}px;`}
         />
     </div>

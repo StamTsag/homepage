@@ -51,7 +51,7 @@ export default function JourneyPoint({
       )}
 
       <div
-        className={`bg-[hsl(var(--foreground))] w-[2px] h-[200px]`}
+        className={`xs:max-h-[300px] bg-[hsl(var(--foreground))] w-[2px]`}
         style={{
           height: lineHeight,
         }}

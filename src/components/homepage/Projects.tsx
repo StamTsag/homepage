@@ -86,7 +86,7 @@ export default function Projects() {
               <CardTitle className="xs:text-3xl text-5xl tracking-tighter font-black">
                 {title}
               </CardTitle>
-              <CardDescription className="xs:text-md mobile:max-w-[100%] text-lg text-center m-auto">
+              <CardDescription className="xs:text-sm mobile:max-w-[100%] text-lg text-center m-auto">
                 {description}
               </CardDescription>
             </CardHeader>
@@ -95,7 +95,7 @@ export default function Projects() {
               {site && (
                 <>
                   <Link href={site} target="_blank">
-                    <Button size="lg">
+                    <Button className="xs:text-sm text-md" size="lg">
                       <ExternalLinkIcon className="mr-2" />
                       Visit site
                     </Button>
@@ -106,7 +106,11 @@ export default function Projects() {
               )}
 
               <Link href={github} target="_blank">
-                <Button size="lg" variant={"outline"}>
+                <Button
+                  className="xs:text-sm text-md"
+                  size="lg"
+                  variant={"outline"}
+                >
                   <GitHubLogoIcon className="mr-2" /> View on Github
                 </Button>
               </Link>

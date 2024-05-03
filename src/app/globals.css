@@ -27,9 +27,9 @@
   }
 
   .dark {
-    --background: 255 10% 4%;
+    --background: 255 10% 3%;
     --foreground: 240 0% 90%;
-    --card: 255 0% 4%;
+    --card: 255 0% 3%;
     --card-foreground: 240 0% 90%;
     --popover: 240 10% 5%;
     --popover-foreground: 240 0% 90%;
@@ -43,7 +43,7 @@
     --accent-foreground: 240 0% 90%;
     --destructive: 0 50% 30%;
     --destructive-foreground: 240 0% 90%;
-    --border: 255 0% 8%;
+    --border: 255 0% 12%;
     --input: 255 0% 20%;
     --ring: 240 0% 100%;
     --radius: 0.5rem;

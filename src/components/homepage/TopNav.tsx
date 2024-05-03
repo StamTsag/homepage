@@ -60,7 +60,11 @@ export default function TopNav() {
             <SheetHeader>
               <SheetTitle asChild>
                 <div className="flex items-center">
-                  <img src="/favicon.ico" className=" w-[28px] h-[28px] mr-2" />
+                  <img
+                    onClick={scrollTop}
+                    src="/favicon.ico"
+                    className=" w-[28px] h-[28px] mr-2"
+                  />
 
                   <h1
                     onClick={scrollTop}
@@ -96,7 +100,11 @@ export default function TopNav() {
           </SheetContent>
         </Sheet>
 
-        <img src="/favicon.ico" className="xs:hidden w-[28px] h-[28px] mr-2" />
+        <img
+          onClick={scrollTop}
+          src="/favicon.ico"
+          className="xs:hidden w-[28px] h-[28px] mr-2 cursor-pointer"
+        />
 
         <h1
           onClick={scrollTop}

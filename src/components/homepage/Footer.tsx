@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Separator } from "../ui/separator";
 
 export default function Footer() {
@@ -6,8 +7,11 @@ export default function Footer() {
       <Separator />
 
       <div className="flex items-center justify-center pt-2 pb-2">
-        <h1 className="mobile:text-sm font-medium text-md">
-          © Stamatis Tsagkliotis 2024
+        <h1 className="mobile:text-sm font-medium text-sm">
+          © Stamatis Tsagkliotis 2024 | Much ♥ to{" "}
+          <Link href="https://ui.shadcn.com" target="_blank">
+            shadcn
+          </Link>
         </h1>
       </div>
     </div>

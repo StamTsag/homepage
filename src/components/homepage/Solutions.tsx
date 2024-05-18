@@ -27,7 +27,7 @@ export default function Solutions() {
     {
       title: "Litestore",
       description:
-        "Your own tracker-less, private, lite-weight online file storage.",
+        "Your own private, lite-weight online file storage.",
       github: "https://github.com/Shadofer/Litestore",
       site: "https://litestore.shadofer.com",
     },

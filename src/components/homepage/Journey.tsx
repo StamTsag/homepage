@@ -180,6 +180,14 @@ export default function Journey() {
         skipPoint
       />
 
+      <JourneyPoint
+        creationText={"Upgraded Litestore with"}
+        creation={"shadcn"}
+        creationUrl={"https://ui.shadcn.com/"}
+        lineHeight={25}
+        skipPoint
+      />
+
       <JourneyDestination />
     </div>
   );

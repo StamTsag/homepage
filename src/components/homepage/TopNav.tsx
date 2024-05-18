@@ -28,6 +28,10 @@ export default function TopNav() {
       ref: "journey",
     },
     {
+      title: "Solutions",
+      ref: "solutions",
+    },
+    {
       title: "Projects",
       ref: "projects",
     },

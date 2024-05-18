@@ -2,7 +2,6 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -10,57 +9,41 @@ import {
 } from "../ui/card";
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
-interface Project {
+interface Solution {
   title: string;
   description: string;
   github: string;
   site?: string;
 }
 
-export default function Projects() {
-  const projects: Project[] = [
+export default function Solutions() {
+  const projects: Solution[] = [
     {
-      title: "TowerVerse",
-      description: "A dungeon-themed online multiplayer game made in Godot.",
-      github: "https://github.com/TowerVerse",
+      title: "Fronvo",
+      description: "Private social media, reimagined.",
+      github: "https://github.com/Fronvo",
+      site: "https://fronvo.com",
     },
     {
-      title: "Ezier",
+      title: "Litestore",
       description:
-        "An organisation aiming to create simple ports of famous JavaScript libraries.",
-      github: "https://github.com/Ezier-Project",
-    },
-    {
-      title: "Homepage",
-      description: "This homepage, showcasing my work.",
-      github: "https://github.com/Shadofer/homepage",
-      site: "https://shadofer.com",
-    },
-    {
-      title: "Dogey",
-      description:
-        "A pythonic wrapper of the deprecated stage platform, DogeHouse.",
-      github: "https://github.com/Shadofer/dogey",
-    },
-    {
-      title: "XMAS Counter",
-      description: "A simple but reactive christmas day counter.",
-      github: "https://github.com/Shadofer/xmas-counter",
-      site: "https://shadofer.github.io/xmas-counter",
+        "Your own tracker-less, private, lite-weight online file storage.",
+      github: "https://github.com/Shadofer/Litestore",
+      site: "https://litestore.shadofer.com",
     },
   ];
 
   return (
     <div
-      id="projects"
+      id="solutions"
       className="flex flex-col items-center justify-center pt-[100px] text-center"
     >
       <h1 className="xs:text-2xl font-black text-4xl tracking-tighter">
-        ..Anything else?
+        What have I created?
       </h1>
 
       <h1 className="xs:text-sm xs:w-[75%] w-[500px] text-lg">
-        I've developed some side projects too.
+        Production-grade solutions for the masses.
       </h1>
 
       {projects.map(({ title, description, github, site }) => {

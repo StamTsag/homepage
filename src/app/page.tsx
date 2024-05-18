@@ -4,6 +4,7 @@ import TopNav from "@/components/homepage/TopNav";
 import Contact from "@/components/homepage/Contact";
 import Journey from "@/components/homepage/Journey";
 import Projects from "@/components/homepage/Projects";
+import Solutions from "@/components/homepage/Solutions";
 
 export default function Homepage() {
   return (
@@ -13,6 +14,8 @@ export default function Homepage() {
       <MainView />
 
       <Journey />
+
+      <Solutions />
 
       <Projects />
 

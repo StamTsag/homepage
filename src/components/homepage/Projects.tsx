@@ -33,20 +33,19 @@ export default function Projects() {
     {
       title: "Homepage",
       description: "This homepage, showcasing my work.",
-      github: "https://github.com/Shadofer/homepage",
-      site: "https://shadofer.com",
+      github: "https://github.com/StamTsag/homepage",
+      site: "https://stamtsag.com",
     },
     {
       title: "Dogey",
       description:
         "A pythonic wrapper of the deprecated stage platform, DogeHouse.",
-      github: "https://github.com/Shadofer/dogey",
+      github: "https://github.com/StamTsag/dogey",
     },
     {
       title: "XMAS Counter",
       description: "A simple but reactive christmas day counter.",
-      github: "https://github.com/Shadofer/xmas-counter",
-      site: "https://shadofer.github.io/xmas-counter",
+      github: "https://github.com/StamTsag/xmas-counter",
     },
   ];
 

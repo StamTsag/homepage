@@ -137,7 +137,7 @@ export default function TopNav() {
 
         <span className="flex-1" />
 
-        <a href="https://github.com/Shadofer" target="_blank" className="mr-2">
+        <a href="https://github.com/StamTsag" target="_blank" className="mr-2">
           <Button size="icon" variant="ghost">
             <GitHubLogoIcon width={20} height={20} />
           </Button>

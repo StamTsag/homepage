@@ -23,16 +23,16 @@ export default function RootLayout({
         <meta name="description" content="A full-stack developer." />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://shadofer.com/" />
+        <meta property="og:url" content="https://stamtsag.com/" />
         <meta property="og:title" content="Stam Tsag" />
         <meta
           property="og:description"
           content="The journey of a Fullstack Developer."
         />
-        <meta property="og:image" content="https://shadofer.com/embed.png" />
+        <meta property="og:image" content="https://stamtsag.com/embed.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://shadofer.com/" />
+        <meta property="twitter:url" content="https://stamtsag.com/" />
         <meta property="twitter:title" content="Stam Tsag" />
         <meta
           property="twitter:description"
@@ -40,7 +40,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="https://shadofer.com/embed.png"
+          content="https://stamtsag.com/embed.png"
         />
       </head>
       <body className={font.className}>

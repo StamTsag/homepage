@@ -74,7 +74,7 @@ export default function Journey() {
       <JourneyPoint
         creationText={"Created"}
         creation={"Dogey"}
-        creationUrl={"https://github.com/Shadofer/dogey"}
+        creationUrl={"https://github.com/StamTsag/dogey"}
         lineHeight={50}
         skipPoint
       />
@@ -116,7 +116,7 @@ export default function Journey() {
       <JourneyPoint
         creationText={"Created"}
         creation={"XMAS Counter"}
-        creationUrl={"https://github.com/Shadofer/xmas-counter"}
+        creationUrl={"https://github.com/StamTsag/xmas-counter"}
         lineHeight={50}
         skipPoint
       />
@@ -142,7 +142,7 @@ export default function Journey() {
       <JourneyPoint
         creationText={"Created this"}
         creation={"homepage"}
-        creationUrl={"https://github.com/Shadofer/homepage"}
+        creationUrl={"https://github.com/StamTsag/homepage"}
         lineHeight={50}
         skipPoint
       />
@@ -167,7 +167,7 @@ export default function Journey() {
       <JourneyPoint
         creationText={"Created"}
         creation={"Litestore"}
-        creationUrl={"https://litestore.shadofer.com/"}
+        creationUrl={"https://litestore.stamtsag.com/"}
         lineHeight={50}
         skipPoint
       />

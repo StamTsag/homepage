@@ -29,7 +29,7 @@ export default function MainView() {
           My journey
         </Button>
 
-        <Link href="https://github.com/Shadofer" target="_blank">
+        <Link href="https://github.com/StamTsag" target="_blank">
           <Button
             variant={"outline"}
             size="lg"

@@ -26,10 +26,9 @@ export default function Solutions() {
     },
     {
       title: "Litestore",
-      description:
-        "Your own private, lite-weight online file storage.",
-      github: "https://github.com/Shadofer/Litestore",
-      site: "https://litestore.shadofer.com",
+      description: "Your own private, lite-weight online file storage.",
+      github: "https://github.com/StamTsag/Litestore",
+      site: "https://litestore.stamtsag.com",
     },
   ];
 

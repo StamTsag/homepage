@@ -188,6 +188,23 @@ export default function Journey() {
         skipPoint
       />
 
+      <JourneyPoint
+        creationText={"Joined"}
+        creation={"Stoy Solutions"}
+        creationUrl={"https://stoysolutions.com/"}
+        creationSuffix={"as a Fullstack Developer"}
+        lineHeight={50}
+        skipPoint
+      />
+
+      <JourneyPoint
+        creationText={"Worked on"}
+        creation={"TynkerAI"}
+        creationUrl={"https://tynkerai.com/"}
+        lineHeight={25}
+        skipPoint
+      />
+
       <JourneyDestination />
     </div>
   );

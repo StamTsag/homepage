@@ -13,12 +13,18 @@ import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 interface Project {
   title: string;
   description: string;
-  github: string;
+  github?: string;
   site?: string;
 }
 
 export default function Projects() {
   const projects: Project[] = [
+    {
+      title: "TynkerAI",
+      description:
+        "Web-based interactive online games powered by AI prompt submission.",
+      site: "https://tynkerai.com",
+    },
     {
       title: "TowerVerse",
       description: "A dungeon-themed online multiplayer game made in Godot.",
@@ -59,7 +65,7 @@ export default function Projects() {
       </h1>
 
       <h1 className="xs:text-sm xs:w-[75%] w-[500px] text-lg">
-        I've developed some side projects too.
+        I've worked and collaborated on some side projects too.
       </h1>
 
       {projects.map(({ title, description, github, site }) => {
@@ -91,15 +97,17 @@ export default function Projects() {
                 </>
               )}
 
-              <Link href={github} target="_blank">
-                <Button
-                  className="xs:text-sm text-md"
-                  size="lg"
-                  variant={"outline"}
-                >
-                  <GitHubLogoIcon className="mr-2" /> View on Github
-                </Button>
-              </Link>
+              {github && (
+                <Link href={github} target="_blank">
+                  <Button
+                    className="xs:text-sm text-md"
+                    size="lg"
+                    variant={"outline"}
+                  >
+                    <GitHubLogoIcon className="mr-2" /> View on Github
+                  </Button>
+                </Link>
+              )}
             </CardFooter>
           </Card>
         );

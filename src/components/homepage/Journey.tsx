@@ -201,6 +201,15 @@ export default function Journey() {
         creationText={"Worked on"}
         creation={"TynkerAI"}
         creationUrl={"https://tynkerai.com/"}
+        lineHeight={15}
+        skipPoint
+      />
+
+      <JourneyPoint
+        creationText={"Joined"}
+        creation={"E-Restaurants.gr"}
+        creationUrl={"https://e-restaurants.gr/"}
+        creationSuffix={"as a Senior Frontend Developer"}
         lineHeight={25}
         skipPoint
       />

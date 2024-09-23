@@ -26,13 +26,13 @@ export default function JourneyPoint({
   return (
     <div className="xs:w-[90%] flex flex-col items-center justify-center animation-150 mt-[10px] w-full">
       {year != -1 && (
-        <h1 className="xs:text-base border-2 border-foreground/10 rounded-full p-0.5 pl-2 pr-2 font-black text-lg mb-1 tracking-tight">
+        <h1 className="xs:text-base border-2 border-foreground/10 rounded-full p-0.5 pl-2 pr-2 font-medium text-md mb-1 tracking-tight">
           {year}
         </h1>
       )}
 
       {creation ? (
-        <h1 className="xs:text-base font-medium text-lg mb-1 tracking-tight">
+        <h1 className="xs:text-base font-medium text-md mb-1 tracking-tight">
           {text} {creationText ? creationText : "Created"}{" "}
           {creationPrefix ? `${creationPrefix} ` : ""}
           <Link href={creationUrl} target="_blank">
@@ -41,7 +41,7 @@ export default function JourneyPoint({
           {creationSuffix ? `${creationSuffix} ` : ""}
         </h1>
       ) : (
-        <h1 className="xs:text-base font-medium text-lg mb-1 tracking-tight">
+        <h1 className="xs:text-base font-medium text-md mb-1 tracking-tight">
           {text}
         </h1>
       )}

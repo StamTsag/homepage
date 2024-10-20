@@ -72,7 +72,7 @@ export default function TopNav() {
 
                   <h1
                     onClick={scrollTop}
-                    className="font-bold text-xl mr-6 translate-x-[-3px] font-black cursor-pointer"
+                    className="font-bold mobile:text-md text-xl mr-6 translate-x-[-3px] font-black cursor-pointer"
                   >
                     Stam Tsag
                   </h1>
@@ -112,7 +112,7 @@ export default function TopNav() {
 
         <h1
           onClick={scrollTop}
-          className="tracking-tighter font-bold text-xl mr-6 translate-x-[-3px] font-black cursor-pointer"
+          className="tracking-tighter font-bold mobile:text-lg text-xl mr-6 translate-x-[-3px] font-black cursor-pointer"
         >
           Stam Tsag
         </h1>

@@ -8,7 +8,7 @@ export default function JourneyDestination() {
       <div className="xs:w-[20px] xs:h-[20px] w-[25px] h-[25px] rounded-full border-2 border-[hsl(var(--foreground))]" />
 
       <h1 className="text-xs font-semibold mt-6 text-tertiary">
-        Last updated: 28/9/2024
+        Last updated: 20/10/2024
       </h1>
     </div>
   );

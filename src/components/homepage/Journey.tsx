@@ -248,7 +248,7 @@ export default function Journey() {
             creationText={"Joined"}
             creation={"Cryptify AI"}
             creationUrl={"https://cryptify.ai/"}
-            creationSuffix={"as a Developer Manager"}
+            creationSuffix={"as a Frontend Developer"}
             lineHeight={15}
             skipPoint
           />

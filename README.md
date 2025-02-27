@@ -1,4 +1,4 @@
-
+<img src='https://raw.githubusercontent.com/StamTsag/homepage/refs/heads/v3/.github/assets/preview.png' align='center' />
 
 # Running
 

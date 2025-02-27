@@ -46,7 +46,7 @@ export default function WorkedOn() {
     {
       title: "Cryptify AI",
       description:
-        "Gain insights into influencer (KOL) with an insightful dashboard.",
+        "Gain insights into influencer (KOL) with a powerful dashboard.",
       link: "https://cryptify.ai",
       tags: ["SvelteKit", "shadcn", "Tailwind", "drizzle"],
       usePng: true,

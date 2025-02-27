@@ -32,6 +32,7 @@ export default function Projects() {
     {
       title: "TowerVerse",
       description: "A dungeon-themed online multiplayer game made in Godot.",
+      link: "https://github.com/TowerVerse",
       github: "https://github.com/TowerVerse",
       tags: ["GDScript", "Typescript", "Python", "Rust"],
       usePlaceholder: true,
@@ -40,6 +41,7 @@ export default function Projects() {
       title: "Ezier",
       description:
         "An organisation aiming to create simple ports of famous JavaScript libraries.",
+      link: "https://github.com/Ezier-Project",
       github: "https://github.com/Ezier-Project",
       tags: ["Node.JS", "Typescript"],
       usePlaceholder: true,
@@ -48,6 +50,7 @@ export default function Projects() {
       title: "Dogey",
       description:
         "A pythonic wrapper of the deprecated stage platform, DogeHouse.",
+      link: "https://github.com/StamTsag/dogey",
       github: "https://github.com/StamTsag/dogey",
       tags: ["Python"],
       usePlaceholder: true,

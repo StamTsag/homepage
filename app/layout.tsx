@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import type React from "react";
+import MouseMoveEffect from "@/components/mouse-move-effect";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -53,6 +54,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <MouseMoveEffect />
           {children}
         </ThemeProvider>
       </body>

@@ -1,8 +1,11 @@
+"use client";
+
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "../types";
+import { useState } from "react";
 
 export default function ProjectCard({
   title,
@@ -13,8 +16,38 @@ export default function ProjectCard({
   usePng,
   usePlaceholder,
 }: Project) {
+  const [tiltStyle, setTiltStyle] = useState({});
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const cardRect = card.getBoundingClientRect();
+    const cardCenterX = cardRect.left + cardRect.width / 2;
+    const cardCenterY = cardRect.top + cardRect.height / 2;
+    const mouseX = e.clientX - cardCenterX;
+    const mouseY = e.clientY - cardCenterY;
+    const rotateX = (mouseY / cardRect.height) * 20;
+    const rotateY = -(mouseX / cardRect.width) * 20;
+
+    setTiltStyle({
+      transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`,
+      transition: "all 0.1s ease",
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setTiltStyle({
+      transform: "perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)",
+      transition: "all 0.25s ease",
+    });
+  };
+
   return (
-    <Card className="overflow-hidden">
+    <Card
+      className="overflow-hidden cursor-pointer"
+      style={tiltStyle}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="relative aspect-video">
         <Link href={link || ""} target="_blank">
           <Image
@@ -27,7 +60,7 @@ export default function ProjectCard({
             }
             alt={title}
             fill
-            className="object-cover transition-transform hover:scale-105"
+            className="object-cover"
           />
         </Link>
       </div>

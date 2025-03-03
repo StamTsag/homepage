@@ -8,10 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 export function isElementInViewport(element: HTMLElement) {
   var bounding = element.getBoundingClientRect();
 
-  return (
-    bounding.top >= 0 &&
-    bounding.left >= 0 &&
-    bounding.bottom + 100 <=
-      (window.innerHeight || document.documentElement.clientHeight)
-  );
+  return bounding.top >= 0 && bounding.left >= 0;
 }

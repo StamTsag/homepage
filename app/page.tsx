@@ -20,35 +20,9 @@ enum ScrollLayout {
   Contact,
 }
 
-function getSectionFromHref(): ScrollLayout {
-  const section = location.hash.replaceAll("#", "");
-
-  if (!section) return ScrollLayout.Home;
-
-  switch (section) {
-    case "home":
-      return ScrollLayout.Home;
-
-    case "worked-on":
-      return ScrollLayout["Worked on"];
-
-    case "projects":
-      return ScrollLayout.Projects;
-
-    case "stack":
-      return ScrollLayout.Stack;
-
-    case "contact":
-      return ScrollLayout.Contact;
-
-    default:
-      return ScrollLayout.Home;
-  }
-}
-
 export default function Page() {
   let [activeScroll, setActiveScroll] = useState<ScrollLayout>(
-    process.env.NODE_ENV === "development" ? 0 : getSectionFromHref()
+    ScrollLayout.Home
   );
 
   useEffect(() => {

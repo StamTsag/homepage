@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
@@ -6,8 +8,70 @@ import TechStack from "./components/tech-stack";
 import { ThemeToggle } from "@/components/theme-toggle";
 import Projects from "./components/projects";
 import WorkedOn from "./components/worked-on";
+import HoverTabs from "@/components/hover-tabs";
+import { useEffect, useState } from "react";
+import { isElementInViewport } from "@/lib/utils";
+
+enum ScrollLayout {
+  Home,
+  "Worked on",
+  Projects,
+  Stack,
+  Contact,
+}
+
+function getSectionFromHref(): ScrollLayout {
+  const section = location.hash.replaceAll("#", "");
+
+  if (!section) return ScrollLayout.Home;
+
+  switch (section) {
+    case "home":
+      return ScrollLayout.Home;
+
+    case "worked-on":
+      return ScrollLayout["Worked on"];
+
+    case "projects":
+      return ScrollLayout.Projects;
+
+    case "stack":
+      return ScrollLayout.Stack;
+
+    case "contact":
+      return ScrollLayout.Contact;
+
+    default:
+      return ScrollLayout.Home;
+  }
+}
 
 export default function Page() {
+  let [activeScroll, setActiveScroll] = useState<ScrollLayout>(
+    process.env.NODE_ENV === "development" ? 0 : getSectionFromHref()
+  );
+
+  useEffect(() => {
+    window.onscroll = () => {
+      const home = document.getElementById("about");
+      const workedOn = document.getElementById("worked-on");
+      const projects = document.getElementById("projects");
+      const stack = document.getElementById("stack");
+      const contact = document.getElementById("contact");
+
+      if (isElementInViewport(home!)) setActiveScroll(ScrollLayout.Home);
+      else if (isElementInViewport(workedOn!))
+        setActiveScroll(ScrollLayout["Worked on"]);
+      else if (isElementInViewport(projects!))
+        setActiveScroll(ScrollLayout.Projects);
+      else if (isElementInViewport(stack!)) {
+        setActiveScroll(ScrollLayout.Stack);
+      } else if (isElementInViewport(contact!)) {
+        setActiveScroll(ScrollLayout.Contact);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <div>
@@ -29,36 +93,11 @@ export default function Page() {
                 </span>
               </Link>
               <nav className="flex items-center space-x-6 text-sm font-medium">
-                <Link
-                  href="#about"
-                  className="transition-colors hover:text-foreground/80"
-                >
-                  About
-                </Link>
-                <Link
-                  href="#workedon"
-                  className="transition-colors hover:text-foreground/80"
-                >
-                  Work
-                </Link>
-                <Link
-                  href="#projects"
-                  className="transition-colors hover:text-foreground/80"
-                >
-                  Projects
-                </Link>
-                <Link
-                  href="#stack"
-                  className="transition-colors hover:text-foreground/80"
-                >
-                  Stack
-                </Link>
-                <Link
-                  href="#contact"
-                  className="transition-colors hover:text-foreground/80"
-                >
-                  Contact
-                </Link>
+                <HoverTabs
+                  tabs={["Home", "Worked on", "Projects", "Stack", "Contact"]}
+                  useLinks
+                  customActiveTab={activeScroll}
+                />
               </nav>
             </div>
 
@@ -116,7 +155,7 @@ export default function Page() {
           </section>
 
           <section
-            id="workedon"
+            id="worked-on"
             className="md:pr-[15%] md:pl-[15%] py-12 md:py-24 lg:py-32"
           >
             <div className="px-4 md:px-6">

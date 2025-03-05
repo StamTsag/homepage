@@ -125,6 +125,9 @@ importers:
       nodemailer:
         specifier: ^6.10.0
         version: 6.10.0
+      posthog-js:
+        specifier: ^1.227.0
+        version: 1.227.0(@rrweb/types@2.0.0-alpha.17)
       react:
         specifier: ^18
         version: 18.3.1
@@ -923,6 +926,9 @@ packages:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
       react-dom: ^18.0 || ^19.0 || ^19.0.0-rc
 
+  '@rrweb/types@2.0.0-alpha.17':
+    resolution: {integrity: sha512-AfDTVUuCyCaIG0lTSqYtrZqJX39ZEYzs4fYKnexhQ+id+kbZIpIJtaut5cto6dWZbB3SEe4fW0o90Po3LvTmfg==}
+
   '@selderee/plugin-htmlparser2@0.11.0':
     resolution: {integrity: sha512-P33hHGdldxGabLFjPPpaTxVolMrzrcegejx+0GxjrIb9Zv48D8yAIA/QTDR2dFl7Uz7urX8aX6+5bCZslr+gWQ==}
 
@@ -1082,6 +1088,9 @@ packages:
   config-chain@1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
 
+  core-js@3.41.0:
+    resolution: {integrity: sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==}
+
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -1227,6 +1236,9 @@ packages:
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
+
+  fflate@0.4.8:
+    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -1521,6 +1533,14 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
+  posthog-js@1.227.0:
+    resolution: {integrity: sha512-xdXpBI+6SJDG3vUSxW3KH8o4B5CrHz0Y95anSaHjIzkEeRd9NbTTDku/Hy9lLt1+8tkiwvsh6fYi7jS1UBHL/g==}
+    peerDependencies:
+      '@rrweb/types': 2.0.0-alpha.17
+
+  preact@10.26.4:
+    resolution: {integrity: sha512-KJhO7LBFTjP71d83trW+Ilnjbo+ySsaAgCfXOXUlmGzJ4ygYPWmysm77yg4emwfmoz3b22yvH5IsVFHbhUaH5w==}
+
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
@@ -1640,6 +1660,9 @@ packages:
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+  rrweb-snapshot@2.0.0-alpha.18:
+    resolution: {integrity: sha512-hBHZL/NfgQX6wO1D9mpwqFu1NJPpim+moIcKhFEjVTZVRUfCln+LOugRc4teVTCISYHN8Cw5e2iNTWCSm+SkoA==}
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -1802,6 +1825,9 @@ packages:
 
   victory-vendor@36.9.2:
     resolution: {integrity: sha512-PnpQQMuxlwYdocC8fIJqVXvkeViHYzotI+NJrCuav0ZYFoq912ZHBk3mCeuj+5/VpodOjPe1z0Fk2ihgzlXqjQ==}
+
+  web-vitals@4.2.4:
+    resolution: {integrity: sha512-r4DIlprAGwJ7YM11VZp4R884m0Vmgr6EAKe3P+kO0PPj3Unqyvv59rczf6UiGcb9Z8QxZVcqKNwv/g0WNdWwsw==}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -2590,6 +2616,10 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-promise-suspense: 0.3.4
 
+  '@rrweb/types@2.0.0-alpha.17':
+    dependencies:
+      rrweb-snapshot: 2.0.0-alpha.18
+
   '@selderee/plugin-htmlparser2@0.11.0':
     dependencies:
       domhandler: 5.0.3
@@ -2750,6 +2780,8 @@ snapshots:
       ini: 1.3.8
       proto-list: 1.2.4
 
+  core-js@3.41.0: {}
+
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -2881,6 +2913,8 @@ snapshots:
   fastq@1.19.1:
     dependencies:
       reusify: 1.1.0
+
+  fflate@0.4.8: {}
 
   fill-range@7.1.1:
     dependencies:
@@ -3145,6 +3179,16 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  posthog-js@1.227.0(@rrweb/types@2.0.0-alpha.17):
+    dependencies:
+      '@rrweb/types': 2.0.0-alpha.17
+      core-js: 3.41.0
+      fflate: 0.4.8
+      preact: 10.26.4
+      web-vitals: 4.2.4
+
+  preact@10.26.4: {}
+
   prop-types@15.8.1:
     dependencies:
       loose-envify: 1.4.0
@@ -3272,6 +3316,10 @@ snapshots:
       supports-preserve-symlinks-flag: 1.0.0
 
   reusify@1.1.0: {}
+
+  rrweb-snapshot@2.0.0-alpha.18:
+    dependencies:
+      postcss: 8.5.3
 
   run-parallel@1.2.0:
     dependencies:
@@ -3448,6 +3496,8 @@ snapshots:
       d3-shape: 3.2.0
       d3-time: 3.1.0
       d3-timer: 3.0.1
+
+  web-vitals@4.2.4: {}
 
   which@2.0.2:
     dependencies:

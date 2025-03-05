@@ -5,6 +5,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import type React from "react";
 import MouseMoveEffect from "@/components/mouse-move-effect";
+import { PostHogProvider } from "./providers";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -58,7 +59,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <MouseMoveEffect />
-          {children}
+          <PostHogProvider>{children}</PostHogProvider>
         </ThemeProvider>
       </body>
     </html>

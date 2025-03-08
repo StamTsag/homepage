@@ -4,6 +4,14 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: "TuneXify",
+      description:
+        "Instantly download music from both Youtube & Spotify with just a link.",
+      link: "https://tunexify.stamtsag.com",
+      tags: ["Mext.JS", "shadcn", "Tailwind"],
+      usePng: true,
+    },
+    {
       title: "Fronvo",
       description:
         "Next-gen social media, privacy-oriented, performant and unique.",
@@ -28,32 +36,6 @@ export default function Projects() {
       link: "https://xmas.stamtsag.com/",
       tags: ["SvelteKit"],
       usePng: true,
-    },
-    {
-      title: "TowerVerse",
-      description: "A dungeon-themed online multiplayer game made in Godot.",
-      link: "https://github.com/TowerVerse",
-      github: "https://github.com/TowerVerse",
-      tags: ["GDScript", "Typescript", "Python", "Rust"],
-      usePlaceholder: true,
-    },
-    {
-      title: "Ezier",
-      description:
-        "An organisation aiming to create simple ports of famous JavaScript libraries.",
-      link: "https://github.com/Ezier-Project",
-      github: "https://github.com/Ezier-Project",
-      tags: ["Node.JS", "Typescript"],
-      usePlaceholder: true,
-    },
-    {
-      title: "Dogey",
-      description:
-        "A pythonic wrapper of the deprecated stage platform, DogeHouse.",
-      link: "https://github.com/StamTsag/dogey",
-      github: "https://github.com/StamTsag/dogey",
-      tags: ["Python"],
-      usePlaceholder: true,
     },
   ];
 

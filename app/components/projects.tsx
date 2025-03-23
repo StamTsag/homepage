@@ -8,7 +8,7 @@ export default function Projects() {
       description:
         "Instantly download music from both Youtube & Spotify with just a link.",
       link: "https://tunexify.stamtsag.com",
-      tags: ["Mext.JS", "shadcn", "Tailwind"],
+      tags: ["Next.JS", "shadcn", "Tailwind"],
       usePng: true,
     },
     {

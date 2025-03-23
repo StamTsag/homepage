@@ -4,6 +4,15 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: "Acrylica",
+      description:
+        "A minimalistic, acrylic-based design operating system on the web.",
+      github: "https://github.com/StamTsag/acrylica",
+      link: "https://acrylica.stamtsag.com",
+      tags: ["SvelteKit", "shadcn", "Tailwind"],
+      usePng: true,
+    },
+    {
       title: "TuneXify",
       description:
         "Instantly download music from both Youtube & Spotify with just a link.",
@@ -26,15 +35,6 @@ export default function Projects() {
       github: "https://github.com/StamTsag/Litestore",
       link: "https://litestore.stamtsag.com",
       tags: ["Next.JS", "shadcn", "Tailwind", "Node.JS", "Prisma"],
-      usePng: true,
-    },
-    {
-      title: "XMAS Counter",
-      description:
-        "A stylish christmas day counter for those impatiently waiting.",
-      github: "https://github.com/StamTsag/xmas-counter",
-      link: "https://xmas.stamtsag.com/",
-      tags: ["SvelteKit"],
       usePng: true,
     },
   ];

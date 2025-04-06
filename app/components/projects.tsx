@@ -23,7 +23,7 @@ export default function Projects() {
     {
       title: "LinkShr",
       description:
-        "Instantly download music from both Youtube & Spotify with just a link.",
+        "Shorten those long links to a simple readable format, online.",
       link: "https://linkshr.stamtsag.com",
       tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
       github: "https://github.com/StamTsag/linkshr",

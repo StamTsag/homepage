@@ -21,6 +21,15 @@ export default function Projects() {
       usePng: true,
     },
     {
+      title: "LinkShr",
+      description:
+        "Instantly download music from both Youtube & Spotify with just a link.",
+      link: "https://linkshr.stamtsag.com",
+      tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
+      github: "https://github.com/StamTsag/linkshr",
+      usePng: true,
+    },
+    {
       title: "Fronvo",
       description:
         "Next-gen social media, privacy-oriented, performant and unique.",

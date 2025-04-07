@@ -22,8 +22,10 @@ const technologies: Technology[] = [
     category: "Backend",
     skills: [
       "Node.JS",
+      "Java",
       "Typescript",
       "Express",
+      "Spring Boot",
       "Prisma",
       "Drizzle",
       "Jest",

@@ -13,6 +13,16 @@ export default function Projects() {
       usePng: true,
     },
     {
+      title: "Speedy",
+      description:
+        "Measure your internet speed efficiently and share your results.",
+      link: "https://speedy.stamtsag.com",
+      tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
+      github: "https://github.com/StamTsag/speedy",
+
+      usePng: true,
+    },
+    {
       title: "TuneXify",
       description:
         "Instantly download music from both Youtube & Spotify with just a link.",
@@ -27,23 +37,6 @@ export default function Projects() {
       link: "https://linkshr.stamtsag.com",
       tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
       github: "https://github.com/StamTsag/linkshr",
-      usePng: true,
-    },
-    {
-      title: "Fronvo",
-      description:
-        "Next-gen social media, privacy-oriented, performant and unique.",
-      link: "https://fronvo.com",
-      github: "https://github.com/Fronvo",
-      tags: ["SvelteKit", "shadcn", "Tailwind", "Node.JS", "Prisma"],
-    },
-    {
-      title: "Litestore",
-      description:
-        "Your own private, lite-weight and secure online file storage.",
-      github: "https://github.com/StamTsag/Litestore",
-      link: "https://litestore.stamtsag.com",
-      tags: ["Next.JS", "shadcn", "Tailwind", "Node.JS", "Prisma"],
       usePng: true,
     },
   ];

@@ -4,15 +4,6 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: "Acrylica",
-      description:
-        "A minimalistic, acrylic-based design operating system on the web.",
-      github: "https://github.com/StamTsag/acrylica",
-      link: "https://acrylica.stamtsag.com",
-      tags: ["SvelteKit", "shadcn", "Tailwind"],
-      usePng: true,
-    },
-    {
       title: "Speedy",
       description:
         "Measure your internet speed efficiently and share your results.",
@@ -37,6 +28,15 @@ export default function Projects() {
       link: "https://linkshr.stamtsag.com",
       tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
       github: "https://github.com/StamTsag/linkshr",
+      usePng: true,
+    },
+    {
+      title: "Acrylica",
+      description:
+        "A minimalistic, acrylic-based design operating system on the web.",
+      github: "https://github.com/StamTsag/acrylica",
+      link: "https://acrylica.stamtsag.com",
+      tags: ["SvelteKit", "shadcn", "Tailwind"],
       usePng: true,
     },
   ];

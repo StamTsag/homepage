@@ -15,7 +15,9 @@ const technologies: Technology[] = [
       "Next.JS",
       "shadcn",
       "Typescript",
+      "PostCSS",
       "Tailwind",
+      "Vite",
     ],
   },
   {
@@ -23,11 +25,13 @@ const technologies: Technology[] = [
     skills: [
       "Node.JS",
       "Java",
+      "Javascript",
       "Typescript",
       "Express",
       "Spring Boot",
       "Prisma",
       "Drizzle",
+      "Mocha",
       "Jest",
       "PostgreSQL",
       "MongoDB",
@@ -35,11 +39,21 @@ const technologies: Technology[] = [
   },
   {
     category: "DevOps",
-    skills: ["Docker", "AWS", "Azure", "CI/CD", "Git", "Linux"],
+    skills: [
+      "Docker",
+      "AWS",
+      "Azure",
+      "CircleCI",
+      "Github Actions",
+      "Git",
+      "Linux",
+      "PM2",
+    ],
   },
   {
     category: "Tools",
     skills: [
+      "Trello",
       "VS Code",
       "Postman",
       "Figma",
@@ -47,7 +61,7 @@ const technologies: Technology[] = [
       "GitHub",
       "Vercel",
       "Render",
-      "CircleCI",
+      "PostHog",
     ],
   },
 ];

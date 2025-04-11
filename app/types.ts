@@ -1,3 +1,11 @@
+export enum ScrollLayout {
+  Home,
+  "Worked on",
+  Projects,
+  Stack,
+  Contact,
+}
+
 export interface Project {
   title: string;
   description: string;

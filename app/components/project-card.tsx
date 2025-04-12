@@ -43,7 +43,7 @@ export default function ProjectCard({
 
   return (
     <Card
-      className="overflow-hidden cursor-pointer"
+      className="overflow-hidden cursor-pointer h-full"
       style={tiltStyle}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}

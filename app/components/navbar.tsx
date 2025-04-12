@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { ScrollLayout } from "../types";
+import { motion } from "framer-motion";
 
 interface Props {
   activeScroll: ScrollLayout;
@@ -12,7 +13,13 @@ interface Props {
 // TODO: Drawer
 export default function NavBar({ activeScroll }: Props) {
   return (
-    <header className="md:pr-[15%] md:pl-[15%] sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75">
+    <motion.header
+      initial={{ y: -60 }}
+      animate={{ y: 0 }}
+      transition={{ bounce: false, duration: 0.25 }}
+      viewport={{ once: true }}
+      className="md:pr-[15%] md:pl-[15%] sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75"
+    >
       <div className="flex h-14 items-center max-w-[90vw] justify-center m-auto">
         <div className="mr-4 hidden md:flex flex flex-1">
           <Link className="mr-6 flex items-center space-x-2" href="/">
@@ -43,6 +50,6 @@ export default function NavBar({ activeScroll }: Props) {
 
         <ThemeToggle />
       </div>
-    </header>
+    </motion.header>
   );
 }

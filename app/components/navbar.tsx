@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { ScrollLayout } from "../types";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Props {
   activeScroll: ScrollLayout;
@@ -13,43 +13,42 @@ interface Props {
 // TODO: Drawer
 export default function NavBar({ activeScroll }: Props) {
   return (
-    <motion.header
-      initial={{ y: -60 }}
-      animate={{ y: 0 }}
-      transition={{ bounce: false, duration: 0.25 }}
-      viewport={{ once: true }}
-      className="md:pr-[15%] md:pl-[15%] sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75"
-    >
-      <div className="flex h-14 items-center max-w-[90vw] justify-center m-auto">
-        <div className="mr-4 hidden md:flex flex flex-1">
-          <Link className="mr-6 flex items-center space-x-2" href="/">
-            <span className="font-bold inline-block min-w-[85px]">
-              Stam Tsag
-            </span>
-          </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
-            <HoverTabs
-              tabs={["Home", "Worked on", "Projects", "Stack", "Contact"]}
-              useLinks
-              customActiveTab={activeScroll}
-            />
-          </nav>
-        </div>
+    <header className="sticky top-0 pr-4 md:top-4 z-50 w-full md:min-w-[750px] md:w-[85%] lg:min-w-[800px] lg:w-[60%] m-auto border md:rounded-full dark:border-border/50 bg-background dark:bg-background/30 dark:backdrop-blur-lg shadow-lg dark:shadow-none">
+      <div className="container flex h-14 max-w-screen-2xl items-center">
+        <Link href="/" className="mr-6 ml-5 flex items-center space-x-2">
+          <Image
+            className="hidden sm:block"
+            src={"/favicon.ico"}
+            alt="Logo"
+            width={24}
+            height={24}
+          />
+          <span className="font-bold">StamTsag</span>
+        </Link>
+        <nav className="hidden md:block flex items-center space-x-6 text-sm font-medium">
+          <HoverTabs
+            tabs={["Home", "Worked on", "Projects", "Stack", "Contact"]}
+            useLinks
+            customActiveTab={activeScroll}
+          />
+        </nav>
 
         <span className="flex-1" />
 
-        <Link
-          href="https://github.com/StamTsag"
-          className="mr-3"
-          target="_blank"
-        >
-          <Button variant={"outline"} size="sm" className="ml-auto">
-            View Github <ArrowUpRight />
-          </Button>
-        </Link>
+        <div className="flex items-center justify-end space-x-4 flex-1">
+          <Link
+            href="https://github.com/StamTsag"
+            className="mr-3"
+            target="_blank"
+          >
+            <Button variant={"outline"} size="sm" className="ml-auto">
+              View Github <ArrowUpRight />
+            </Button>
+          </Link>
 
-        <ThemeToggle />
+          <ThemeToggle />
+        </div>
       </div>
-    </motion.header>
+    </header>
   );
 }

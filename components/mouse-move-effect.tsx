@@ -19,9 +19,9 @@ export default function MouseMoveEffect() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-10 transition-opacity duration-150"
+      className="pointer-events-none fixed inset-0 z-10 transition-opacity duration-150 opacity-0 lg:opacity-40 lg:dark:opacity-100"
       style={{
-        background: `radial-gradient(400px at ${mousePosition.x}px ${mousePosition.y}px, rgba(50, 78, 216, 0.1), transparent 50%)`,
+        background: `radial-gradient(400px at ${mousePosition.x}px ${mousePosition.y}px, rgba(78, 102, 223, 0.1), transparent 50%)`,
       }}
     />
   );

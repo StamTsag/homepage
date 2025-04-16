@@ -43,12 +43,12 @@ export default function ProjectCard({
 
   return (
     <Card
-      className="overflow-hidden cursor-pointer h-full"
+      className="overflow-hidden cursor-pointer w-full h-full m-auto max-w-[500px]"
       style={tiltStyle}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="relative aspect-video">
+      <div className="relative h-[175px] md:aspect-video md:h-auto">
         <Link href={link || ""} target="_blank">
           <Image
             src={
@@ -65,13 +65,15 @@ export default function ProjectCard({
         </Link>
       </div>
       <CardContent className="p-4">
-        <h3 className="font-semibold text-xl mb-2">{title}</h3>
-        <p className="text-sm text-muted-foreground mb-4">{description}</p>
+        <h3 className="font-semibold text-lg md:text-xl mb-2">{title}</h3>
+        <p className="text-[0.7rem] md:text-sm text-muted-foreground mb-4">
+          {description}
+        </p>
         <div className="flex flex-wrap gap-2">
           {tags?.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10"
+              className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-[0.7rem] md:text-xs font-medium ring-1 ring-inset ring-gray-500/10"
             >
               {tag}
             </span>

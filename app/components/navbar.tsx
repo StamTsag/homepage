@@ -13,11 +13,11 @@ interface Props {
 // TODO: Drawer
 export default function NavBar({ activeScroll }: Props) {
   return (
-    <header className="sticky top-0 pr-4 md:top-4 z-50 w-full md:min-w-[750px] md:w-[85%] lg:min-w-[800px] lg:w-[60%] m-auto border md:rounded-full dark:border-border/50 bg-background dark:bg-background/30 dark:backdrop-blur-lg shadow-lg dark:shadow-none">
+    <header className="sticky top-0 pr-4 md:top-4 z-50 w-full md:min-w-[750px] md:w-[85%] lg:min-w-[800px] lg:w-[60%] m-auto border md:rounded-full dark:border-border/100 bg-background dark:bg-background/30 dark:backdrop-blur-lg shadow-lg dark:shadow-none">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 ml-5 flex items-center space-x-2">
           <Image
-            className="hidden sm:block"
+            className="hidden sm:block rounded-full"
             src={"/favicon.ico"}
             alt="Logo"
             width={24}

@@ -90,7 +90,8 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       screens: {
-        md: { min: "1000px" },
+        md: { min: "900px" },
+        lg: { min: "1200px" },
       },
     },
   },

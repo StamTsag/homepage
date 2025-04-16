@@ -28,13 +28,14 @@ export default function About() {
             >
               Hey, I'm Stamatis — a fullstack developer from Athens, Greece.
               <br />
-              <br />I work across both frontend and backend, building both
-              snappy and intuitive web experiences from the ground up.
+              <br />I work across both frontend and backend, building snappy and
+              intuitive web experiences from the ground up.
               <br />
               <br />
               Right now, I'm working on{" "}
               <a
                 href="https://speedy.stamtsag.com"
+                target="_blank"
                 className="font-semibold text-primary hover:underline"
               >
                 Speedy

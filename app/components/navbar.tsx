@@ -38,7 +38,7 @@ export default function NavBar({ activeScroll }: Props) {
         <div className="flex items-center justify-end space-x-4 flex-1">
           <Link
             href="https://github.com/StamTsag"
-            className="mr-3"
+            className="mr-3 hidden md:block"
             target="_blank"
           >
             <Button variant={"outline"} size="sm" className="ml-auto">

@@ -38,7 +38,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium mb-2"
+                  className="block text-xs md:text-sm font-medium mb-2"
                 >
                   Name
                 </label>
@@ -47,7 +47,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium mb-2"
+                  className="block text-xs md:text-sm font-medium mb-2"
                 >
                   Email
                 </label>
@@ -56,7 +56,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium mb-2"
+                  className="block text-xs md:text-sm font-medium mb-2"
                 >
                   Message
                 </label>
@@ -64,7 +64,7 @@ export default function ContactForm() {
               </div>
               <Button
                 type="submit"
-                className="w-full"
+                className="text-xs md:text-md w-full"
                 disabled={pending || submitted}
               >
                 {pending
@@ -74,7 +74,7 @@ export default function ContactForm() {
                   : "Send Message"}
               </Button>
               {message && (
-                <p className="text-sm text-center mt-4 text-muted-foreground">
+                <p className="text-xs md:text-sm text-center mt-4 text-muted-foreground">
                   {message}
                 </p>
               )}

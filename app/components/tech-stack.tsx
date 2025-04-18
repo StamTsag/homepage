@@ -84,7 +84,7 @@ export default function TechStack() {
                 {tech.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10"
+                    className="inline-flex items-center rounded-xl bg-accent/75 px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10"
                   >
                     {skill}
                   </span>

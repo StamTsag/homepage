@@ -64,7 +64,7 @@ export default function ContactForm() {
               </div>
               <Button
                 type="submit"
-                className="text-xs md:text-md w-full"
+                className="text-xs md:text-[0.8rem] w-full"
                 disabled={pending || submitted}
               >
                 {pending

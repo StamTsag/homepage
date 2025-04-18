@@ -73,7 +73,7 @@ export default function ProjectCard({
           {tags?.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-[0.7rem] md:text-xs font-medium ring-1 ring-inset ring-gray-500/10"
+              className="inline-flex items-center rounded-xl bg-muted px-2 py-1 text-[0.7rem] md:text-xs font-medium ring-1 ring-inset ring-gray-500/10"
             >
               {tag}
             </span>

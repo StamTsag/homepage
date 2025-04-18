@@ -78,7 +78,7 @@ export default function HoverTabs({
     <div className="relative select-none">
       {/* Hover Highlight */}
       <div
-        className="absolute h-[30px] transition-all duration-300 ease-out bg-[#0e0f1114] dark:bg-[#ffffff1a] rounded-[6px] flex items-center"
+        className="absolute h-[30px] transition-all duration-300 ease-out bg-[#0e0f1114] dark:bg-[#ffffff1a] rounded-[10px] flex items-center"
         style={{
           ...hoverStyle,
           opacity: hoveredIndex !== null ? 1 : 0,
@@ -87,7 +87,7 @@ export default function HoverTabs({
 
       {/* Active Indicator */}
       <div
-        className="absolute bottom-[-6px] h-[2px] bg-[#0e0f11] dark:bg-white transition-all duration-300 ease-out"
+        className="absolute bottom-[-6px] h-[2px] bg-[#0e0f11] dark:bg-white transition-all duration-300 rounded-full ease-out"
         style={activeStyle}
       />
 

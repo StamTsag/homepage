@@ -1,21 +1,25 @@
-import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="md:pr-[15%] md:pl-[15%] border-t">
-      <div className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          © 2025 Stamatis Tsagkliotis. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-xs hover:underline underline-offset-4"
-            href="https://github.com/StamTsag/homepage"
-            target="_blank"
-          >
-            View source
-          </Link>
-        </nav>
+    <footer className="border border-border/50 rounded-t-3xl md:w-[75%] lg:w-[60%] m-auto bg-background/50 backdrop-blur-lg p-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
+        <div className="container flex flex-col md:flex-row mb-4 md:mb-0">
+          <div className="flex-1 space-y-4">
+            <div className="flex space-x-2">
+              <Image src={"/favicon.ico"} alt="Logo" width={32} height={32} />
+
+              <h2 className="font-bold text-xl md:text-[2rem] tracking-tight">
+                StamTsag
+              </h2>
+            </div>
+
+            <p className="text-xs text-primary/50 tracking-wider">
+              © {new Date().getFullYear()} Stamatis Tsagkliotis. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );

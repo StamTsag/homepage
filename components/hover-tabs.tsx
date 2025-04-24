@@ -8,6 +8,8 @@ interface Props {
   useLinks?: boolean;
   action?: ({}: { tab: string }) => void;
   customActiveTab?: number;
+  centerItems?: boolean;
+  hideIndicator?: boolean;
 }
 
 export default function HoverTabs({
@@ -15,6 +17,8 @@ export default function HoverTabs({
   useLinks,
   action,
   customActiveTab,
+  centerItems,
+  hideIndicator,
 }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(customActiveTab || 0);
@@ -87,12 +91,18 @@ export default function HoverTabs({
 
       {/* Active Indicator */}
       <div
-        className="absolute bottom-[-6px] h-[2px] bg-[#0e0f11] dark:bg-white transition-all duration-300 rounded-full ease-out"
+        className={`${
+          hideIndicator && "opacity-0"
+        } absolute bottom-[-6px] h-[2px] bg-[#0e0f11] dark:bg-white transition-all rounded-full duration-300 ease-out`}
         style={activeStyle}
       />
 
       {/* Tabs */}
-      <div className="relative flex space-x-[6px] items-center">
+      <div
+        className={`${
+          centerItems && "justify-center"
+        } relative flex space-x-[6px] items-center`}
+      >
         {tabs.map((tab, index) => (
           <div key={index}>
             {useLinks ? (
@@ -119,7 +129,7 @@ export default function HoverTabs({
                     if (action) action({ tab });
                   }}
                 >
-                  <div className="text-sm font-medium leading-5 whitespace-nowrap flex items-center justify-center h-full">
+                  <div className="text-sm font-semibold leading-5 whitespace-nowrap flex items-center justify-center h-full">
                     {tab}
                   </div>
                 </div>

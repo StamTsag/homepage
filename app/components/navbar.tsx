@@ -71,7 +71,7 @@ export default function NavBar() {
           />
         </nav>
         <div className="flex items-center justify-end space-x-4 flex-1 pr-4 md:flex-[0]">
-          <Link href="https://github.com/stamtsag">
+          <Link href="https://github.com/stamtsag" target="_blank">
             <Button
               size="sm"
               className="bg-primary hover:bg-primary/80 rounded-full font-semibold pr-6 pl-6"

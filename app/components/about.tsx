@@ -12,7 +12,7 @@ export default function About() {
       <div className="px-4 md:px-6">
         <div className="flex flex-col space-y-4">
           <div className="space-y-2">
-            <Link href="https://devpair.app">
+            <Link href="https://devpair.app" target="_blank">
               <motion.h1
                 initial={{ x: -20, y: -30, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}

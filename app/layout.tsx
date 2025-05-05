@@ -1,13 +1,13 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import type React from "react";
 import MouseMoveEffect from "@/components/mouse-move-effect";
 import { PostHogProvider } from "./providers";
 
-const manrope = Manrope({ subsets: ["latin"] });
+const dmsans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Stamatis Tsagkliotis",
@@ -51,7 +51,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={cn("bg-background antialiased", manrope.className)}>
+      <body className={cn("bg-background antialiased", dmsans.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

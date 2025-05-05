@@ -4,6 +4,14 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: "DevPair",
+      description:
+        "Find developers who vibe with your vision and match your energy. Build real, meaningful projects together with DevPair..",
+      link: "https://devpair.app",
+      tags: ["Next.JS", "shadcn", "Tailwind", "Supabase", "Stripe"],
+      usePng: true,
+    },
+    {
       title: "Acrylica",
       description:
         "A minimalistic, acrylic-based design operating system on the web.",

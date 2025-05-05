@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Code, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Code, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -12,6 +12,25 @@ export default function About() {
       <div className="px-4 md:px-6">
         <div className="flex flex-col space-y-4">
           <div className="space-y-2">
+            <Link href="https://devpair.app">
+              <motion.h1
+                initial={{ x: -20, y: -30, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ bounce: false, duration: 0.3, delay: 1.75 }}
+                className="absolute group flex items-center text-xs md:text-sm border-2 border-green-500 cursor-pointer text-primary rounded-2xl bg-green-300/10 w-max p-1 pr-4 pl-4"
+              >
+                <img
+                  src={"https://devpair.app/icon.svg"}
+                  className="w-[20px] h-[20px] mr-1"
+                />{" "}
+                <span className="font-medium mr-1">DevPair</span> just launched
+                <ArrowRight
+                  size={16}
+                  className="group-hover:translate-x-1 duration-150 ml-3"
+                />
+              </motion.h1>
+            </Link>
+
             <motion.h1
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -34,14 +53,14 @@ export default function About() {
               <br />
               Right now, I'm working on{" "}
               <a
-                href="https://speedy.stamtsag.com"
+                href="https://devpair.app"
                 target="_blank"
-                className="font-semibold text-primary hover:underline"
+                className="font-semibold text-green-600 dark:text-green-500 hover:underline"
               >
-                Speedy
+                DevPair
               </a>{" "}
-              — an app that measures your internet speed across different
-              regions.
+              — an app that connects you with developers similar to your skill
+              set from all over the world.
               <br />
               <br />
               Not to fret, I'm always open to new connections and possible

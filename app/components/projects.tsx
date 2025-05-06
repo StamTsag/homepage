@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: "DevPair",
       description:
-        "Find developers who vibe with your vision and match your energy. Build real, meaningful projects together with DevPair..",
+        "Find developers who vibe with your vision and match your energy. Build real, meaningful projects together with DevPair.",
       link: "https://devpair.app",
       tags: ["Next.JS", "shadcn", "Tailwind", "Supabase", "Stripe"],
       usePng: true,

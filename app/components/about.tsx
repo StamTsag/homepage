@@ -63,7 +63,7 @@ export default function About() {
 
             <div>
               <Link href="https://linkedin.com/in/stamtsag" target="_blank">
-                <Button>
+                <Button variant={"outline"}>
                   <Linkedin className="h-4 w-4" />
                   <span className="text-xs md:text-[0.9rem]">LinkedIn</span>
                 </Button>
@@ -72,7 +72,7 @@ export default function About() {
 
             <div>
               <Link href="mailto:stamatiostsag@gmail.com">
-                <Button>
+                <Button variant={"outline"}>
                   <Mail className="h-4 w-4" />
                   <span className="text-xs md:text-[0.9rem]">Email</span>
                 </Button>

@@ -71,8 +71,8 @@ export default function ProjectCard({
           {title}{" "}
           {productHuntRank && (
             <Link href={productHunt!} target="_blank" className="w-max flex">
-              <h1 className="text-xs text-orange-500 hover:underline w-max">
-                #{productHuntRank} on ProductHunt
+              <h1 className="text-xs text-yellow-400 hover:underline w-max">
+                🏆 Top {productHuntRank} on ProductHunt
               </h1>
             </Link>
           )}

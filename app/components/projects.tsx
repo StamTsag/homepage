@@ -11,7 +11,7 @@ export default function Projects() {
       tags: ["Next.JS", "shadcn", "Tailwind", "Supabase", "Stripe"],
       usePng: true,
       productHunt: "https://producthunt.com/posts/devpair",
-      productHuntRank: 33,
+      productHuntRank: 30,
     },
     {
       title: "Acrylica",

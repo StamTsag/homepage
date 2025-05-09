@@ -10,6 +10,8 @@ export default function Projects() {
       link: "https://devpair.app",
       tags: ["Next.JS", "shadcn", "Tailwind", "Supabase", "Stripe"],
       usePng: true,
+      productHunt: "https://producthunt.com/posts/devpair",
+      productHuntRank: 33,
     },
     {
       title: "Acrylica",

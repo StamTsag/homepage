@@ -14,4 +14,6 @@ export interface Project {
   tags: string[];
   usePng?: boolean;
   usePlaceholder?: boolean;
+  productHunt?: string;
+  productHuntRank?: number;
 }

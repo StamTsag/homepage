@@ -15,6 +15,8 @@ export default function ProjectCard({
   tags,
   usePng,
   usePlaceholder,
+  productHunt,
+  productHuntRank,
 }: Project) {
   const [tiltStyle, setTiltStyle] = useState({});
 
@@ -65,7 +67,16 @@ export default function ProjectCard({
         </Link>
       </div>
       <CardContent className="p-4">
-        <h3 className="font-semibold text-lg md:text-xl mb-2">{title}</h3>
+        <h3 className="font-semibold text-lg md:text-xl mb-2">
+          {title}{" "}
+          {productHuntRank && (
+            <Link href={productHunt!} target="_blank" className="w-max flex">
+              <h1 className="text-xs text-orange-500 hover:underline w-max">
+                #{productHuntRank} on ProductHunt
+              </h1>
+            </Link>
+          )}
+        </h3>
         <p className="text-[0.7rem] md:text-sm text-muted-foreground mb-4">
           {description}
         </p>

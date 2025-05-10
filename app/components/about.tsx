@@ -44,7 +44,13 @@ export default function About() {
                 DevPair
               </a>{" "}
               — an app that connects you with developers similar to your skill
-              set from all over the world.
+              set from all over the world. It just hit{" "}
+              <Link href="https://producthunt.com/posts/devpair">
+                <span className="text-yellow-500 font-bold hover:underline">
+                  Top 30
+                </span>
+              </Link>{" "}
+              on Product Hunt!
               <br />
               <br />
               Not to fret, I'm always open to new connections and possible

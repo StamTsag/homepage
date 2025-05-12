@@ -7,13 +7,10 @@ import WorkedOn from "./components/worked-on";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import About from "./components/about";
-import BgGradients from "./components/bg-gradients";
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-background">
-      <BgGradients />
-
       <div className="relative z-10">
         <NavBar />
 

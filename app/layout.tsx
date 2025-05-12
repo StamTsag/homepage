@@ -58,7 +58,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <MouseMoveEffect />
           <PostHogProvider>{children}</PostHogProvider>
         </ThemeProvider>
       </body>

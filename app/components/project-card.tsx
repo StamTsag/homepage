@@ -67,7 +67,7 @@ export default function ProjectCard({
         </Link>
       </div>
       <CardContent className="p-4">
-        <h3 className="font-semibold text-lg md:text-xl mb-2">
+        <h3 className="font-bold text-lg md:text-xl mb-2">
           {title}{" "}
           {productHuntRank && (
             <Link href={productHunt!} target="_blank" className="w-max flex">

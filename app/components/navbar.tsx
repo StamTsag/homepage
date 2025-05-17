@@ -48,9 +48,9 @@ export default function NavBar() {
     <header
       className={`sticky top-2 z-50 w-full m-auto ${
         collapsed
-          ? "border border-border/50 md:top-4 md:rounded-full bg-background dark:bg-background/60 dark:backdrop-blur-lg shadow-lg dark:shadow-none md:min-w-[750px] md:w-[90%] lg:min-w-[700px] lg:w-[50%]"
-          : "md:min-w-[750px] md:w-[90%] lg:min-w-[800px] lg:w-[70%] border-transparent"
-      } duration-150`}
+          ? "border border-border/50 md:top-4 md:rounded-full bg-background dark:bg-background/35 dark:backdrop-blur-lg shadow-lg dark:shadow-none md:min-w-[750px] md:w-[90%] lg:min-w-[700px] lg:w-[50%]"
+          : "md:min-w-[750px] md:w-[90%] lg:min-w-[800px] lg:w-[70%]"
+      } duration-150 border-transparent`}
     >
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2 pl-4">
@@ -73,14 +73,13 @@ export default function NavBar() {
         <div className="flex items-center justify-end space-x-4 flex-1 pr-4 md:flex-[0]">
           <Link href="https://github.com/stamtsag" target="_blank">
             <Button
+              variant={"outline"}
               size="sm"
-              className="bg-primary hover:bg-primary/80 rounded-full font-semibold pr-6 pl-6"
+              className={`rounded-full font-semibold pr-6 pl-6`}
             >
               View Github
             </Button>
           </Link>
-
-          <ThemeToggle />
         </div>
       </div>
     </header>

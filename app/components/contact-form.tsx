@@ -64,8 +64,9 @@ export default function ContactForm() {
               </div>
               <Button
                 type="submit"
-                className="text-xs md:text-[0.8rem] w-full"
+                className="text-xs md:text-[0.8rem] w-full rounded-lg"
                 disabled={pending || submitted}
+                variant={"outline"}
               >
                 {pending
                   ? "Sending..."

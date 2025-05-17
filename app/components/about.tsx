@@ -11,10 +11,10 @@ export default function About() {
       <div className="px-4 md:px-6">
         <div className="flex flex-col space-y-4">
           <div className="flex items-center flex-col space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Hey, I'm Stamatis
             </h1>
-            <p className="text-center max-w-[725px] pt-1 text-gray-700 text-sm md:text-base dark:text-gray-300 whitespace-pre-line">
+            <p className="text-center max-w-[725px] pt-1 text-sm md:text-base dark:text-gray-200 whitespace-pre-line">
               I work across both frontend and backend, building snappy and
               intuitive web experiences from the ground up.
               <br />
@@ -44,7 +44,7 @@ export default function About() {
           <div className="space-x-4 flex items-center justify-center">
             <div>
               <Link href="https://github.com/StamTsag" target="_blank">
-                <Button>
+                <Button variant={"outline"}>
                   <Github className="h-4 w-4" />
                   <span className="text-xs md:text-[0.9rem]">GitHub</span>
                 </Button>

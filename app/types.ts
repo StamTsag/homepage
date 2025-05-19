@@ -17,3 +17,8 @@ export interface Project {
   productHunt?: string;
   productHuntRank?: number;
 }
+
+export interface Message {
+  role: "user" | "ai";
+  message: string;
+}

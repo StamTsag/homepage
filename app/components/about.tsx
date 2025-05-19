@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
+import AIPrompt from "./ai-prompt";
 
 export default function About() {
   return (
@@ -41,6 +42,9 @@ export default function About() {
               collaborations.
             </p>
           </div>
+
+          <AIPrompt />
+
           <div className="space-x-4 flex items-center justify-center">
             <div>
               <Link href="https://github.com/StamTsag" target="_blank">

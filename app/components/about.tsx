@@ -22,20 +22,14 @@ export default function About() {
               <br />
               Right now, I'm working on{" "}
               <a
-                href="https://devpair.app"
+                href="https://calendizer.app"
                 target="_blank"
-                className="font-semibold text-green-600 dark:text-green-500 hover:underline"
+                className="font-semibold text-blue-500 hover:underline"
               >
-                DevPair
+                Calendizer
               </a>{" "}
-              — an app that connects you with developers similar to your skill
-              set from all over the world. It just hit{" "}
-              <Link href="https://producthunt.com/posts/devpair">
-                <span className="text-yellow-500 font-bold hover:underline">
-                  Top 30
-                </span>
-              </Link>{" "}
-              on Product Hunt!
+              — an app that creates efficient Calendar Roadmaps according to
+              your timeframe in order to achieve your goals.
               <br />
               <br />
               Not to fret, I'm always open to new connections and possible

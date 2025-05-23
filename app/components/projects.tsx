@@ -4,6 +4,14 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: "Calendizer",
+      description:
+        "Calendizer allows you to learn any skill in a time period with a specialised roadmap which can be exported to your calendar.",
+      link: "https://calendizer.app",
+      tags: ["Next.JS", "shadcn", "Tailwind", "Supabase", "Stripe"],
+      usePng: true,
+    },
+    {
       title: "DevPair",
       description:
         "Find developers who vibe with your vision and match your energy. Build real, meaningful projects together with DevPair.",

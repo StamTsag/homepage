@@ -82,7 +82,7 @@ export default function HoverTabs({
     <div className="relative select-none">
       {/* Hover Highlight */}
       <div
-        className="absolute h-[30px] transition-all duration-200 ease-out bg-[#0e0f1114] dark:bg-[#ffffff1a] rounded-[10px] flex items-center"
+        className="absolute h-[30px] transition-all duration-200 ease-out bg-[#0e0f1114] bg-[#ffffff1a] rounded-[10px] flex items-center"
         style={{
           ...hoverStyle,
           opacity: hoveredIndex !== null ? 1 : 0,
@@ -93,7 +93,7 @@ export default function HoverTabs({
       <div
         className={`${
           hideIndicator && "opacity-0"
-        } absolute bottom-[-6px] h-[2px] bg-[#0e0f11] dark:bg-white transition-all rounded-full duration-300 ease-out`}
+        } absolute bottom-[-6px] h-[2px] bg-[#0e0f11] bg-white transition-all rounded-full duration-300 ease-out`}
         style={activeStyle}
       />
 
@@ -118,8 +118,8 @@ export default function HoverTabs({
                   ref={(el) => (tabRefs.current[index] = el)}
                   className={`px-3 py-2 cursor-pointer transition-colors duration-300 h-[30px] ${
                     index === activeIndex
-                      ? "text-[#0e0e10] dark:text-white"
-                      : "text-[#0e0f1199] dark:text-[#ffffff99]"
+                      ? "text-[#0e0e10] text-white"
+                      : "text-[#0e0f1199] text-[#ffffff99]"
                   }`}
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
@@ -140,8 +140,8 @@ export default function HoverTabs({
                 ref={(el) => (tabRefs.current[index] = el)}
                 className={`px-3 py-2 cursor-pointer transition-colors duration-300 h-[30px] ${
                   index === activeIndex
-                    ? "text-[#0e0e10] dark:text-white"
-                    : "text-[#0e0f1199] dark:text-[#ffffff99]"
+                    ? "text-[#0e0e10] text-white"
+                    : "text-[#0e0f1199] text-[#ffffff99]"
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}

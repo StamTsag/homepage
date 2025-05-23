@@ -48,7 +48,7 @@ export default function NavBar() {
     <header
       className={`sticky top-2 z-50 w-full m-auto ${
         collapsed
-          ? "border border-border/50 md:top-4 md:rounded-full dark:bg-white/10 dark:backdrop-blur-lg shadow-lg dark:shadow-none md:min-w-[750px] md:w-[90%] lg:min-w-[700px] lg:w-[50%]"
+          ? "border border-border/50 md:top-4 md:rounded-full bg-white/10 backdrop-blur-lg shadow-lg shadow-none md:min-w-[750px] md:w-[90%] lg:min-w-[700px] lg:w-[50%]"
           : "md:min-w-[750px] md:w-[90%] lg:min-w-[800px] lg:w-[70%]"
       } duration-150 border-transparent`}
     >

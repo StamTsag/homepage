@@ -15,7 +15,7 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Hey, I'm Stamatis
             </h1>
-            <p className="text-center max-w-[725px] pt-1 text-sm md:text-base dark:text-gray-200 whitespace-pre-line">
+            <p className="text-center max-w-[725px] pt-1 text-sm md:text-base text-gray-200 whitespace-pre-line">
               I work across both frontend and backend, building snappy and
               intuitive web experiences from the ground up.
               <br />

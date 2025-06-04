@@ -53,7 +53,7 @@ export default function NavBar() {
       } duration-150 border-transparent`}
     >
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2 pl-4">
+        <Link href="/" className="mr-6 flex items-center space-x-2 pl-0">
           <Image
             src={"/favicon.ico"}
             alt="Logo"

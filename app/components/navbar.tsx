@@ -69,7 +69,7 @@ export default function NavBar() {
         </Link>
         <nav className="hidden md:block flex flex-1 items-center justify-center space-x-6 text-sm w-full">
           <HoverTabs
-            tabs={["Home", "Worked on", "Projects", "Stack", "Contact"]}
+            tabs={["Home", "Worked on", "Projects", "Contact"]}
             useLinks
             customActiveTab={activeScroll}
             hideIndicator

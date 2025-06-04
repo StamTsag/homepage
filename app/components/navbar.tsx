@@ -48,13 +48,19 @@ export default function NavBar() {
     <header
       className={`sticky top-2 z-50 w-full m-auto ${
         collapsed
-          ? "border border-border/50 md:top-4 md:rounded-full bg-white/10 backdrop-blur-lg shadow-lg shadow-none md:min-w-[750px] md:w-[90%] lg:min-w-[700px] lg:w-[50%]"
+          ? "border border-border/50 md:top-4 md:rounded-full bg-[#202020]/50 backdrop-blur-2xl shadow-lg shadow-none md:min-w-[750px] md:w-[90%] lg:min-w-[700px] lg:w-[50%]"
           : "md:min-w-[750px] md:w-[90%] lg:min-w-[800px] lg:w-[70%]"
       } duration-150 border-transparent`}
     >
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2 pl-4">
-          <Image src={"/favicon.ico"} alt="Logo" width={24} height={24} />
+          <Image
+            src={"/favicon.ico"}
+            alt="Logo"
+            width={24}
+            height={24}
+            className="rounded-full"
+          />
           <span
             className={`${collapsed && "opacity-0"} duration-150 font-bold`}
           >

@@ -24,7 +24,7 @@ export default function About() {
               <a
                 href="https://netcompany.com"
                 target="_blank"
-                className="font-semibold text-emerald-500 hover:underline"
+                className="font-bold text-emerald-500 hover:underline"
               >
                 Netcompany - Intrasoft
               </a>{" "}

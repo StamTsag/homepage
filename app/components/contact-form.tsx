@@ -28,12 +28,12 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="py-12 md:py-24 lg:py-32">
-      <div className="px-4 md:px-6">
-        <div className="mx-auto max-w-2xl">
+      <div className="px-4 md:px-6 ">
+        <div className="mx-auto max-w-2xl ">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
             Contact Me
           </h2>
-          <Card className="p-6">
+          <Card className="p-6 backdrop-blur-lg">
             <form action={handleSubmit} className="space-y-4">
               <div>
                 <label
@@ -64,7 +64,7 @@ export default function ContactForm() {
               </div>
               <Button
                 type="submit"
-                className="text-xs md:text-[0.8rem] w-full rounded-lg"
+                className="text-xs md:text-[0.8rem] w-full"
                 disabled={pending || submitted}
                 variant={"outline"}
               >

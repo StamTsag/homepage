@@ -82,7 +82,7 @@ export default function HoverTabs({
     <div className="relative select-none">
       {/* Hover Highlight */}
       <div
-        className="absolute h-[30px] transition-all duration-200 ease-out bg-[#0e0f1114] bg-[#ffffff1a] rounded-[10px] flex items-center"
+        className="absolute h-[35px] transition-all duration-200 ease-out bg-[#0e0f1114] bg-[#ffffff1a] rounded-[10px] flex items-center"
         style={{
           ...hoverStyle,
           opacity: hoveredIndex !== null ? 1 : 0,
@@ -116,7 +116,7 @@ export default function HoverTabs({
                 <div
                   //   @ts-ignore
                   ref={(el) => (tabRefs.current[index] = el)}
-                  className={`px-3 py-2 cursor-pointer transition-colors duration-300 h-[30px] ${
+                  className={`px-3 py-2 cursor-pointer transition-colors duration-300 h-[35px] ${
                     index === activeIndex
                       ? "text-[#0e0e10] text-white"
                       : "text-[#0e0f1199] text-[#ffffff99]"
@@ -138,7 +138,7 @@ export default function HoverTabs({
               <div
                 //   @ts-ignore
                 ref={(el) => (tabRefs.current[index] = el)}
-                className={`px-3 py-2 cursor-pointer transition-colors duration-300 h-[30px] ${
+                className={`px-3 py-2 cursor-pointer transition-colors duration-300 h-[35px] ${
                   index === activeIndex
                     ? "text-[#0e0e10] text-white"
                     : "text-[#0e0f1199] text-[#ffffff99]"

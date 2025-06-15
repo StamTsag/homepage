@@ -20,16 +20,16 @@ export default function About() {
               intuitive web experiences from the ground up.
               <br />
               <br />
-              Right now, I'm working on{" "}
+              Right now, I'm working at{" "}
               <a
-                href="https://calendizer.app"
+                href="https://netcompany.com"
                 target="_blank"
-                className="font-semibold text-blue-500 hover:underline"
+                className="font-semibold text-emerald-500 hover:underline"
               >
-                Calendizer
+                Netcompany - Intrasoft
               </a>{" "}
-              — an app that creates efficient Calendar Roadmaps according to
-              your timeframe in order to achieve your goals.
+              as a Fullstack Developer, revolutionising healthcare services for
+              all Greek citizens.
               <br />
               <br />
               Not to fret, I'm always open to new connections and possible

@@ -1,4 +1,6 @@
-<img src='https://raw.githubusercontent.com/StamTsag/homepage/refs/heads/v3/.github/assets/preview.png' align='center' />
+<a href="https://stamtsag.com" target="_blank" rel="noopener noreferrer">
+  <img src="https://raw.githubusercontent.com/StamTsag/homepage/refs/heads/v3/.github/assets/preview.png" align="center" />
+</a>
 
 # Running
 

@@ -84,10 +84,15 @@ const config: Config = {
             height: "0",
           },
         },
+        "reverse-pulse": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "0.1" }, // slightly dimmer, not full pulse
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "reverse-pulse": "reverse-pulse 20s ease-in-out infinite",
       },
       screens: {
         md: { min: "900px" },

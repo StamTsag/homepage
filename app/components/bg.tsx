@@ -3,7 +3,7 @@ export default function Background() {
     <img
       src={"/background.jpg"}
       alt="Background"
-      className="fixed top-0 opacity-50 w-screen h-screen blur-xl -z-[1]"
+      className="fixed top-0 opacity-50 w-screen h-screen animate-reverse-pulse blur-sm -z-[1]"
     />
   );
 }

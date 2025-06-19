@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
-import AIPrompt from "./ai-prompt";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="flex items-center justify-center py-12 md:py-20 lg:py-24"
+      className="flex items-center justify-center py-12 md:py-20 lg:py-28"
     >
       <div className="px-4 md:px-6">
         <div className="flex flex-col space-y-4">
@@ -36,8 +35,6 @@ export default function About() {
               collaborations.
             </p>
           </div>
-
-          <AIPrompt />
 
           <div className="space-x-4 flex items-center justify-center">
             <div>

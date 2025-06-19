@@ -85,7 +85,7 @@ const config: Config = {
           },
         },
         "reverse-pulse": {
-          "0%, 100%": { opacity: "0.5" },
+          "0%, 100%": { opacity: "0.75" },
           "50%": { opacity: "0.1" }, // slightly dimmer, not full pulse
         },
       },

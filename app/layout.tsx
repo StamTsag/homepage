@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import type React from "react";
-import MouseMoveEffect from "@/components/mouse-move-effect";
 import { PostHogProvider } from "./providers";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });

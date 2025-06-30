@@ -63,13 +63,13 @@ export default function BlogPostPreview({
 
           <div className="flex items-center gap-x-6 mt-4">
             <div className="text-xs md:text-sm flex gap-x-2 items-center">
-              <Calendar width={18} height={18} />
-              {formattedDate}
+              <Clock width={18} height={18} />
+              {calculateHTMLReadingTime(contentHtml)} min read
             </div>
 
             <div className="text-xs md:text-sm flex gap-x-2 items-center">
-              <Clock width={18} height={18} />
-              {calculateHTMLReadingTime(contentHtml)} min read
+              <Calendar width={18} height={18} />
+              {formattedDate}
             </div>
           </div>
         </div>

@@ -10,6 +10,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      typography: () => ({
+        compact: {
+          css: {
+            h1: { marginTop: "0rem", marginBottom: "0rem" },
+            h2: { marginTop: "0rem", marginBottom: "0rem" },
+            h3: { marginTop: "0rem", marginBottom: "0rem" },
+            p: { marginTop: "0rem", marginBottom: "0rem" },
+            ul: {
+              marginTop: "0rem",
+              marginBottom: "0rem",
+              paddingLeft: "1.25rem",
+            },
+            ol: { marginTop: "0rem", marginBottom: "0rem" },
+            pre: { marginTop: "0rem", marginBottom: "0rem" },
+            blockquote: { marginTop: "0rem", marginBottom: "0rem" },
+            li: {
+              marginBottom: "0.25rem",
+            },
+          },
+        },
+      }),
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -86,7 +107,7 @@ const config: Config = {
         },
         "reverse-pulse": {
           "0%, 100%": { opacity: "0.75" },
-          "50%": { opacity: "0.1" }, // slightly dimmer, not full pulse
+          "50%": { opacity: "0.25" }, // slightly dimmer, not full pulse
         },
       },
       animation: {
@@ -100,6 +121,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
 export default config;

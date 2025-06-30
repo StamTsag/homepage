@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
         <div className="container flex flex-col md:flex-row mb-4 md:mb-0">
           <div className="flex-1 space-y-4">
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 items-center">
               <Image src={"/favicon.ico"} alt="Logo" width={32} height={32} />
 
-              <h2 className="font-bold text-xl md:text-[2rem] tracking-tight">
+              <h2 className="font-bold text-xl md:text-[1.7rem] tracking-tight">
                 StamTsag
               </h2>
             </div>

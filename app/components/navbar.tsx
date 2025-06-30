@@ -1,16 +1,13 @@
+"use client";
+
 import HoverTabs from "@/components/hover-tabs";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { ScrollLayout } from "../types";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { isElementInViewport } from "@/lib/utils";
-
-interface Props {
-  activeScroll: ScrollLayout;
-}
+import { Newspaper } from "lucide-react";
 
 // TODO: Drawer
 export default function NavBar() {
@@ -39,8 +36,12 @@ export default function NavBar() {
         setActiveScroll(ScrollLayout.Contact);
       }
 
-      if (!isElementInViewport(home!)) setCollapsed(true);
-      else setCollapsed(false);
+      const handleScroll = () => {
+        setCollapsed(window.scrollY > 25);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -67,7 +68,7 @@ export default function NavBar() {
             StamTsag
           </span>
         </Link>
-        <nav className="hidden md:block flex flex-1 items-center justify-center space-x-6 text-sm w-full">
+        <nav className="hidden md:block flex flex-1 items-center justify-center space-x-6 text-sm w-full pl-6">
           <HoverTabs
             tabs={["Home", "Worked on", "Projects", "Contact"]}
             useLinks
@@ -77,13 +78,13 @@ export default function NavBar() {
           />
         </nav>
         <div className="flex items-center justify-end space-x-4 flex-1 pr-4 md:flex-[0]">
-          <Link href="https://github.com/stamtsag" target="_blank">
+          <Link href="/blog">
             <Button
-              variant={"outline"}
               size="sm"
               className={`rounded-full font-semibold pr-6 pl-6`}
             >
-              View Github
+              <Newspaper />
+              Stamatis' Blog
             </Button>
           </Link>
         </div>

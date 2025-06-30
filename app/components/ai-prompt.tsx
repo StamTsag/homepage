@@ -122,7 +122,7 @@ export default function AIPrompt() {
             className="flex-1 w-[97.5%] md:w-[40%] md:min-w-[485px] lg:min-w-[575px] overflow-y-auto pb-4"
           >
             {messages.map((message) => (
-              <motion.div className="flex gap-x-2 mt-2">
+              <motion.div key={message.message} className="flex gap-x-2 mt-2">
                 {message.role === "ai" && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -36,7 +36,7 @@ export default function NavBarBlogPost({ slug, title }: Props) {
           href="/blog"
           className="hidden md:flex items-center space-x-2 hover:underline"
         >
-          <Newspaper width={20} height={20} />
+          <Newspaper width={24} height={24} />
 
           <span className={`duration-150 font-bold`}>Stamatis' Blog</span>
         </Link>

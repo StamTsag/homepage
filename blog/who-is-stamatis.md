@@ -40,7 +40,7 @@ All I had was a crappy laptop from **2005**, a phone with **2** cores, hopes and
 
 Obviously, my first few Python bots were bad to say the least but I loved the creativity that was required in order to come up with new commands and functionalities.
 
-That's why I keep creating platforms from scratch instead of using [insert AI platform] to create most of them. Programming is a creative process for me and I would not replace that for any amount of **€** on my **Stripe** dashboard.
+That's why I keep creating platforms from scratch instead of using [insert AI platform] to develop most of them. Programming is a creative process for me and I would not replace that for any amount of **€** on my **Stripe** dashboard.
 
 Also, I never really watched Youtube tutorials after my 1st year of programming. I found them to be a waste of time. In most cases, just **DOING** something **ON YOUR OWN** is time way-better-spent.
 
@@ -70,7 +70,7 @@ Here's a timeline.
 
 **Jun 2021 - Aug 2021**: I founded a startup with 3 of my online buddies ([**Michal**](https://github.com/michqo), [**Otterlord**](https://otterlord.dev), [**KittyBorgX**](https://github.com/KittyBorgX)) and worked as a **Lead Fullstack Developer**. The project was focused on making a realtime **MMO Godot** game with APIs for TypeScript, Python and Rust.
 
-**Oct 2021 - Apr 2024**: I founded [**Fronvo**](https://github.com/Fronvo) and worked as a **Lead Fullstack Developer** with a team of 8 developers of varying level (4 frontend, 4 backend). Fronvo was a private social media app merging core features from top platforms such as **Instagram**, **Discord**, **Snapchat** and **Twitter**. It ultimately scaled to 5,000+ users before it reached EOL so I consider it a widely successful first startup. I architected the real-time backends with Socket.IO and PM2 for load-balancing the realtime connections between different server shards. I also coded the Fronvo APIs in Rust, Python, and TypeScript.
+**Oct 2021 - Apr 2024**: I founded [**Fronvo**](https://github.com/Fronvo) and worked as a **Lead Fullstack Developer** with a team of 8 developers of varying level (4 frontend, 4 backend). Fronvo was a private social media app merging core features from top platforms such as **Instagram**, **Discord**, **Snapchat** and **Twitter**. It ultimately scaled to 5,000+ users before it reached EOL so I consider it a widely successful first startup. I architected the real-time backends with Socket.IO and PM2 for load-balancing connections between different server shards. I also coded the Fronvo APIs in Rust, Python, and TypeScript.
 
 **Apr 2024 - Jun 2024**: Contracted by [**FindEnergy**](https://findenergy.com) as a **Fullstack Developer** to build a Spintax no-code editor and responsive admin dashboards using SvelteKit and shadcn.
 
@@ -82,7 +82,7 @@ Here's a timeline.
 
 **Oct 2024 - Dec 2024**: Led frontend development on a contract at [**Cryptify AI**](https://cryptify.ai) as a **Senior Frontend Developer**, shipping financial dashboards with Highcharts and fast-performing UIs using Tailwind + shadcn.
 
-**May 2025 - Present**: I Founded [**DevPair**](https://devpair.app), a platform that helps devs match based on stack, level, and goals. Hit Top 30 on [**ProductHunt**](https://www.producthunt.com/products/devpair/launches/devpair). Built with Next.js, Socket.IO, and Supabase, with Stripe-powered subscriptions and AWS-accelerated media.
+**May 2025 - Present**: I founded [**DevPair**](https://devpair.app), a platform that helps devs match based on stack, level, and goals. Hit Top 30 on [**ProductHunt**](https://www.producthunt.com/products/devpair/launches/devpair). Built with Next.js, Socket.IO, and Supabase, with Stripe-powered subscriptions and AWS-accelerated media.
 
 **Jun 2025 - Present**: Joined [**Netcompany**](https://netcompany.com) full-time as a **Mid Level Fullstack Engineer**. Contributing to Greece's national healthcare system ([**EOPYY**](https://www.eopyy.gov.gr/)), supporting millions of citizens with Java, Spring Boot, React, and Keycloak across a hybrid cloud infrastructure.
 

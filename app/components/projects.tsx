@@ -62,7 +62,7 @@ export default function Projects() {
         </h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => {
-            return <ProjectCard {...project} />;
+            return <ProjectCard key={project.title} {...project} />;
           })}
         </div>
       </div>

@@ -27,8 +27,8 @@ export default function About() {
               >
                 Netcompany - Intrasoft
               </a>{" "}
-              as a Fullstack Developer, revolutionising healthcare services for
-              all Greek citizens.
+              as a Fullstack Developer, revolutionising Greek healthcare
+              services, used by millions of citizens.
               <br />
               <br />
               Not to fret, I'm always open to new connections and possible

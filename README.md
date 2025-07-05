@@ -29,3 +29,7 @@ tags: ["Some", "Tag"]
 
 # Markdown content here
 ```
+
+All blog images go to the `public/blog/` directory
+
+Image: `blog/snake_case_file_name/icon.jpg`

@@ -154,12 +154,11 @@ export default function AIPrompt() {
           <Input
             className="duration-150 text-sm md:text-base text-white p-4 h-[60px] outline-none shadow-xl min-w-screen rounded-2xl md:min-w-[400px] m-auto"
             placeholder={
-              (thinking ? "Generating response..." : `Ask AI about Stamatis`) &&
-              "Temporarily disabled"
+              thinking ? "Generating response..." : `Ask AI about Stamatis`
             }
             value={prompt}
             maxLength={64}
-            disabled={true || thinking}
+            disabled={thinking}
             onChange={(e) => setPrompt(e.target.value)}
             autoFocus
             ref={inputRef}

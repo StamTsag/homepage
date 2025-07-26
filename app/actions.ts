@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 
-export async function submitContactForm(formData: FormData) {
+export async function submitCollaborateForm(formData: FormData) {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");

@@ -3,7 +3,7 @@ export enum ScrollLayout {
   "Worked on",
   Projects,
   Stack,
-  Contact,
+  Collaborate,
 }
 
 export interface Project {

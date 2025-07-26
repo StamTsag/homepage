@@ -1,4 +1,3 @@
-import ContactForm from "./components/contact-form";
 import TechStack from "./components/tech-stack";
 import Projects from "./components/projects";
 import WorkedOn from "./components/worked-on";
@@ -6,6 +5,7 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import About from "./components/about";
 import AIPrompt from "./components/ai-prompt";
+import WorkWithMe from "./components/collaborate";
 
 export default function Page() {
   return (
@@ -24,7 +24,7 @@ export default function Page() {
 
           <TechStack />
 
-          <ContactForm />
+          <WorkWithMe />
         </main>
 
         <Footer />

@@ -23,7 +23,14 @@ export default function Projects() {
       description:
         "Calendizer allows you to learn any skill in a time period with a specialised roadmap which can be exported to your calendar.",
       link: "https://calendizer.app",
-      tags: ["Next.JS", "shadcn", "Tailwind", "Supabase", "Stripe"],
+      tags: [
+        "Next.JS",
+        "shadcn",
+        "Tailwind",
+        "OpenRouter",
+        "Supabase",
+        "Stripe",
+      ],
       usePng: true,
     },
     {

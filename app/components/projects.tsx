@@ -4,6 +4,21 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: "Blissed",
+      description:
+        "Blissed lets you create fully production-ready apps instantly using an intuitive Scratch-like interface.",
+      link: "https://blissed.app",
+      tags: [
+        "Next.JS",
+        "shadcn",
+        "Tailwind",
+        "OpenRouter",
+        "Supabase",
+        "Stripe",
+      ],
+      usePng: true,
+    },
+    {
       title: "Calendizer",
       description:
         "Calendizer allows you to learn any skill in a time period with a specialised roadmap which can be exported to your calendar.",

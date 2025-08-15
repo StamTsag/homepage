@@ -1,7 +1,7 @@
-import BlogPost from "@/app/components/blog-post";
+import BlogPost from "@/app/components/blog/blog-post";
 import { getPost, getSlugs } from "@/lib/blog";
-import NavBarBlogPost from "@/app/components/navbar-blog-post";
-import FooterMini from "@/app/components/footer-mini";
+import NavBarBlogPost from "@/app/components/blog/navbar-blog-post";
+import FooterMini from "@/app/components/blog/footer-blog";
 import { redirect } from "next/navigation";
 
 export async function generateStaticParams() {

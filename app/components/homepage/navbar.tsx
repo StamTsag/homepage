@@ -3,13 +3,12 @@
 import HoverTabs from "@/components/hover-tabs";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ScrollLayout } from "../types";
+import { ScrollLayout } from "@/app/types";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { isElementInViewport } from "@/lib/utils";
 import { Newspaper } from "lucide-react";
 
-// TODO: Drawer
 export default function NavBar() {
   let [activeScroll, setActiveScroll] = useState<ScrollLayout>(
     ScrollLayout.Home

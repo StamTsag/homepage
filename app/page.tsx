@@ -1,10 +1,10 @@
-import TechStack from "./components/tech-stack";
-import Projects from "./components/projects";
-import WorkedOn from "./components/worked-on";
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
-import About from "./components/about";
-import WorkWithMe from "./components/collaborate";
+import TechStack from "./components/homepage/tech-stack";
+import Projects from "./components/homepage/projects";
+import WorkedOn from "./components/homepage/worked-on";
+import NavBar from "./components/homepage/navbar";
+import Footer from "./components/homepage/footer";
+import About from "./components/homepage/about";
+import WorkWithMe from "./components/homepage/collaborate";
 
 export default function Page() {
   return (

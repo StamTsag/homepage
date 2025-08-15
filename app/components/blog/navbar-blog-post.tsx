@@ -10,7 +10,6 @@ interface Props {
   title: string;
 }
 
-// TODO: Drawer
 export default function NavBarBlogPost({ slug, title }: Props) {
   const [collapsed, setCollapsed] = useState(false);
 

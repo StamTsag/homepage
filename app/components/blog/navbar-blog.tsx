@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArrowLeft, Newspaper } from "lucide-react";
 
-// TODO: Drawer
 export default function NavBarBlog() {
   const [collapsed, setCollapsed] = useState(false);
 

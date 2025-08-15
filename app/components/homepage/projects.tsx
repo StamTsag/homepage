@@ -1,4 +1,4 @@
-import { Project } from "../types";
+import { Project } from "@/app/types";
 import ProjectCard from "./project-card";
 
 export default function Projects() {

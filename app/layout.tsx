@@ -5,8 +5,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import type React from "react";
 import { PostHogProvider } from "./providers";
-import Background from "./components/bg";
-import BlurBars from "./components/blur-bars";
+import Background from "../components/bg";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 
@@ -60,7 +59,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <PostHogProvider>
-            <BlurBars />
             <Background />
 
             {children}

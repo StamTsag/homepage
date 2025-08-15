@@ -4,7 +4,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Project } from "../types";
+import { Project } from "@/app/types";
 import { useState } from "react";
 
 export default function ProjectCard({

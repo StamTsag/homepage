@@ -1,8 +1,8 @@
-import NavBarBlog from "../components/navbar-blog";
+import NavBarBlog from "../components/blog/navbar-blog";
 
 import { getAllPosts } from "@/lib/blog";
-import BlogPostPreview from "../components/blog-post-preview";
-import FooterMini from "../components/footer-mini";
+import BlogPostPreview from "../components/blog/blog-post-preview";
+import FooterBlog from "../components/blog/footer-blog";
 import { PackageOpen } from "lucide-react";
 
 export default async function Blog() {
@@ -40,7 +40,7 @@ export default async function Blog() {
           </div>
         )}
 
-        <FooterMini />
+        <FooterBlog />
       </div>
     </div>
   );

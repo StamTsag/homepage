@@ -4,7 +4,6 @@ import WorkedOn from "./components/worked-on";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import About from "./components/about";
-import AIPrompt from "./components/ai-prompt";
 import WorkWithMe from "./components/collaborate";
 
 export default function Page() {
@@ -14,8 +13,6 @@ export default function Page() {
         <NavBar />
 
         <main className="px-4 md:px-6">
-          <AIPrompt />
-
           <About />
 
           <WorkedOn />

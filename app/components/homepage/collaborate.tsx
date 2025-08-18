@@ -58,7 +58,7 @@ export default function CollaborateForm() {
                   htmlFor="message"
                   className="block text-xs md:text-sm font-medium mb-2"
                 >
-                  Project information (budget, industry, etc.)
+                  Project information
                 </label>
                 <Textarea id="message" name="message" required />
               </div>

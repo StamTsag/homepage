@@ -12,6 +12,7 @@ const technologies: Technology[] = [
       "Svelte",
       "SvelteKit",
       "React",
+      "Redux",
       "Next.JS",
       "shadcn",
       "Typescript",

@@ -4,6 +4,14 @@ import ProjectCard from "./project-card";
 export default function WorkedOn() {
   const projects: Project[] = [
     {
+      title: "EOPYY",
+      description:
+        "Greek national healthcare infrastructure used by millions of citizens.",
+      link: "https://eopyy.gov.gr",
+      tags: ["React", "Redux", "CSS", "Weblogic"],
+      usePng: true,
+    },
+    {
       title: "Tynker AI",
       description:
         "Web-based interactive online games powered by AI prompt submission.",

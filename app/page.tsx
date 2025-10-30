@@ -4,7 +4,6 @@ import WorkedOn from "./components/homepage/worked-on";
 import NavBar from "./components/homepage/navbar";
 import Footer from "./components/homepage/footer";
 import About from "./components/homepage/about";
-import WorkWithMe from "./components/homepage/collaborate";
 
 export default function Page() {
   return (
@@ -20,8 +19,6 @@ export default function Page() {
           <Projects />
 
           <TechStack />
-
-          <WorkWithMe />
         </main>
 
         <Footer />

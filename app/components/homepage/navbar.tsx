@@ -22,7 +22,6 @@ export default function NavBar() {
       const workedOn = document.getElementById("worked-on");
       const projects = document.getElementById("projects");
       const stack = document.getElementById("stack");
-      const collaborate = document.getElementById("collaborate");
 
       if (isElementInViewport(home!)) setActiveScroll(ScrollLayout.Home);
       else if (isElementInViewport(workedOn!))
@@ -31,8 +30,6 @@ export default function NavBar() {
         setActiveScroll(ScrollLayout.Projects);
       else if (isElementInViewport(stack!)) {
         setActiveScroll(ScrollLayout.Stack);
-      } else if (isElementInViewport(collaborate!)) {
-        setActiveScroll(ScrollLayout.Collaborate);
       }
 
       const handleScroll = () => {
@@ -69,7 +66,7 @@ export default function NavBar() {
         </Link>
         <nav className="hidden md:block flex flex-1 items-center justify-center space-x-6 text-sm w-full pl-6">
           <HoverTabs
-            tabs={["Home", "Worked on", "Projects", "Collaborate"]}
+            tabs={["Home", "Worked on", "Projects"]}
             useLinks
             customActiveTab={activeScroll}
             hideIndicator

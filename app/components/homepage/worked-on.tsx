@@ -51,14 +51,6 @@ export default function WorkedOn() {
       tags: ["Next.JS", "shadcn", "Tailwind", "Node.JS"],
       usePng: true,
     },
-    {
-      title: "Cryptify AI",
-      description:
-        "Gain insights into influencer (KOL) with a powerful dashboard.",
-      link: "https://cryptify.ai",
-      tags: ["SvelteKit", "shadcn", "Tailwind", "drizzle"],
-      usePng: true,
-    },
   ];
 
   return (

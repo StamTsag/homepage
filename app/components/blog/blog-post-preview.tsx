@@ -32,15 +32,15 @@ export default function BlogPostPreview({
     <Link
       href={`/blog/${slug}`}
       aria-label={`Read blog post: ${title}`}
-      className="block w-[90%] md:max-h-[200px] md:w-[75%] lg:w-[60%] m-auto"
+      className="block w-[90%] md:h-[200px] md:w-[75%] lg:w-[60%] m-auto"
     >
-      <div className="flex flex-col md:flex-row rounded-3xl bg-white/5 hover:bg-white/10 duration-150 backdrop-blur-lg mt-10">
+      <div className="flex flex-col md:flex-row rounded-3xl bg-white/5 hover:bg-white/10 duration-150 backdrop-blur-lg mt-10 overflow-hidden md:h-full">
         <img
           src={`/blog/${slug}/icon.jpg`}
-          className="md:min-h-[200px] md:min-w-[350px] max-h-[200px] md:max-h-[230px] md:max-w-[350px] object-cover rounded-t-3xl md:rounded-tr-none md:rounded-l-3xl"
+          className="md:h-full md:w-[350px] max-h-[200px] md:max-h-none object-cover rounded-t-3xl md:rounded-tr-none md:rounded-l-3xl"
         />
 
-        <div className="flex flex-col p-4 md:p-6 md:pt-4 md:pb-4">
+        <div className="flex flex-col p-4 md:p-6 md:pt-4 md:pb-4 overflow-hidden">
           <div className="flex flex-wrap gap-2 mb-1">
             {tags?.map((tag) => (
               <span
@@ -51,10 +51,12 @@ export default function BlogPostPreview({
               </span>
             ))}
           </div>
-          <h2 className="text-xl md:text-3xl font-bold mb-3">{title}</h2>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 line-clamp-1">
+            {title}
+          </h2>
 
           {excerpt && (
-            <div className="text-xs text-primary/75 md:text-[0.8rem] line-clamp-3 overflow-hidden text-ellipsis whitespace-pre-wrap">
+            <div className="text-xs text-primary/75 md:text-[0.8rem] line-clamp-2 md:line-clamp-3 overflow-hidden text-ellipsis whitespace-pre-wrap">
               {excerpt}
             </div>
           )}

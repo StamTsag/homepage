@@ -33,20 +33,21 @@ export default function BlogPostPreview({
     <Link
       href={`/blog/${slug}`}
       aria-label={`Read blog post: ${title}`}
-      className="block w-[90%] md:h-[200px] md:w-[75%] lg:w-[60%] m-auto"
+      className="block w-[90%] h-[400px] md:h-[200px] md:w-[75%] lg:w-[60%] m-auto mt-10"
     >
-      <div className="flex flex-col md:flex-row rounded-3xl bg-white/5 hover:bg-white/10 duration-150 backdrop-blur-lg mt-10 overflow-hidden md:h-full">
-        <div className="relative w-full h-[200px] md:h-full md:w-[350px] shrink-0">
+      <div className="flex flex-col md:flex-row h-full rounded-3xl bg-white/5 hover:bg-white/10 duration-150 backdrop-blur-lg overflow-hidden">
+        <div className="relative w-full h-[200px] md:h-full md:w-[350px] flex-none">
           <Image
             src={`/blog/${slug}/icon.jpg`}
             alt={title}
             fill
             priority
+            loading="eager"
             className="object-cover rounded-t-3xl md:rounded-tr-none md:rounded-l-3xl"
           />
         </div>
 
-        <div className="flex flex-col p-4 md:p-6 md:pt-4 md:pb-4 overflow-hidden">
+        <div className="flex flex-col p-4 md:p-6 md:pt-4 md:pb-4 overflow-hidden flex-1">
           <div className="flex flex-wrap gap-2 mb-1">
             {tags?.map((tag) => (
               <span

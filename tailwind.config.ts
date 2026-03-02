@@ -11,6 +11,23 @@ const config: Config = {
   theme: {
     extend: {
       typography: () => ({
+        DEFAULT: {
+          css: {
+            code: {
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              padding: "0.2rem 0.4rem",
+              borderRadius: "0.375rem",
+              fontWeight: "400",
+              color: "white",
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+          },
+        },
         compact: {
           css: {
             h1: { marginTop: "0rem", marginBottom: "0rem" },

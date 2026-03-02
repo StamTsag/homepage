@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { calculateHTMLReadingTime } from "@/lib/utils";
 import { Calendar, Clock } from "lucide-react";
 import Link from "next/link";
@@ -35,10 +36,15 @@ export default function BlogPostPreview({
       className="block w-[90%] md:h-[200px] md:w-[75%] lg:w-[60%] m-auto"
     >
       <div className="flex flex-col md:flex-row rounded-3xl bg-white/5 hover:bg-white/10 duration-150 backdrop-blur-lg mt-10 overflow-hidden md:h-full">
-        <img
-          src={`/blog/${slug}/icon.jpg`}
-          className="md:h-full md:w-[350px] max-h-[200px] md:max-h-none object-cover rounded-t-3xl md:rounded-tr-none md:rounded-l-3xl"
-        />
+        <div className="relative w-full h-[200px] md:h-full md:w-[350px] shrink-0">
+          <Image
+            src={`/blog/${slug}/icon.jpg`}
+            alt={title}
+            fill
+            priority
+            className="object-cover rounded-t-3xl md:rounded-tr-none md:rounded-l-3xl"
+          />
+        </div>
 
         <div className="flex flex-col p-4 md:p-6 md:pt-4 md:pb-4 overflow-hidden">
           <div className="flex flex-wrap gap-2 mb-1">

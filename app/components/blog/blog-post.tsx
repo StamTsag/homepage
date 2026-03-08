@@ -29,11 +29,11 @@ export default function BlogPost({
             width={36}
             height={36}
             className="rounded-full mr-1"
-          />
+          />  
           <div className="flex flex-col gap-y-[1px]">
             <h1 className="text-base">Stamatis Tsagkliotis</h1>
 
-            <div className="flex gap-x-2 items-center text-xs">
+            <div className="flex gap-x-2 items-center text-xs text-white/70">
               <p className="flex gap-x-2 items-center">
                 <Clock width={16} height={16} />
                 {calculateHTMLReadingTime(contentHtml)} min read
@@ -69,7 +69,7 @@ export default function BlogPost({
         {tags?.map((tag) => (
           <span
             key={tag}
-            className="inline-flex items-center rounded-xl bg-white/10 px-2 py-1 text-[0.7rem] md:text-xs font-medium"
+            className="inline-flex items-center rounded-xl bg-white/10 px-3 py-1 text-xs font-medium"
           >
             {tag}
           </span>
@@ -77,7 +77,10 @@ export default function BlogPost({
       </div>
 
       <div
-        className="whitespace-pre-wrap [&>*]:my-0 prose-sm md:prose-base prose prose-compact text-white prose-a:text-white max-w-none prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-strong:text-white"
+        className="whitespace-pre-wrap [&>*]:my-0 [&>h2]:mt-12 prose-sm md:prose-base prose prose-compact text-white prose-a:text-white max-w-none 
+                   prose-h1:text-white 
+                   prose-h2:text-white prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:font-bold
+                   prose-h3:text-white prose-strong:text-white"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
     </article>

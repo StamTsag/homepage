@@ -4,6 +4,21 @@ import NavBarBlogPost from "@/app/components/blog/navbar-blog-post";
 import FooterMini from "@/app/components/blog/footer-blog";
 import { redirect } from "next/navigation";
 
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const post = await getPost(params.slug);
+
+  return {
+    title: post.title,
+    description: post.title,
+  };
+}
+
 export async function generateStaticParams() {
   const slugs = getSlugs();
   return slugs.map((slug) => ({ slug }));

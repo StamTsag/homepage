@@ -10,7 +10,7 @@ You are currently viewing my first blog post. It serves as an introduction to me
 
 For the sake of authenticity, I won't be using any AI tool to improve my blogs so enjoy some raw experiences.
 
-## 👨‍💻 About me
+## About me
 
 I am **Stamatis Tsagkliotis** born in **Piraeus, Greece** on **January 20 2005**.
 
@@ -22,13 +22,13 @@ I am not the type of person to share this much about me online. That is why you 
 
 This blog is the only place where you will see me opening up.
 
-## ❓ How did I start?
+## How did I start?
 
 This is the most common question I get: **How did you start so young?**
 
 The answer is pretty simple and, in all honesty, is not as interesting as people think it is.
 
-## 🚀 The start of my journey
+## The start of my journey
 
 Imagine this: it's **2015**.
 
@@ -46,7 +46,7 @@ Also, I never really watched Youtube tutorials after my 1st year of programming.
 
 All in all, these bots didn't ultimately lead to the traction I expected, but I now had way bigger plans in mind...
 
-## 😎 This seems cool..
+## This seems cool..
 
 With a few Python scripts under my belt, several **.env** files exposed on **Github** and no idea as to where this will lead me, I got interested in creating mobile apps.
 
@@ -60,7 +60,7 @@ Around **2020** I got tired of recreating the same mod menus for every update. M
 
 I soon realised C++ isn't my thing, so I started wondering what I should do next...
 
-## 🔧 It's getting serious
+## It's getting serious
 
 I spent some time away thinking about what I want to do with my newly acquired skills. I went through every hoop including **open source**, **startups** and **corporate** companies.
 
@@ -86,7 +86,7 @@ Here's a timeline.
 
 **Jun 2025 - Present**: Joined [**Netcompany**](https://netcompany.com) full-time as a **Mid Level Fullstack Engineer**. Contributing to Greece's national healthcare system ([**EOPYY**](https://www.eopyy.gov.gr/)), supporting millions of citizens with Java, Spring Boot, React, and Keycloak across a hybrid cloud infrastructure.
 
-## 🎯 What is my end goal?
+## What is my end goal?
 
 With my documented career path, I hope I inspire the new generations of Greek citizens (and other countries) to pursue programming at a high level without focusing on the beaten path.
 

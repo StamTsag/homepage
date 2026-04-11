@@ -24,7 +24,7 @@ export default function BlogPost({
       <div className="flex items-center gap-x-6 mb-4">
         <div className="flex text-sm gap-x-2 items-center">
           <Image
-            src={"/favicon.ico"}
+            src={"/favicon.jpg"}
             alt="Logo"
             width={36}
             height={36}

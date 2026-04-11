@@ -11,7 +11,7 @@ import { Newspaper } from "lucide-react";
 
 export default function NavBar() {
   let [activeScroll, setActiveScroll] = useState<ScrollLayout>(
-    ScrollLayout.Home
+    ScrollLayout.Home,
   );
 
   const [collapsed, setCollapsed] = useState(false);
@@ -52,7 +52,7 @@ export default function NavBar() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2 pl-4">
           <Image
-            src={"/favicon.ico"}
+            src={"/favicon.jpg"}
             alt="Logo"
             width={24}
             height={24}
@@ -61,10 +61,10 @@ export default function NavBar() {
           <span
             className={`${collapsed && "opacity-0"} duration-150 font-bold`}
           >
-            StamTsag
+            Stamatis
           </span>
         </Link>
-        <nav className="hidden md:block flex flex-1 items-center justify-center space-x-6 text-sm w-full pl-6">
+        <nav className="hidden md:block flex flex-1 items-center justify-center space-x-6 text-sm w-full pl-8">
           <HoverTabs
             tabs={["Home", "Worked on", "Projects"]}
             useLinks

@@ -1,13 +1,23 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Sora, Space_Mono } from "next/font/google";
 import "./globals.css";
 import type React from "react";
 import { PostHogProvider } from "./providers";
 import Background from "../components/bg";
 
-const dmsans = DM_Sans({ subsets: ["latin"] });
+const sora = Sora({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
+
+const spaceMono = Space_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Stamatis Tsagkliotis",
@@ -51,7 +61,13 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={cn("bg-background antialiased", dmsans.className)}>
+      <body
+        className={cn(
+          "bg-background antialiased",
+          sora.variable,
+          spaceMono.variable,
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

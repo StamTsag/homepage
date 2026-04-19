@@ -43,14 +43,6 @@ export default function WorkedOn() {
       tags: ["SvelteKit", "shadcn", "Tailwind"],
       usePng: true,
     },
-    {
-      title: "Moonrate AI",
-      description:
-        "Efficiently find the best hotels for you with the use of new-generation AI.",
-      link: "https://moonrate.ai",
-      tags: ["Next.JS", "shadcn", "Tailwind", "Node.JS"],
-      usePng: true,
-    },
   ];
 
   return (

@@ -96,4 +96,4 @@ I will keep posting on this personal blog so check back often for new tips & tri
 
 **PS**: Think you are ready to level up as a young builder like me? Add me on Discord: **stam.tsag**
 
-**Stam**
+`- Stam`

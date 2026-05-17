@@ -14,7 +14,7 @@ export function isElementInViewport(element: HTMLElement) {
 }
 
 export function calculateHTMLReadingTime(html: string) {
-  // Guess around 150 words a minute
+  // Guess around 200 words a minute
   const wordCount = html.split(/\s+/).length;
   const readingTime = Math.max(1, Math.ceil(wordCount / 200)); // minimum 1 min
 

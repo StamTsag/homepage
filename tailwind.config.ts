@@ -20,6 +20,13 @@ const config: Config = {
               fontWeight: "400",
               color: "white",
             },
+            pre: {
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              padding: "0.2rem 0.4rem",
+              borderRadius: "0.375rem",
+              fontWeight: "400",
+              color: "white",
+            },
             "code::before": {
               content: '""',
             },
@@ -42,8 +49,12 @@ const config: Config = {
             ol: { marginTop: "0rem", marginBottom: "0rem" },
             pre: { marginTop: "0rem", marginBottom: "0rem" },
             blockquote: { marginTop: "0rem", marginBottom: "0rem" },
+            code: { marginTop: "0rem", marginBottom: "0rem" },
             li: {
               marginBottom: "0.25rem",
+            },
+            img: {
+              borderRadius: "24px",
             },
           },
         },

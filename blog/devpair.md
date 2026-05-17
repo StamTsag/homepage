@@ -154,8 +154,6 @@ I also had the idea of alternating between the images automatically if more than
 
 The share card feature is a **Builder Mode exclusive** that allows premium users to generate and share their unique developer card link.
 
-Each Builder Mode member gets a personalized URL in the format `https://devpair.app/@{username}` that displays their full profile in a mobile-optimized view.
-
 To regenerate/update your custom link, send a POST request to `/api/updateUserLink`:
 
 ```
@@ -163,19 +161,6 @@ To regenerate/update your custom link, send a POST request to `/api/updateUserLi
   link: "stam" // Your desired username (3-20 characters)
 }
 ```
-
-The API validates:
-
-- User must have an active Builder Mode subscription (verified via `isPro(user.plan)`)
-- Link must be between 3 to 20 characters
-- Link must not be already taken by another user
-
-The share dialog includes:
-
-- Copy to clipboard button
-- Regenerate link option (change your custom username)
-- Quick share buttons for Twitter, Facebook, WhatsApp, Telegram, LinkedIn, Email
-- QR code generator for offline sharing
 
 ![](/blog/devpair/assets/9.png)
 Pssst, check out my card at [https://devpair.app/@stam](https://devpair.app/@stam).
@@ -197,16 +182,12 @@ Later on, I added an option to disable the active status of a developer while hi
 
 Builder Mode is the premium subscription tier of DevPair, designed for serious developers who want to maximize their networking potential.
 
-### Pricing
-
-Builder Mode is available at two price points:
+It is currently available at two price points:
 
 - **Monthly**: $4.99/month
-- **Yearly**: $34.99/year (save ~40%)
+- **Yearly**: $34.99/year
 
 ### Features
-
-Builder Mode unlocks the following features:
 
 **Unlimited Swipes**: Free users have a daily swipe limit, while Builder Mode members can swipe as much as they want.
 

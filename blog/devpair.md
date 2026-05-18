@@ -1,6 +1,6 @@
 ---
 title: "DevPair - Social Network for Devs"
-date: "2026-03-28"
+date: "2026-05-17"
 tags: ["DevPair", "Social Network", "Developers"]
 ---
 

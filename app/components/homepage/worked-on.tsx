@@ -4,6 +4,14 @@ import ProjectCard from "./project-card";
 export default function WorkedOn() {
   const projects: Project[] = [
     {
+      title: "Wealthyhood",
+      description:
+        "Investing made simple for Gen Z with fractional shares, 0 commission fees and portfolio automation.",
+      link: "https://eopyy.gov.gr",
+      tags: ["Typescript", "React", "Node.JS", "React Native"],
+      usePng: true,
+    },
+    {
       title: "EOPYY",
       description:
         "Greek national healthcare infrastructure used by millions of citizens.",

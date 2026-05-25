@@ -21,18 +21,14 @@ export default function About() {
               <br />
               Right now, I'm working at{" "}
               <a
-                href="https://netcompany.com"
+                href="https://wealthyhood.com"
                 target="_blank"
-                className="font-bold text-emerald-500 hover:underline"
+                className="font-bold text-purple-500 hover:underline"
               >
-                Netcompany - Intrasoft
+                Wealthyhood
               </a>{" "}
-              as a Fullstack Developer, revolutionising Greek healthcare
-              services, used by millions of citizens.
-              <br />
-              <br />
-              Not to fret, I'm always open to new connections and possible
-              collaborations.
+              as a Software Engineer, bringing the magic of investing to
+              millions of Greek citizens and the next generation.
             </p>
           </div>
 

@@ -1,9 +1,9 @@
-import TechStack from "./components/homepage/tech-stack";
 import Projects from "./components/homepage/projects";
 import WorkedOn from "./components/homepage/worked-on";
 import NavBar from "./components/homepage/navbar";
 import Footer from "./components/homepage/footer";
 import About from "./components/homepage/about";
+import Technologies from "./components/homepage/technologies";
 
 export default function Page() {
   return (
@@ -18,7 +18,7 @@ export default function Page() {
 
           <Projects />
 
-          <TechStack />
+          <Technologies />
         </main>
 
         <Footer />

@@ -7,7 +7,7 @@ export default function WorkedOn() {
       title: "Wealthyhood",
       description:
         "Investing made simple for Gen Z with fractional shares, 0 commission fees and portfolio automation.",
-      link: "https://eopyy.gov.gr",
+      link: "https://wealthyhood.com",
       tags: ["Typescript", "React", "Node.JS", "React Native"],
       usePng: true,
     },

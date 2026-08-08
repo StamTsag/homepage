@@ -19,16 +19,8 @@ export default function About() {
               intuitive web experiences from the ground up.
               <br />
               <br />
-              Right now, I'm working at{" "}
-              <a
-                href="https://wealthyhood.com"
-                target="_blank"
-                className="font-bold text-purple-500 hover:underline"
-              >
-                Wealthyhood
-              </a>{" "}
-              as a Software Engineer, bringing the magic of investing to
-              millions of Greek citizens and the next generation.
+              Right now, I'm working on new personal projects, focusing on
+              improving my skills and balancing it with AI-assisted development.
             </p>
           </div>
 

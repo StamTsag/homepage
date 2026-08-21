@@ -52,25 +52,6 @@ export default function Projects() {
       tags: ["SvelteKit", "shadcn", "Tailwind"],
       usePng: true,
     },
-    {
-      title: "Speedy",
-      description:
-        "Measure your internet speed efficiently and share your results.",
-      link: "https://speedy.stamtsag.com",
-      tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
-      github: "https://github.com/StamTsag/speedy",
-
-      usePng: true,
-    },
-    {
-      title: "LinkShr",
-      description:
-        "Shorten those long links to a simple readable format, online.",
-      link: "https://linkshr.stamtsag.com",
-      tags: ["Next.JS", "shadcn", "Tailwind", "Java", "Spring Boot"],
-      github: "https://github.com/StamTsag/linkshr",
-      usePng: true,
-    },
   ];
 
   return (
